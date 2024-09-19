@@ -6,7 +6,14 @@
         <title>Matematisk Modellering</title>
     </head>
 
-    </head>
+    <style>
+        /*Temporary inline styling for visualising tables, (code from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3)*/
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
     <body>
         <header>
             <nav>
@@ -231,7 +238,92 @@
                         >
                     </li>
 
+                    <li>
+                        <ul>
+                            <li>
+                                <h4>1. Studieår</h4>
+                                <table>
+                                    <tr>
+                                        <th>1. Semester</th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <a
+                                                href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST"
+                                                >Diskret matematikk</a
+                                            >
+                                            <p>DAPE1300 10 stp.</p>
+                                        </th>
+                                        <th>
+                                            <a
+                                                href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST"
+                                                >Programmering</a
+                                            >
+                                            <p>DAPE1400 10 stp.</p>
+                                        </th>
+                                        <th>
+                                            <a
+                                                href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA1100/2024/H%C3%98ST"
+                                                >Teknologi og samfunn for
+                                                programmerere</a
+                                            >
+                                            <p>DATA1100 5 stp.</p>
+                                        </th>
+                                        <th>
+                                            <a
+                                                href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO1100/2024/H%C3%98ST"
+                                                >Innføring i modeller og
+                                                beregninger</a
+                                            >
+                                            <p>MAMO1100 5 stp.</p>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>2. Semester</th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <a
+                                                href="https://student.oslomet.no/studier/-/studieinfo/emne/DAFE1000/2024/H%C3%98ST"
+                                                >Matematikk 1000</a
+                                            >
+                                            <p>DAFE1000 10 stp.</p>
+                                        </th>
+                                        <th>
+                                            <a
+                                                href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE2101/2024/H%C3%98ST"
+                                                >Fysikk og kjemi</a
+                                            >
+                                            <p>DAPE2101 10 stp.</p>
+                                        </th>
+                                        <th>
+                                            <a
+                                                href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA1500/2024/H%C3%98ST"
+                                                >Databaser</a
+                                            >
+                                            <p>DATA1500 10 stp.</p>
+                                        </th>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <h4>2. Studieår</h4>
+                                <table>
+                                    <tr><th>1. Semester</th></tr>
+                                    <tr>
+                                        <th>
+                                            <a
+                                                href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA1500/2024/H%C3%98ST"
+                                                >Databaser</a
+                                            >
+                                            <p>Matematikk 2000 med statistikk 10 stp.</p>
+                                        </th>
+                                    </tr>
+                                </table>
+                            </li>
+                        </ul>
                     <!--Studiets oppbygging går her-->
+                    </li>
 
                     <li>
                         <h3>Hvordan foregår undervisningen?</h3>
@@ -255,7 +347,69 @@
                     </li>
 
                     <li>
-                        <h3>hva</h3>
+                        <h3>Hva koster det</h3>
+                        <p>
+                            Det er ikke studieavgift på dette studiet.
+                            <a href="https://student.oslomet.no/semesteravgift"
+                                >Du betaler en semesteravgift hvert semester
+                                (student.oslomet.no)</a
+                            >
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Hva kan du jobbe som?</h3>
+                        <p>
+                            Med dette studiet får du IT-kompetanse som er
+                            etterspurt i arbeidslivet, særlig om du velger
+                            spesialiseringene vitenskapelige beregninger eller
+                            statistiske og datadrevne metoder.
+                        </p>
+                        <p>
+                            Spesialiseringen i matematikk og fysikk retter seg
+                            mer mot videre studier, men også her får du
+                            etterspurt kompetanse i arbeidslivet etter
+                            bachelorstudiet.
+                        </p>
+                        <p>
+                            Matematisk modellering og datavitenskap blir stadig
+                            viktigere som basisgrunnlag, i for eksempel
+                            beregninger knyttet til klima, forsikring og finans,
+                            og datadrevne metoder for verdiskaping.
+                        </p>
+                        <p>
+                            Datadrevne metoder og maskinlæring er i dag svært
+                            mye brukt i arbeidslivet.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Utveksling</h3>
+                        <p>Du kan dra på utveksling i femte semester.</p>
+                    </li>
+                    <li>
+                        <h3>Videre studiemuligheter ved OsloMet</h3>
+                        <a
+                            href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi"
+                            style="
+                                display: block;
+                                text-decoration: none;
+                                color: inherit;
+                            "
+                        >
+                            <!--Using display: block makes the entire article clickable which is the intent, instead of the separate elements being clickable, the whole section is-->
+                            <!--Using text-decoration:none, and color:inherit; the text will look like the rest, and not like a link-->
+                            <!--All of this is up to change, this is just inline style testing.-->
+                            <article>
+                                <p>Anvendt data- og informasjonsteknologi</p>
+                                <table style="width: 100%">
+                                    <tr>
+                                        <th>Masterprogram</th>
+                                        <th>2 år</th>
+                                        <th>Pilestredet i Oslo</th>
+                                        <th>Heltid</th>
+                                    </tr>
+                                </table>
+                            </article>
+                        </a>
                     </li>
                 </ul>
             </section>

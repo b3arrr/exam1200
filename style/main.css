@@ -1,5 +1,9 @@
-ul.no-bullets {
+.footermiddle, .footerright {
     list-style-type: none; 
     padding: 0;
     margin: 0;
+}
+
+.footerleft, .fagligleder {
+    font-style: normal;
 }

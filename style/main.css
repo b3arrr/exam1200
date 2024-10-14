@@ -114,3 +114,14 @@ section {
     row-gap: 20px;
 
 }
+
+.footermiddle, .footerright {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.footerleft, .fagligleder {
+    font-style: normal;
+}
+

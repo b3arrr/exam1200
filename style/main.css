@@ -1,7 +1,7 @@
 /*Beginning with temp stylization for heading and experimenting with fonts and styles*/
 
 :root {
-    --background: #ffffff;
+    --background: #c8cec3;
     --primary-color: #eb8d00;
     --secondary-color: #69a003;
     --text-color: #000000;
@@ -41,6 +41,7 @@ li {
 
 /* Header specific styling*/
 header {
+    background-color: white;
     width: 100%;
     display: flex;
     align-items: center;

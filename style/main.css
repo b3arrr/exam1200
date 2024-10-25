@@ -8,9 +8,9 @@
 }
 html {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16pt;
-    margin: 0 15%;
+    font-size: 16px;
 }
+
 
 * {
     margin: 0;
@@ -19,6 +19,8 @@ html {
 
 body {
     background-color: var(--background);
+    margin: 0;
+    padding: 0;
 }
 p,
 h1,
@@ -39,20 +41,25 @@ li {
     list-style: none;
 }
 
+img {
+    max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
+}
 /* Header specific styling*/
 header {
     width: 100%;
     display: flex;
     align-items: center;
-    position: sticky; /*Makes the header stick to the top (top 0, position: sticky)*/ 
-    top:0;
-    background-color: var(--background);
+    justify-content: space-between; /* Distributes space between header elements */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px; /* Uniform padding for consistency */
 }
 #exam {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-weight: 800;
+    font-weight: 500;
     text-transform: uppercase;
 }
 a:hover {
@@ -94,17 +101,50 @@ a:hover {
 }
 
 /*styling main*/
-main {
-    width: 100%;
+main, aside{
+    margin: 0 15%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
-section {
-    margin: 20px 0;
+
+
+ .semester {
+    
+ }
+ .topic-group {
+    
+ }
+ .topic-group li{
+    border: 1px solid #a2a2a2;
+    padding: 15px;
+    background-color: #eaeaea;
+    border-radius: 5px;
+    width: fit-content
+ }
+ 
+
+table {
+    width: 100%;
+    background: rgb(234, 234, 234);
+    border-collapse: collapse;
 }
+th, td {
+    border: 1px solid;
+    padding:10px;
+    text-align: center;
+}
+th {
+    background-color: rgb(211, 211, 211);
+}
+section {
+    margin: 40px 0;
+    width: 100%;
+}
+
+
 
 .listWrapper {
     box-sizing: border-box;
@@ -112,16 +152,16 @@ section {
     display: grid;
     grid-template-columns: 2fr 2fr;
     row-gap: 20px;
-
 }
 
-.footermiddle, .footerright {
-    list-style-type: none; 
+.footermiddle,
+.footerright {
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.footerleft, .fagligleder {
+.footerleft,
+.fagligleder {
     font-style: normal;
 }
-

@@ -145,7 +145,6 @@ section {
 }
 
 
-
 .listWrapper {
     box-sizing: border-box;
     margin-top: 40px;
@@ -154,14 +153,37 @@ section {
     row-gap: 20px;
 }
 
-.footermiddle,
-.footerright {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.address {
+    font-style: normal;
 }
 
-.footerleft,
-.fagligleder {
-    font-style: normal;
+
+.footerflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #a2a2a2;
+}
+
+.footerleft {
+    width: max(400px);
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.footermiddle {
+    list-style-type: none;
+    width: max(400px);
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.footerright {
+    list-style-type: none;
+    width: max(400px);
+    padding: 0.5em;
+    margin: 0.5em;
 }

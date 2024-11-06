@@ -1,27 +1,30 @@
-/*Beginning with temp stylization for heading and experimenting with fonts and styles*/
 
+/*Stores variable colors in root to be re-used in the project*/
 :root {
     --background: #ffffff;
-    --primary-color: #eb8d00;
-    --secondary-color: #69a003;
+    --primary-color: #ebd400;
+    --secondary-color: #ff3c00;
     --text-color: #000000;
 }
+
+/*Define what font and font size to be used in the project (inside the <html> element)*/
 html {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
 }
 
-
+/*Remove all default margin and padding for all elements, this gives precise control  */
 * {
     margin: 0;
     padding: 0;
 }
 
+/*Gives the background color of the document the color of -> variable --background*/
 body {
     background-color: var(--background);
-    margin: 0;
-    padding: 0;
 }
+
+/*Gives the text color for these elements (p,h1,h2,h3) the color of -> variable --text-color */
 p,
 h1,
 h2,
@@ -32,8 +35,13 @@ h3 {
 h1 {
     font-weight: 800;
 }
+
+/*Gives all links a yellow underline with a 2px thickness*/
 a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 2px;
+
     color: var(--text-color);
 }
 
@@ -52,19 +60,21 @@ header {
     justify-content: space-between; /* Distributes space between header elements */
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: var(--primary-color);
     padding: 10px; /* Uniform padding for consistency */
 }
+
+/*Position the exam title in the center of the header*/
 #exam {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-weight: 500;
+    font-weight: 800;
     text-transform: uppercase;
 }
 a:hover {
     /* When you hover over links, it will change the color to what is set for primary-color, and use 0.2 seconds to transition to that color*/
-    color: var(--primary-color);
+    color: var(--secondary-color);
     transition-duration: 0.2s;
 }
 
@@ -75,6 +85,8 @@ a:hover {
     cursor: pointer;
     box-sizing: border-box;
 }
+
+/*Content to be shown in when hovering over the dropwdown*/
 .dropdown-content {
     display: none;
     position: absolute;
@@ -85,6 +97,7 @@ a:hover {
     background-color: white;
     box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
+/*Makes it display the content of the dropdown-content when hovering using the :hover pseudoclass */
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -94,6 +107,7 @@ a:hover {
     filter: brightness(0) saturate(100%);
 }
 
+/*Using filter to fill in color of an SVG element, this will apply when hovering over the svg*/
 #dropdown-symbol:hover {
     transition-duration: 0.1s;
     filter: brightness(0) saturate(100%) invert(53%) sepia(100%) saturate(432%)
@@ -110,13 +124,6 @@ main, aside{
 }
 
 
-
- .semester {
-    
- }
- .topic-group {
-    
- }
  .topic-group li{
     border: 1px solid #a2a2a2;
     padding: 15px;
@@ -139,6 +146,7 @@ th, td {
 th {
     background-color: rgb(211, 211, 211);
 }
+/* adding margin on top and bottom, to give some spacing between sections */
 section {
     margin: 40px 0;
     width: 100%;
@@ -157,7 +165,7 @@ section {
     font-style: normal;
 }
 
-
+/*Footer specific styling*/
 .footerflex {
     display: flex;
     justify-content: space-around;

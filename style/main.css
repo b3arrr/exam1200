@@ -301,7 +301,7 @@ font-size: 16px;
     background-color: #e68aab; 
 }
 
-   /* Styled the table so that it is easier for the user to know where they are on the table. 
+/* Styled the table so that it is easier for the user to know where they are on the table. 
 For example, having different colors on the rows and the rows will be highlighted when hovered over.
 Code used in https://www.w3schools.com/css/css_table.asp*/
 
@@ -312,7 +312,7 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
 
 .suggestion td, .suggestion th {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 15px;
 }
 .suggestion tr:nth-child(even){
     background-color: #f2f2f2;
@@ -320,6 +320,11 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
 
 .suggestion tr:hover {
     background-color: #ddd;
+}
+
+caption {
+    text-align: left;
+    padding-bottom: 10px;
 }
 
 /* FOOTER STARTS HERE*/
@@ -358,3 +363,5 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     /* padding: 0.5em;
     margin: 0.5em; */
 }
+
+/* FOOTER ENDS HERE*/

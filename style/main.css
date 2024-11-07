@@ -145,7 +145,6 @@ section {
 }
 
 
-
 .listWrapper {
     box-sizing: border-box;
     margin-top: 40px;
@@ -154,16 +153,20 @@ section {
     row-gap: 20px;
 }
 
-.footermiddle,
-.footerright {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.address {
+    font-style: normal;
 }
 
-.footerleft,
-.fagligleder {
-    font-style: normal;
+/* Styled the table so that it is easier for the user to know where they are on the table. 
+For example, having different colors on the rows and the rows will be highlighted when hovered over.*/
+.suggestion {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.suggestion td, .suggestion th {
+    border: 1px solid #ddd;
+    padding: 8px;
 }
 
 /* CSS FOR ACTIVITY PAGE*/
@@ -359,4 +362,48 @@ font-size: 16px;
 }
 .load-button:hover {
     background-color: #e68aab; 
+
+.suggestion tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.suggestion tr:hover {
+    background-color: #ddd;
+}
+
+/* FOOTER STARTS HERE*/
+
+.footerflex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+@media (max-width: 900px) {
+    .footerflex {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-top: 1em;
+        padding: 1em;
+    }
+}
+
+.footermiddle {
+    list-style-type: none;
+    /* width: max(400px); */
+    /* padding: 0.5em;
+    margin: 0.5em; */
+} 
+
+.footerright {
+    list-style-type: none;
+    /* width: max(400px); */
+    /* padding: 0.5em;
+    margin: 0.5em; */
 }

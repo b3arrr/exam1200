@@ -196,7 +196,7 @@ For example, having different colors on the rows and the rows will be highlighte
         align-items: flex-start;
         gap: 20px;
         margin-top: 1em;
-        padding: 1em;
+        padding: 2em;
     }
 }
 

@@ -157,6 +157,8 @@ section {
     font-style: normal;
 }
 
+/* Styled the table so that it is easier for the user to know where they are on the table. 
+For example, having different colors on the rows and the rows will be highlighted when hovered over.*/
 .suggestion {
     border-collapse: collapse;
     width: 100%;

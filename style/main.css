@@ -158,7 +158,8 @@ section {
 }
 
 /* Styled the table so that it is easier for the user to know where they are on the table. 
-For example, having different colors on the rows and the rows will be highlighted when hovered over.*/
+For example, having different colors on the rows and the rows will be highlighted when hovered over.
+Code used in https://www.w3schools.com/css/css_table.asp*/
 .suggestion {
     border-collapse: collapse;
     width: 100%;

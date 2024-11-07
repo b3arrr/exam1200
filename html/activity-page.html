@@ -86,18 +86,71 @@
             }
 
             /** This is where the CSS for the pictures begins */
-            .container {
-                display: flex;
-                background-color: lightblue;
-                height: 400px;
-            }
 
-            .image-tur {
-                width: 200px;
-                vertical-align: top;
-                margin-right: 15px;
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-            }
+            body {
+            background: rgb(27, 27 ,27);
+        }
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 270px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+
+        .card-image {
+            height: 170px;
+            margin-bottom: 15px;
+            background-size: cover;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .box-1 {
+            background-image: url(/media/istockphoto-1407893845-612x612.jpg);
+        }
+
+        .box-2 {
+            background-image: url(/media/paris-2024-olympics-soccer.jpg);
+        }   
+
+        .box-3 {
+            background-image: url(/media/article_topimage_mobile_offside-i-fotball.jpg);
+        }
+
+        .box-4 {
+            background-image: url(/media/21_NFF_Fotball_no_Fairplay_Saksbilder_1920x1230_Fa.jpg);
+        }
+
+        .box h2 {
+            padding: 10px;
+        }
+
+        .box p {
+            padding: 10px;
+        }
+
+        .button-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: rgb(14, 119, 242);
+            border: none;
+            border-radius: 4px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 8px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            
+        }
 
         </style>
         <header class="header-main">
@@ -118,62 +171,57 @@
 
         <main>
             <h1>Opplev det Oslo har å tilby</h1>
-            <section class="section-intro">
+            <section aria-label="main heaading "class="section-intro">
                 <p>
-                    Med en fantastisk natur, og fantastiske opplevelser har Oslo mer
-                    å tilby en de aller fleste tror. 
+                    Football is one of norways most popular sport to watch and to 
+                     plat. Whith this said you can read more and gain more knowlage about
+                    football down below 
                 </p>
             </section>
 
-            <div class="container">
-                <div class="image-tur">
-                    <img class="tur" src="/media/ekebergparken-activity-page.jpg" alt="picture-ekebergparken">
-                    <div>
-                        <p class="date-posted">
-                            1.March 2024
+            <section class="container">
+                <div class="box">
+                    <div class="box-image box-1">
+                        <h2>Hvorfor driver med fotball</h2>
+                        <p>Fotball er ett av landets største idretter
+                            med masse muligheter for nye opplevelser og interaksjoner.
+                            Gjennom idretten blir det mulig for deg å skape venner og minner
+                            for livet
                         </p>
+                        <button class="button-link"><a class="link-button" href="#"></a>Les videre</button>
                     </div>
-                    <p class="tur-informasjon">Her komme det litt informasjon om
-                        ekebergparken
-                    </p>
-                    <button class="les-videre-button">
-                        Read more
-                    </button>
-            </div>
-
-            <div class="container">
-                <div class="image-tur">
-                    <img class="tur" src="/media/frognerparken-activity-page.jpg" alt="picture-frognerparken">
-                    <div class="date">
-                        <p class="date-posted">
-                            31.April 2024
+                </div>
+                <div class="box">
+                    <div class="box-image box-2">
+                        <h2>Hvorda spiller man fotball?</h2>
+                        <p>Fotball spilles på forskjellige banestørelser, noe som
+                            kommer ann på alderen til barnet. I voksenfotball spiller man
+                            på en bane med 11 spillere
                         </p>
+                        <button class="button-link"><a class="link-button" href="#"></a>Les videre</button>
                     </div>
-                    <p class="tur-informasjon">
-                        Her kommer det litt mer informasjon om
-                        forgnerparken
-                    </p>
-                    <button class="les-videre-button">
-                        Read more 
-                    </button>
                 </div>
-
-                <div class="container">
-                    <div class="image-tur">
-                        <img class="tur" src="/media/songsvann-activity-page.webp" alt="picture-songsvann">
-                        <div class="date">
-                            <p class="date-posted">
-                                27.June 2024
-                            </p>
-                        </div>
-                        <p class="tur-informasjon">
-                            Her kommer det litt mer informasjon om
-                            songsvann
+                <div class="box">
+                    <div class="box-image box-3">
+                        <h2>Regler</h2>
+                        <p>Fotball har mange regler og noen av disse reglene kan være
+                            litt komplekse å forstå. Les videre for å lære mer om fotballens
+                            regelverk
                         </p>
-                        <button class="les-videre-button">
-                            Read more 
-                        </button>
+                        <button class="button-link"><a class="link-button" href="#"></a>Les videre</button>
+                    </div>
                 </div>
+                <div class="box">
+                    <div class="box-image box-4">
+                        <h2>Fair Play</h2>
+                        <p>Hva er Fair Play? Fair Play betyr at vi som utøvere
+                            skal respektere reglene på banen og vise respekt til de vi møter
+                            på banen. Vi skal ikke diskriminere og vi skal heller ikke spille stygt
+                        </p>
+                        <button class="button-link"><a class="link-button" href="#"></a>Les videre</button>
+                    </div>
+                </div>
+        </section>
         </main>
     </body>
 </html>

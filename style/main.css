@@ -157,6 +157,25 @@ section {
     font-style: normal;
 }
 
+.suggestion {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.suggestion td, .suggestion th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.suggestion tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.suggestion tr:hover {
+    background-color: #ddd;
+}
+
+/* FOOTER STARTS HERE*/
 
 .footerflex {
     display: flex;

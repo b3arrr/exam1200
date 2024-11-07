@@ -28,132 +28,7 @@
             </div>
         </header>
 
-        <!-- Midlertidlig CSS -->
-
-        <style>
-
-            .header-main {
-
-                width: 100%;
-                height: 60px;
-                background-color: grey;
-                display: flex;
-                justify-content: space-evenly;
-                z-index: 1000;
-            }
-
-            .header-main-logo {
-                width: fit-content;
-                height: 100%;
-                display: flex;
-                padding-right: 60px;
-            }
-            .header-main-logo img {
-                height: 50px;
-                align-self: center;
-            }
-
-            .header-main-logo a {
-                align-self: center;
-            }
-
-            .header-main-nav {
-                width: fit-content;
-                height: 100%;
-            }
-
-            .header-main-nav ul {
-                margin-left: 50px;
-            }
-
-            .header-main-nav ul li {
-                display: inline;
-                float: left;
-            }
-
-            .header-main-nav ul li a {
-                padding: 0 10px 0 10px;
-                font-family: Arial, Helvetica, sans-serif;
-                line-height: 60px;
-                display: block;
-                height: 100%;
-                align-self: right;
-
-            }
-
-            .section-intro {
-                margin:0px;
-            }
-
-            /** This is where the CSS for the pictures begins */
-
-            body {
-            background: rgb(27, 27 ,27);
-        }
-        .container {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: white;
-            width: 270px;
-            margin: 10px;
-            border-radius: 15px;
-        }
-
-        .card-image {
-            height: 170px;
-            margin-bottom: 15px;
-            background-size: cover;
-            border-radius: 15px 15px 0 0;
-        }
-
-        .box-1 {
-            background-image: url(/media/istockphoto-1407893845-612x612.jpg);
-        }
-
-        .box-2 {
-            background-image: url(/media/paris-2024-olympics-soccer.jpg);
-        }   
-
-        .box-3 {
-            background-image: url(/media/article_topimage_mobile_offside-i-fotball.jpg);
-        }
-
-        .box-4 {
-            background-image: url(/media/21_NFF_Fotball_no_Fairplay_Saksbilder_1920x1230_Fa.jpg);
-        }
-
-        .box h2 {
-            padding: 10px;
-        }
-
-        .box p {
-            padding: 10px;
-        }
-
-        .button-link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            background-color: rgb(14, 119, 242);
-            border: none;
-            border-radius: 4px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-left: 8px;
-            margin-bottom: 10px;
-            font-size: 16px;
-            
-        }
-
-        </style>
-        <header class="header-main">
+       <!-- <header class="header-main">
             <div class="header-main-logo">
                 <a href="activity-page.html"><img src="/media/UTlogo.webp" alt="ut-logo"></a>
                 <nav class="header-main-nav">
@@ -165,9 +40,7 @@
                     </ul>
                 </nav>
             </div>
-        </header>
-
-        <header>
+        </header> -->
 
         <main>
             <h1>Opplev det Oslo har å tilby</h1>
@@ -221,7 +94,80 @@
                         <button class="button-link"><a class="link-button" href="#"></a>Les videre</button>
                     </div>
                 </div>
-        </section>
+            </section>
+
+            <!-- MANDI SIN DEL-->
+             
+            <section class="bottom-section">
+                <div class="inner-content">
+                    <h2>De beste fotballbaner i Oslo</h2>
+                    <p>Oslo har et stort utvalg av fotballbaner som passer både for profesjonelle spillere og de som ønsker å spille for moro skyld. 
+                    Her er noen av de beste fotballbanene i Oslo:</p>
+                    <div class="image-grid">
+                        <article class="image-card">
+                            <img src="Kringsjåbanen.jpeg" alt="Beskrivelse av bilde 1" width="460" height="345">                          
+                            <p>Kringsjå Kunstgress</p>
+                            <a href="https://maps.app.goo.gl/KDiu6rBhKe4zoKUw6" target="_blank">
+                                <button class="load-button">
+                                    <span class="icon">+</span> Kart
+                                </button>
+                            </a>
+                        </article>                    
+                        <article class="image-card">
+                            <img src="SofienmyrStadion.jpeg" alt="Beskrivelse av bilde 2">
+                            <p>Sofiemyr Stadion</p>
+                            <a href="https://maps.app.goo.gl/kt6KBptBBoGC8BV1A" target="_blank">
+                                <button class="load-button">
+                                    <span class="icon">+</span> Kart
+                                </button>
+                            </a>
+                        </article>
+                        <article class="image-card">
+                            <img src="BislettStadion.jpg" alt="Beskrivelse av bilde 3">
+                            <p>Bislett Stadion</p>
+                            <a href="https://maps.app.goo.gl/pikHPw7Gd1KVh7fu7" target="_blank">
+                                <button class="load-button">
+                                    <span class="icon">+</span> Kart
+                                </button>
+                            </a>
+                        </article>                    
+                        <article class="image-card">
+                            <img src="GrefsenStadion.jpg" alt="Beskrivelse av bilde 3">
+                            <p>Grefsen Stadion</p>
+                            <a href="https://maps.app.goo.gl/84bXPopJ3VCu1xDF6" target="_blank">
+                                <button class="load-button">
+                                    <span class="icon">+</span> Kart
+                                </button>
+                            </a>
+                        </article>                    
+                        <article class="image-card">
+                            <img src="FerdStadion.jpg" alt="Beskrivelse av bilde 3">
+                            <p>Ferd Stadion</p>
+                            <a href="https://maps.app.goo.gl/xfJNXv2Nzm5Qpaha8" target="_blank">
+                                <button class="load-button">
+                                    <span class="icon">+</span> Kart
+                                </button>
+                            </a>
+                        </article>                    
+                        <article class="image-card">
+                            <img src="Eikelibanen.jpg" alt="Beskrivelse av bilde 3">
+                            <p>Eikelibanen</p>
+                            <a href="https://maps.app.goo.gl/aTLt6EMnpxAxdGn57" target="_blank">
+                                <button class="load-button">
+                                    <span class="icon">+</span> Kart
+                                </button>
+                            </a>
+                        </article>
+                        <div class="extra-text-box">
+                            <h3>Er det forskjell på øst og vest Oslo?</h3>
+                            <p>Fotballbanene i Oslo varierer betydelig mellom øst og vest. I vest finner man flere toppmoderne baner, ofte knyttet til velstående idrettslag og klubber. I øst er det mer folk og mindre baner, noe som går utover barn og ungdom i denne regionen.</p>
+                        </div>
+                        <div class="load-more">
+                            <button class="load-button"><span class="icon">+</span> Last inn flere forslag</button>
+                        </div>
+                    </div>      
+                </div>
+            </section>
         </main>
     </body>
 </html>

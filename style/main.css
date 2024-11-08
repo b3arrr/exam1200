@@ -312,7 +312,7 @@ font-size: 16px;
 For example, having different colors on the rows and the rows will be highlighted when hovered over.
 Code used in https://www.w3schools.com/css/css_table.asp*/
 
-.info-table {
+.info-table, .info-table-without-hovering {
     border-collapse: collapse;
     width: 100%;
 }

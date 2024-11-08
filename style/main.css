@@ -312,7 +312,7 @@ font-size: 16px;
 For example, having different colors on the rows and the rows will be highlighted when hovered over.
 Code used in https://www.w3schools.com/css/css_table.asp*/
 
-.info-table, .info-table-without-hovering {
+.info-table {
     border-collapse: collapse;
     width: 100%;
 }
@@ -325,9 +325,11 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     background-color: #f2f2f2;
 }
 
-.info-table tr:hover {
+/*.info-table tr:hover {
     background-color: #ddd;
 }
+    By using rowspan, the hover effect didn´t work as we wished. Consider to drop.
+*/
 
 caption {
     text-align: left;

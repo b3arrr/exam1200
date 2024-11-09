@@ -11,7 +11,7 @@
 html {
     font-family: Arial,'Times New Roman', Calibri, Helvetica, Verdana, sans-serif; /* Based on the 'WCAG Guideline 1.4 Distinguishable'
     these fonts fulfills the requirement the best, info from https://www.accessibilitychecking.com/blog/fonts-accessibility/#stk-5 */
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /*Remove all default margin and padding for all elements, this gives precise control  */

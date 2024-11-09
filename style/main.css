@@ -46,9 +46,9 @@ a {
     color: var(--text-color);
 }
 
-li {
+/*li {
     list-style: none;
-}
+}*/
 
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
@@ -309,7 +309,7 @@ font-size: 16px;
 }
 
 /* Styled the table so that it is easier for the user to know where they are on the table. 
-For example, having different colors on the rows and the rows will be highlighted when hovered over.
+For example, having different colors on the rows 
 Code used in https://www.w3schools.com/css/css_table.asp*/
 
 .info-table {

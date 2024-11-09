@@ -11,7 +11,7 @@
 html {
     font-family: Arial,'Times New Roman', Calibri, Helvetica, Verdana, sans-serif; /* Based on the 'WCAG Guideline 1.4 Distinguishable'
     these fonts fulfills the requirement the best, info from https://www.accessibilitychecking.com/blog/fonts-accessibility/#stk-5 */
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /*Remove all default margin and padding for all elements, this gives precise control  */
@@ -46,9 +46,9 @@ a {
     color: var(--text-color);
 }
 
-li {
+/*li {
     list-style: none;
-}
+}*/
 
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
@@ -309,7 +309,7 @@ font-size: 16px;
 }
 
 /* Styled the table so that it is easier for the user to know where they are on the table. 
-For example, having different colors on the rows and the rows will be highlighted when hovered over.
+For example, having different colors on the rows 
 Code used in https://www.w3schools.com/css/css_table.asp*/
 
 .info-table {

@@ -46,9 +46,9 @@ a {
     color: var(--text-color);
 }
 
-/*li {
+/* li {
     list-style: none;
-}*/
+} */
 
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
@@ -68,6 +68,7 @@ header {
 
 /*Position the exam title in the center of the header*/
 #exam {
+    font-size: 2rem; 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);

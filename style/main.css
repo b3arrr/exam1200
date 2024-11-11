@@ -1,4 +1,3 @@
-
 /*Stores variable colors in root to be re-used in the project*/
 :root {
     --background: #ffffff;
@@ -9,7 +8,8 @@
 
 /*Define what font and font size to be used in the project (inside the <html> element)*/
 html {
-    font-family: Arial,'Times New Roman', Calibri, Helvetica, Verdana, sans-serif; /* Based on the 'WCAG Guideline 1.4 Distinguishable'
+    font-family: Arial, "Times New Roman", Calibri, Helvetica, Verdana,
+        sans-serif; /* Based on the 'WCAG Guideline 1.4 Distinguishable'
     these fonts fulfills the requirement the best, info from https://www.accessibilitychecking.com/blog/fonts-accessibility/#stk-5 */
     font-size: 1rem;
 }
@@ -68,7 +68,7 @@ header {
 
 /*Position the exam title in the center of the header*/
 #exam {
-    font-size: 2rem; 
+    font-size: 2rem;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -118,32 +118,38 @@ header {
 }
 
 /*styling main*/
-main, aside{
+main,
+aside {
     margin: 0 15%;
     display: flex;
     flex-direction: column;
     gap: 30px;
     flex-wrap: wrap;
 }
+/*Reduce margin for the content when entering mobile*/
+@media (max-width: 1200px) {
+    main, aside {
+        margin: 0 8%;
+    }
+}
 
-
- .topic-group li{
+.topic-group li {
     border: 1px solid #a2a2a2;
     padding: 15px;
     background-color: #eaeaea;
     border-radius: 5px;
-    width: fit-content
- }
- 
+    width: fit-content;
+}
 
 table {
     width: 100%;
     background: rgb(234, 234, 234);
     border-collapse: collapse;
 }
-th, td {
+th,
+td {
     border: 1px solid;
-    padding:10px;
+    padding: 10px;
     text-align: center;
 }
 th {
@@ -154,7 +160,6 @@ section {
     margin: 40px 0;
     width: 100%;
 }
-
 
 .listWrapper {
     box-sizing: border-box;
@@ -171,73 +176,73 @@ section {
 /* CSS FOR ACTIVITY PAGE*/
 
 .section-intro {
-    margin:0px;
+    margin: 0px;
 }
 
 /** This is where the CSS for the pictures begins */
 
 .container {
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .box {
-background: white;
-width: 270px;
-margin: 10px;
-border-radius: 15px;
+    background: white;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
 }
 
 .box-image {
-height: 170px;
-margin-bottom: 15px;
-background-size: cover;
-border-radius: 15px 15px 0 0;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
 }
 
 .box-1 {
-background-image: url(/media/istockphoto-1407893845-612x612.jpg);
+    background-image: url(/media/istockphoto-1407893845-612x612.jpg);
 }
 
 .box-2 {
-background-image: url(/media/paris-2024-olympics-soccer.jpg);
-}   
+    background-image: url(/media/paris-2024-olympics-soccer.jpg);
+}
 
 .box-3 {
-background-image: url(/media/article_topimage_mobile_offside-i-fotball.jpg);
+    background-image: url(/media/article_topimage_mobile_offside-i-fotball.jpg);
 }
 
 .box-4 {
-background-image: url(/media/21_NFF_Fotball_no_Fairplay_Saksbilder_1920x1230_Fa.jpg);
+    background-image: url(/media/21_NFF_Fotball_no_Fairplay_Saksbilder_1920x1230_Fa.jpg);
 }
 
 .box h2 {
-padding: 10px;
+    padding: 10px;
 }
 
 .box p {
-padding: 10px;
+    padding: 10px;
 }
 
 .button-link {
-color: white;
-background-color: rgb(14, 119, 242);
-border: none;
-border-radius: 4px;
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 20px;
-padding-right: 20px;
-margin-left: 8px;
-margin-bottom: 10px;
-font-size: 16px;
+    color: white;
+    background-color: rgb(14, 119, 242);
+    border: none;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 /* CSS FRA MANDI*/
 .body {
-    background-color: #ffe6f2; 
-    color: #d147a3; 
+    background-color: #ffe6f2;
+    color: #d147a3;
     font-family: Arial, sans-serif;
 }
 .bottom-section {
@@ -246,8 +251,11 @@ font-size: 16px;
     text-align: center;
     border-radius: 10px;
 }
-.inner-content h2, .inner-content p, .extra-text-box h3, .extra-text-box p {
-    color: #d147a3; 
+.inner-content h2,
+.inner-content p,
+.extra-text-box h3,
+.extra-text-box p {
+    color: #d147a3;
 }
 .image-grid {
     display: flex;
@@ -265,7 +273,7 @@ font-size: 16px;
     width: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 .image-card img {
     width: 100%;
@@ -274,13 +282,13 @@ font-size: 16px;
 }
 .image-card p {
     font-size: 0.9em;
-    color: #d147a3; 
+    color: #d147a3;
     margin-top: 10px;
     text-align: center;
 }
 .extra-text-box {
     margin-top: 30px;
-    background-color: #ffcce6; 
+    background-color: #ffcce6;
     padding: 20px;
     border-radius: 8px;
 }
@@ -288,7 +296,7 @@ font-size: 16px;
     margin-top: 20px;
 }
 .load-button {
-    background-color: #ff99cc; 
+    background-color: #ff99cc;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -306,7 +314,7 @@ font-size: 16px;
 }
 
 .load-button:hover {
-    background-color: #e68aab; 
+    background-color: #e68aab;
 }
 
 /* Styled the table so that it is easier for the user to know where they are on the table. 
@@ -318,13 +326,42 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     width: 100%;
 }
 
-.info-table td, .info-table th {
+.info-table td,
+.info-table th {
     border: 1px solid #ddd;
     padding: 15px;
 }
-.info-table tr:nth-child(even){
+.info-table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+/* Mobile responsiveness */
+@media (max-width: 1200px) {
+    .info-table {
+        font-size: 12px;
+        overflow-x: auto; /* Enable horizontal scrolling on small screens */
+        display: block; /* Makes the table block-level to allow scrolling */
+    }
+
+    .info-table th,
+    .info-table td {
+        padding: 10px 5px; /* Adjust padding for better spacing on mobile */
+        text-align: center; 
+        min-width: 150px; /* Set a minimum width for cells to prevent squishing */
+    }
+
+    /* Ensure the table fills the entire width */
+    .info-table td {
+        white-space: nowrap; 
+    }
+
+    .info-table caption {
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+  
+}
+
 
 /*.info-table tr:hover {
     background-color: #ddd;
@@ -376,7 +413,7 @@ footer {
     /* width: max(400px); */
     /* padding: 0.5em;
     margin: 0.5em; */
-} 
+}
 
 .footerright {
     list-style-type: none;

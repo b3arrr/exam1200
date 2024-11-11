@@ -61,8 +61,7 @@ header {
     justify-content: space-between; /* Distributes space between header elements */
     position: sticky;
     top: 0;
-    background-color: #ffaa18;
-    background-position: fixed; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
+    background-color: #ffaa18; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
     The pairings have sufficient contrast for use with normal text, large text and graphics. Color found at https://venngage.com/tools/accessible-color-palette-generator */
     padding: 10px; /* Uniform padding for consistency */
 }
@@ -127,8 +126,8 @@ aside {
     gap: 30px;
     flex-wrap: wrap;
 }
-/*Reduce margin for the content when entering mobile view*/
-@media (max-width: 768px) {
+/*Reduce margin for the content when entering mobile*/
+@media (max-width: 1200px) {
     main, aside {
         margin: 0 8%;
     }
@@ -336,7 +335,7 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     background-color: #f2f2f2;
 }
 /* Mobile responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .info-table {
         font-size: 12px;
         overflow-x: auto; /* Enable horizontal scrolling on small screens */
@@ -346,13 +345,13 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     .info-table th,
     .info-table td {
         padding: 10px 5px; /* Adjust padding for better spacing on mobile */
-        text-align: center; /* Center align text for better consistency */
+        text-align: center; 
         min-width: 150px; /* Set a minimum width for cells to prevent squishing */
     }
 
     /* Ensure the table fills the entire width */
     .info-table td {
-        white-space: nowrap; /* Prevent text from wrapping */
+        white-space: nowrap; 
     }
 
     .info-table caption {
@@ -360,26 +359,10 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
         text-align: left;
         margin-bottom: 10px;
     }
+  
 }
 
-/* Ultra-wide screen responsiveness */
-@media (min-width: 1800px) {
-    .info-table {
-        width: 90%; /* Centers the table in ultra-wide screens */
-        margin: 0 auto; /* Centers the table */
-    }
 
-    .info-table td,
-    .info-table th {
-        padding: 20px; /* Increased padding for better spacing on wide screens */
-        font-size: 18px; /* Increased font size for readability */
-    }
-
-    .info-table caption {
-        font-size: 24px; /* Increased caption font size for visibility */
-        margin-bottom: 20px;
-    }
-}
 /*.info-table tr:hover {
     background-color: #ddd;
 }

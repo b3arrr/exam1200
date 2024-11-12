@@ -20,6 +20,7 @@ html {
     padding: 0;
 }
 
+
 /*Gives the background color of the document the color of -> variable --background*/
 body {
     background-color: var(--background);
@@ -46,24 +47,23 @@ a {
     color: var(--text-color);
 }
 
-/* li {
+li {
     list-style: none;
-} */
+}
 
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
 }
 /* Header specific styling*/
 header {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Distributes space between header elements */
-    position: sticky;
     top: 0;
     background-color: #ffaa18; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
     The pairings have sufficient contrast for use with normal text, large text and graphics. Color found at https://venngage.com/tools/accessible-color-palette-generator */
-    padding: 10px; /* Uniform padding for consistency */
+    padding: 0px; /* Uniform padding for consistency */
 }
 
 /*Position the exam title in the center of the header*/
@@ -74,6 +74,23 @@ header {
     transform: translateX(-50%);
     font-weight: 800;
     text-transform: uppercase;
+}
+
+
+/*styling main*/
+main,
+aside {
+    margin: 0 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+/*Reduce margin for the content when entering mobile*/
+@media (max-width: 1200px) {
+    main, aside {
+        margin: 0 8%;
+    }
 }
 .change-color-hovering:hover {
     /* When you hover over links, it will change the color to what is set for primary-color, and use 0.2 seconds to transition to that color*/
@@ -117,21 +134,7 @@ header {
         hue-rotate(359deg) brightness(104%) contrast(107%); /*Using filter to fill color of svg*/
 }
 
-/*styling main*/
-main,
-aside {
-    margin: 0 15%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-/*Reduce margin for the content when entering mobile*/
-@media (max-width: 1200px) {
-    main, aside {
-        margin: 0 8%;
-    }
-}
+
 
 .topic-group li {
     border: 1px solid #a2a2a2;
@@ -382,7 +385,7 @@ caption {
 /* FOOTER STARTS HERE*/
 
 footer {
-    width: 100%;
+    max-width: 100%;
     background-color: #ffaa18;
     bottom: 0;
     padding: 10px; /* Uniform padding for consistency */

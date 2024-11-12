@@ -93,7 +93,7 @@ header {
 @media (max-width: 700px) {
     .menu-icon {
         display: block;
-        background-image: url(../media/menu.svg);
+        background-image: url(../media/menu.svg); /* This hamburger menu icon is from https://fonts.google.com/icons */
         background-size: cover;
         height: 40px;
         width: 40px;
@@ -115,12 +115,6 @@ header {
         padding-bottom: 0.5rem;
         background-color: white;
         box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
-    }
-
-    .menu-icon:hover {
-        transition-duration: 0.1s;
-        filter: brightness(0) saturate(100%) invert(53%) sepia(100%) saturate(432%)
-            hue-rotate(359deg) brightness(104%) contrast(107%); /*Using filter to fill color of svg*/
     }
 
     nav {

@@ -67,7 +67,11 @@ header {
     background-color: #ffaa18; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
     The pairings have sufficient contrast for use with normal text, large text and graphics. Color found at https://venngage.com/tools/accessible-color-palette-generator */
     padding: 10px; /* Uniform padding for consistency */
+}
 
+/* Used to apply bold styling to an element, without indicating a higher level of importance like the <strong> element. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
+.bold-text {
+    font-weight: bold;
 }
 
 /* Hamburger menu without javascript. The code is taken from the lecturer's tutorial of hamburger menu */ 
@@ -125,15 +129,6 @@ header {
     }
 }
 
-/*Position the exam title in the center of the header*/
-#exam {
-    font-size: 2rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: 800;
-    text-transform: uppercase;
-}
 .change-color-hovering:hover {
     /* When you hover over links, it will change the color to what is set for primary-color, and use 0.2 seconds to transition to that color*/
     color: var(--secondary-color); 
@@ -405,7 +400,6 @@ footer {
     background-color: #ffaa18;
     bottom: 0;
     padding: 20px; /* Uniform padding for consistency */
-    position: sticky;
 }
 
 .footerflex {

@@ -9,26 +9,18 @@
 
     <body>
         <header>
-            <p id="exam">Eksamen web 1200</p>
-            <div class="dropdown">
-                <img id="dropdown-symbol" src="media/dropdown_menu.svg" />
-                <!--This icon is from https://fonts.google.com/icons-->
-                <nav class="dropdown-content">
-                    <ul>
-                        <li>
-                            <a href="#" class="change-color-hovering"><strong>Index</strong></a>
-                        </li>
-                        <li>
-                            <a href="html/github.html" class="change-color-hovering">Github</a>
-                        </li>
-                        <li>
-                            <a href="html/accessibility.html" class="change-color-hovering">Accessibility</a>
-                        </li>
-                        <li>
-                            <a href="html/activity-page.html" class="change-color-hovering">Activity Page</a>
-                        </li>
-                    </ul>
-                </nav>
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label class="dropdown-container" for="menu-toggle">
+                    <div class="menu-icon"></div>
+                </label>
+                <ul class="menu-content">
+                    <li><a href="#" class="bold-text">Index</a></li>
+                    <li><a href="html/github.html">Github</a></li>
+                    <li><a href="html/accessibility.html">Accessibility</a></li>
+                    <li><a href="htmk/activity-page.html">Activity Page</a></li>
+                </ul>
+            </nav>
             </div>
         </header>
 

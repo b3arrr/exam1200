@@ -8,25 +8,18 @@
     </head>
     <body>
         <header>
-            <p id="exam">Eksamen web 1200</p>
-            <div class="dropdown">
-                <img id="dropdown-symbol" src="../media/dropdown_menu.svg" />
-                <nav class="dropdown-content">
-                    <ul>
-                        <li>
-                            <a href="../index.html" class="change-color-hovering">Index</a>
-                        </li>
-                        <li>
-                            <a href="github.html" class="change-color-hovering">Github</a>
-                        </li>
-                        <li>
-                            <a href="accessibility.html" class="change-color-hovering">Accessibility</a>
-                        </li>
-                        <li>
-                            <a href="activity-page.html" class="change-color-hovering"><strong>Activity Page</strong></a>
-                        </li>
-                    </ul>
-                </nav>
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label class="dropdown-container" for="menu-toggle">
+                    <div class="menu-icon"></div>
+                </label>
+                <ul class="menu-content">
+                    <li><a href="../index.html">Index</a></li>
+                    <li><a href="github.html">Github</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
+                    <li><a href="#" class="bold-text">Activity Page</a></li>
+                </ul>
+            </nav>
             </div>
         </header>
 

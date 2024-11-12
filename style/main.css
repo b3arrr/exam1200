@@ -20,7 +20,6 @@ html {
     padding: 0;
 }
 
-
 /*Gives the background color of the document the color of -> variable --background*/
 body {
     background-color: var(--background);
@@ -43,7 +42,6 @@ a {
     text-decoration: underline;
     text-decoration-color: var(--primary-color);
     text-decoration-thickness: 2px;
-
     color: var(--text-color);
 }
 
@@ -76,7 +74,6 @@ header {
     text-transform: uppercase;
 }
 
-
 /*styling main*/
 main,
 aside {
@@ -88,7 +85,8 @@ aside {
 }
 /*Reduce margin for the content when entering mobile*/
 @media (max-width: 1200px) {
-    main, aside {
+    main,
+    aside {
         margin: 0 8%;
     }
 }
@@ -133,8 +131,6 @@ aside {
     filter: brightness(0) saturate(100%) invert(53%) sepia(100%) saturate(432%)
         hue-rotate(359deg) brightness(104%) contrast(107%); /*Using filter to fill color of svg*/
 }
-
-
 
 .topic-group li {
     border: 1px solid #a2a2a2;
@@ -343,33 +339,21 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     background-color: #f2f2f2;
 }
 /* Mobile responsiveness */
-@media (max-width: 1200px) {
-    .info-table {
-        font-size: 12px;
-        overflow-x: auto; /* Enable horizontal scrolling on small screens */
-        display: block; /* Makes the table block-level to allow scrolling */
+@media (max-width: 700px) {
+    
+    td {
+        display: block;
     }
 
-    .info-table th,
-    .info-table td {
-        padding: 10px 5px; /* Adjust padding for better spacing on mobile */
-        text-align: center; 
-        min-width: 150px; /* Set a minimum width for cells to prevent squishing */
+    th {
+        display:none;
     }
-
-    /* Ensure the table fills the entire width */
-    .info-table td {
-        white-space: nowrap; 
+    td[rowspan] {
+        font-weight: bold;
     }
-
-    .info-table caption {
-        font-size: 16px;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-  
+   
 }
-
+  
 
 /*.info-table tr:hover {
     background-color: #ddd;

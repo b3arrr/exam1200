@@ -37,6 +37,11 @@ h1 {
     font-weight: 800;
 }
 
+/* Used to apply bold styling to an element, without indicating a higher level of importance like the <strong> element. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
+.bold-text {
+    font-weight: bold;
+}
+
 /*Gives all links a yellow underline with a 2px thickness*/
 a {
     text-decoration: underline;
@@ -64,21 +69,16 @@ header {
     justify-content: space-between; /* Distributes space between header elements */
     position: sticky;
     top: 0;
+    padding: 20px; /* Uniform padding for consistency */
     background-color: #ffaa18; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
     The pairings have sufficient contrast for use with normal text, large text and graphics. Color found at https://venngage.com/tools/accessible-color-palette-generator */
-    padding: 10px; /* Uniform padding for consistency */
-}
-
-/* Used to apply bold styling to an element, without indicating a higher level of importance like the <strong> element. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
-.bold-text {
-    font-weight: bold;
 }
 
 /* Hamburger menu without javascript. The code is taken from the lecturer's tutorial of hamburger menu */ 
 
-#menu-toggle {display: none;} /* Hides the checkbox */
+#menu-toggle {display: none;} /* Hides the checkbox, which makes the menu toggle clickable without javascript */
 
-@media (min-width:701px) {
+@media (min-width:701px) { 
     .menu-content {
         display: flex;
         flex-direction: row;
@@ -90,7 +90,7 @@ header {
     .menu-content li {padding-right: 4rem;}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) { /* The hamburger menu will replace the row-menu at 700px */
     .menu-icon {
         display: block;
         background-image: url(../media/menu.svg); /* This hamburger menu icon is from https://fonts.google.com/icons */
@@ -110,9 +110,7 @@ header {
         height: 1rem;
         width: auto;
         text-align: left;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
         background-color: white;
         box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
     }
@@ -139,6 +137,7 @@ aside {
     gap: 30px;
     flex-wrap: wrap;
 }
+
 /*Reduce margin for the content when entering mobile*/
 @media (max-width: 1200px) {
     main, aside {

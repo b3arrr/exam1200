@@ -336,9 +336,11 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     border: 1px solid #ddd;
     padding: 15px;
 }
+
 .info-table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 /* Mobile responsiveness */
 @media (max-width: 1200px) {
     .info-table {

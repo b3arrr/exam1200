@@ -239,6 +239,7 @@ section {
     font-size: 16px;
 }
 
+/* How to add a pointer when hovering over the button: https://developer.mozilla.org/en-US/docs/Web/CSS/cursor * 
 .button-link:hover {
     cursor: pointer;
 }

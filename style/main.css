@@ -46,9 +46,9 @@ a {
     color: var(--text-color);
 }
 
-/* li {
+li {
     list-style: none;
-} */
+}
 
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
@@ -367,13 +367,6 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
   
 }
 
-
-/*.info-table tr:hover {
-    background-color: #ddd;
-}
-    By using rowspan, the hover effect didn´t work as we wished. Consider to drop.
-*/
-
 caption {
     text-align: left;
     padding: 20px 10px 10px 0;
@@ -385,7 +378,7 @@ footer {
     width: 100%;
     background-color: #ffaa18;
     bottom: 0;
-    padding: 10px; /* Uniform padding for consistency */
+    padding: 20px; /* Uniform padding for consistency */
 }
 
 .footerflex {
@@ -415,16 +408,10 @@ footer {
 
 .footermiddle {
     list-style-type: none;
-    /* width: max(400px); */
-    /* padding: 0.5em;
-    margin: 0.5em; */
 }
 
 .footerright {
     list-style-type: none;
-    /* width: max(400px); */
-    /* padding: 0.5em;
-    margin: 0.5em; */
 }
 
 /* FOOTER ENDS HERE*/

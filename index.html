@@ -9,26 +9,18 @@
 
     <body>
         <header>
-            <p id="exam">Eksamen web 1200</p>
-            <div class="dropdown">
-                <img id="dropdown-symbol" src="media/dropdown_menu.svg" />
-                <!--This icon is from https://fonts.google.com/icons-->
-                <nav class="dropdown-content">
-                    <ul>
-                        <li>
-                            <a href="#" class="change-color-hovering"><strong>Index</strong></a>
-                        </li>
-                        <li>
-                            <a href="html/github.html" class="change-color-hovering">Github</a>
-                        </li>
-                        <li>
-                            <a href="html/accessibility.html" class="change-color-hovering">Accessibility</a>
-                        </li>
-                        <li>
-                            <a href="html/activity-page.html" class="change-color-hovering">Activity Page</a>
-                        </li>
-                    </ul>
-                </nav>
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label class="dropdown-container" for="menu-toggle">
+                    <div class="menu-icon"></div>
+                </label>
+                <ul class="menu-content">
+                    <li><a href="#" class="bold-text">Index</a></li>
+                    <li><a href="html/github.html" class="underline-by-hovering">Github</a></li>
+                    <li><a href="html/accessibility.html" class="underline-by-hovering">Accessibility</a></li>
+                    <li><a href="html/activity-page.html" class="underline-by-hovering">Activity Page</a></li>
+                </ul>
+            </nav>
             </div>
         </header>
 
@@ -695,17 +687,8 @@
 
             <section>
                 <h2>Studenthistorier</h2>
-                <a
-                    href="https://www.oslomet.no/studier/studenthistorier?student_story=147"
-                    style="
-                        display: block;
-                        text-decoration: none;
-                        color: inherit;
-                    "
-                >
-                    <p>Teknologi og design</p>
+                <a href="https://www.oslomet.no/studier/studenthistorier?student_story=147">Teknologi og design</a>
                     <p>Spå fremtiden med matematikk og datavitenskap</p>
-                    <p>
                         Har du lyst til å finne ut hva som vil skje i fremtiden?
                         Lær deg å bruke verktøy for å forutsi alt fra været og
                         strømprisene til utviklingen i boligmarkedet.

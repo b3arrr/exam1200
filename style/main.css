@@ -78,6 +78,10 @@ header {
 
 #menu-toggle {display: none;} /* Hides the checkbox, which makes the menu toggle clickable without javascript */
 
+
+
+@media (min-width:701px) { 
+
     .menu-content {
         display: flex;
         flex-direction: row;

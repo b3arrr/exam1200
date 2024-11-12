@@ -4,31 +4,37 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../style/main.css" />
-        <title>accessibility</title>
+        <title>Accessibility</title>
     </head>
     <body>
         <header>
-            <p id="exam">Eksamen web 1200</p>
-            <div class="dropdown">
-                <img id="dropdown-symbol" src="../media/dropdown_menu.svg" />
-                <nav class="dropdown-content">
-                    <ul>
-                        <li>
-                            <a href="../index.html" class="change-color-hovering">Index</a>
-                        </li>
-                        <li>
-                            <a href="github.html" class="change-color-hovering">Github</a>
-                        </li>
-                        <li>
-                            <a href="#" class="change-color-hovering"><strong>Accessibility</strong></a>
-                        </li>
-                        <li>
-                            <a href="activity-page.html" class="change-color-hovering">Activity Page</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <p id="exam"></p>
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label class="dropdown-container" for="menu-toggle">
+                    <div class="menu-icon"></div>
+                </label>
+                <ul class="menu-content">
+                    <li><a href="../index.html">Index</a></li>
+                    <li><a href="github.html" class="change-color-hovering">Github</a></li>
+                    <li><a href="#" class="change-color-hovering"><strong>Accessibility</strong></a></li>
+                    <li><a href="activity-page.html" class="change-color-hovering">Activity Page</a></li>
+                </ul>
+            </nav>
         </header>
+
+        <main>
+            <section>
+                <h1>DUMMY TEXT</h1>
+                    <p>
+                        The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more. 
+                        It is essential that the Web be accessible in order to provide equal access and equal opportunity to people with diverse abilities. Access to information 
+                        and communications technologies, including the Web, is defined as a basic human right in the United Nations Convention on the Rights of Persons with Disabilities (UN CRPD).
+                        The Web offers the possibility of unprecedented access to information and interaction for many people with disabilities. That is, the accessibility barriers to print, audio, 
+                        and visual media can be much more easily overcome through web technologies.
+                    </p>
+            </section>
+        </main>
         <footer class="footerflex">
 
             <div class="footerleft">

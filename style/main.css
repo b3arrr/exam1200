@@ -92,15 +92,6 @@ header {
 
     .menu-content li {padding-right: 4rem;}
 
-@media (max-width: 900px){
-    .menu-content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        position: sticky;
-        padding-left: 0px;
-    }
 }
 
 @media (max-width: 700px) { /* The hamburger menu will replace the row-menu at 700px */
@@ -150,6 +141,36 @@ aside {
     gap: 30px;
     flex-wrap: wrap;
 }
+
+@media (min-width: 901px) {
+    .page-header-container {
+        background-color:rgb(211, 211, 211);
+        display: flex;
+        padding: 30px;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+        max-width: 100%;
+        overflow: hidden;
+    
+    }
+} 
+
+
+@media (max-width: 900px) {
+    .page-header-container {
+        background-color: rgb(211, 211, 211);
+        display: flex;
+        padding: 30px;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        max-width: 100%;
+    }
+}
+
 
 /*Reduce margin for the content when entering mobile*/
 @media (max-width: 1200px) {

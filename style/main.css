@@ -58,7 +58,6 @@ img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
 }
 
-
 /* Header specific styling*/
 
 header {
@@ -70,17 +69,15 @@ header {
     padding: 20px; /* Uniform padding for consistency */
     background-color: #ffaa18; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
     The pairings have sufficient contrast for use with normal text, large text and graphics. Color found at https://venngage.com/tools/accessible-color-palette-generator */
-
 }
 
-/* Hamburger menu without javascript. The code is taken from the lecturer's tutorial of hamburger menu */ 
+/* Hamburger menu without javascript. The code is taken from the lecturer's tutorial of hamburger menu */
 
-#menu-toggle {display: none;} /* Hides the checkbox, which makes the menu toggle clickable without javascript */
+#menu-toggle {
+    display: none;
+} /* Hides the checkbox, which makes the menu toggle clickable without javascript */
 
-
-
-@media (min-width:701px) { 
-
+@media (min-width: 701px) {
     .menu-content {
         display: flex;
         flex-direction: row;
@@ -88,10 +85,12 @@ header {
         position: sticky;
         padding-left: 0px;
     }
+}
+.menu-content li {
+    padding-right: 4rem;
+}
 
-    .menu-content li {padding-right: 4rem;}
-
-@media (max-width: 900px){
+@media (max-width: 900px) {
     .menu-content {
         display: flex;
         flex-direction: row;
@@ -102,7 +101,8 @@ header {
     }
 }
 
-@media (max-width: 700px) { /* The hamburger menu will replace the row-menu at 700px */
+@media (max-width: 700px) {
+    /* The hamburger menu will replace the row-menu at 700px */
     .menu-icon {
         display: block;
         background-image: url(../media/menu.svg); /* This hamburger menu icon is from https://fonts.google.com/icons */
@@ -111,14 +111,16 @@ header {
         width: 40px;
     }
 
-    .dropdown.container {cursor: pointer;}
+    .dropdown.container {
+        cursor: pointer;
+    }
 
     .menu-content li {
         height: 0px;
         overflow: hidden;
     }
 
-    #menu-toggle:checked ~ .menu-content li { 
+    #menu-toggle:checked ~ .menu-content li {
         height: 1rem;
         width: auto;
         text-align: left;
@@ -135,7 +137,7 @@ header {
 
 .change-color-hovering:hover {
     /* When you hover over links, it will change the color to what is set for primary-color, and use 0.2 seconds to transition to that color*/
-    color: var(--secondary-color); 
+    color: var(--secondary-color);
     transition-duration: 0.2s;
 }
 
@@ -151,7 +153,8 @@ aside {
 
 /*Reduce margin for the content when entering mobile*/
 @media (max-width: 1200px) {
-    main, aside {
+    main,
+    aside {
         margin: 0 8%;
     }
 }
@@ -366,21 +369,17 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
 
 /* Mobile responsiveness */
 @media (max-width: 700px) {
-    
     td {
         display: block;
-
     }
 
     th {
-        display:none;
+        display: none;
     }
     td[rowspan] {
         font-weight: bold;
     }
-   
 }
-
 
 caption {
     text-align: left;

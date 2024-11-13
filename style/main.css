@@ -206,11 +206,6 @@ section {
 .box:nth-of-type(3) {
     flex: 1 250px;
 }
-
-.box:nth-of-type(4) {
-    flex: 1 250px;
-}
-
 .img {
     max-width: 250px;
     object-fit: cover;
@@ -224,7 +219,7 @@ section {
     margin-bottom: 20px;
 }
 
-.button {
+.button-link {
     border: initial;
     background-color: initial;
     margin-top: auto;
@@ -234,6 +229,14 @@ section {
     border-radius: 1000px;
     font-size: 0.7rem;
     max-width: 100px;
+}
+
+.button-link:hover {
+    cursor: pointer;
+}
+
+.link-button {
+    margin-top: auto;
 }
 
 

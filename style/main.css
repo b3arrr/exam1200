@@ -37,6 +37,11 @@ h1 {
     font-weight: 800;
 }
 
+/* Used to apply bold styling to an element, without indicating a higher level of importance like the <strong> element. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
+.bold-text {
+    font-weight: bold;
+}
+
 /*Gives all links a yellow underline with a 2px thickness*/
 a {
     text-decoration: underline;
@@ -52,29 +57,89 @@ li {
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
 }
+
+
 /* Header specific styling*/
+
 header {
     max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Distributes space between header elements */
     top: 0;
+    padding: 20px; /* Uniform padding for consistency */
     background-color: #ffaa18; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
     The pairings have sufficient contrast for use with normal text, large text and graphics. Color found at https://venngage.com/tools/accessible-color-palette-generator */
-    padding: 0px; /* Uniform padding for consistency */
+
 }
 
-/*Position the exam title in the center of the header*/
-#exam {
-    font-size: 2rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: 800;
-    text-transform: uppercase;
+/* Hamburger menu without javascript. The code is taken from the lecturer's tutorial of hamburger menu */ 
+
+#menu-toggle {display: none;} /* Hides the checkbox, which makes the menu toggle clickable without javascript */
+
+
+
+@media (min-width:701px) { 
+
+    .menu-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: sticky;
+        padding-left: 0px;
+    }
+
+    .menu-content li {padding-right: 4rem;}
+
+@media (max-width: 900px){
+    .menu-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: sticky;
+        padding-left: 0px;
+    }
 }
 
-/*styling main*/
+@media (max-width: 700px) { /* The hamburger menu will replace the row-menu at 700px */
+    .menu-icon {
+        display: block;
+        background-image: url(../media/menu.svg); /* This hamburger menu icon is from https://fonts.google.com/icons */
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+    }
+
+    .dropdown.container {cursor: pointer;}
+
+    .menu-content li {
+        height: 0px;
+        overflow: hidden;
+    }
+
+    #menu-toggle:checked ~ .menu-content li { 
+        height: 1rem;
+        width: auto;
+        text-align: left;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+        background-color: white;
+        box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+        display: flex;
+        height: 40px;
+    }
+}
+
+.change-color-hovering:hover {
+    /* When you hover over links, it will change the color to what is set for primary-color, and use 0.2 seconds to transition to that color*/
+    color: var(--secondary-color); 
+    transition-duration: 0.2s;
+}
+
+/*Styling main*/
 main,
 aside {
     margin: 0 15%;
@@ -83,53 +148,12 @@ aside {
     gap: 30px;
     flex-wrap: wrap;
 }
+
 /*Reduce margin for the content when entering mobile*/
 @media (max-width: 1200px) {
-    main,
-    aside {
+    main, aside {
         margin: 0 8%;
     }
-}
-.change-color-hovering:hover {
-    /* When you hover over links, it will change the color to what is set for primary-color, and use 0.2 seconds to transition to that color*/
-    color: var(--secondary-color);
-    transition-duration: 0.2s;
-}
-
-.dropdown {
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    box-sizing: border-box;
-}
-
-/*Content to be shown in when hovering over the dropwdown*/
-.dropdown-content {
-    display: none;
-    position: absolute;
-    text-align: left;
-    box-sizing: border-box;
-    padding: 35px;
-    width: 250px;
-    background-color: white;
-    box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-/*Makes it display the content of the dropdown-content when hovering using the :hover pseudoclass */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-#dropdown-symbol {
-    width: 50px;
-    filter: brightness(0) saturate(100%);
-}
-
-/*Using filter to fill in color of an SVG element, this will apply when hovering over the svg*/
-#dropdown-symbol:hover {
-    transition-duration: 0.1s;
-    filter: brightness(0) saturate(100%) invert(53%) sepia(100%) saturate(432%)
-        hue-rotate(359deg) brightness(104%) contrast(107%); /*Using filter to fill color of svg*/
 }
 
 .topic-group li {
@@ -335,14 +359,17 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     border: 1px solid #ddd;
     padding: 15px;
 }
+
 .info-table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 /* Mobile responsiveness */
 @media (max-width: 700px) {
     
     td {
         display: block;
+
     }
 
     th {
@@ -353,13 +380,7 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     }
    
 }
-  
 
-/*.info-table tr:hover {
-    background-color: #ddd;
-}
-    By using rowspan, the hover effect didn´t work as we wished. Consider to drop.
-*/
 
 caption {
     text-align: left;
@@ -372,7 +393,7 @@ footer {
     max-width: 100%;
     background-color: #ffaa18;
     bottom: 0;
-    padding: 10px; /* Uniform padding for consistency */
+    padding: 20px; /* Uniform padding for consistency */
 }
 
 .footerflex {
@@ -402,16 +423,10 @@ footer {
 
 .footermiddle {
     list-style-type: none;
-    /* width: max(400px); */
-    /* padding: 0.5em;
-    margin: 0.5em; */
 }
 
 .footerright {
     list-style-type: none;
-    /* width: max(400px); */
-    /* padding: 0.5em;
-    margin: 0.5em; */
 }
 
 /* FOOTER ENDS HERE*/

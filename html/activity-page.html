@@ -8,25 +8,18 @@
     </head>
     <body>
         <header>
-            <h1 id="exam">Eksamen web 1200</h1>
-            <div class="dropdown">
-                <img id="dropdown-symbol" src="../media/dropdown_menu.svg" />
-                <nav class="dropdown-content">
-                    <ul>
-                        <li>
-                            <a href="../index.html" class="change-color-hovering">Index</a>
-                        </li>
-                        <li>
-                            <a href="github.html" class="change-color-hovering">Github</a>
-                        </li>
-                        <li>
-                            <a href="accessibility.html" class="change-color-hovering">Accessibility</a>
-                        </li>
-                        <li>
-                            <a href="activity-page.html" class="change-color-hovering"><strong>Activity Page</strong></a>
-                        </li>
-                    </ul>
-                </nav>
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label class="dropdown-container" for="menu-toggle">
+                    <div class="menu-icon"></div>
+                </label>
+                <ul class="menu-content">
+                    <li><a href="../index.html" class="underline-by-hovering">Index</a></li>
+                    <li><a href="github.html" class="underline-by-hovering">Github</a></li>
+                    <li><a href="accessibility.html" class="underline-by-hovering">Accessibility</a></li>
+                    <li><a href="#" class="bold-text">Activity Page</a></li>
+                </ul>
+            </nav>
             </div>
         </header>
 
@@ -45,7 +38,7 @@
         </header> -->
 
         <main>
-            <h2>Football in Norway</h2>
+            <h1>Football in Norway</h1>
             <section aria-label="main heaading "class="section-intro">
                 <!-- Informatio about total active players found at snl.no
                  https://snl.no/Norges_Fotballforbund -->
@@ -62,7 +55,7 @@
             <section class="container">
                 <div class="box">
                     <div class="box-image box-1"></div>
-                        <h3>Why chose to play football?</h3>
+                        <h2>Why chose to play football?</h2>
                         <p>Football is one of the country's biggest sports with plenty of 
                             opportunities for new experiences and interactions.
                             Through sport, it becomes possible for you to make friends and 
@@ -99,7 +92,7 @@
                     </div>
                 <div class="box">
                     <div class="box-image box-4"></div>
-                        <h3>Fair Play</h3>
+                        <h2>Fair Play</h2>
                         <p>What is Fair Play? Fair Play means that we as athletes must respect the 
                             rules on the field and show respect to those we play against on the pitch.
                             We will not discriminate and we will not play dirty either. 
@@ -114,7 +107,7 @@
 
             <section class="bottom-section">
                 <div class="inner-content">
-                    <h3>De beste fotballbaner i Oslo</h3>
+                    <h2>De beste fotballbaner i Oslo</h2>
                     <p>Oslo har et stort utvalg av fotballbaner som passer både for profesjonelle spillere og de som ønsker å spille for moro skyld. 
                     Her er noen av de beste fotballbanene i Oslo:</p>
                     <div class="image-grid">
@@ -173,7 +166,7 @@
                             </a>
                         </article>
                         <div class="extra-text-box">
-                            <h3>Er det forskjell på øst og vest Oslo?</h3>
+                            <h2>Er det forskjell på øst og vest Oslo?</h2>
                             <p>Fotballbanene i Oslo varierer betydelig mellom øst og vest. I vest finner man flere toppmoderne baner, ofte knyttet til velstående idrettslag og klubber. I øst er det mer folk og mindre baner, noe som går utover barn og ungdom i denne regionen.</p>
                         </div>
                         <div class="load-more">
@@ -183,5 +176,46 @@
                 </div>
             </section>
         </main>
+        <footer class="footerflex">
+
+            <div class="footerleft">
+                <address class="address">
+                    OSLO METROPOLITIAN UNIVERSITY<br />
+                    STORBYUNIVERSITETET<br />
+                    Postboks 4, St. Olavs plass<br />
+                    0130 Oslo<br />
+                    Tlf.: 67 23 50 00<br />
+                <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+                </address>
+                <p>Hold deg oppdatert på hva som skjer på OsloMet.</p>
+                <p>Abonner på vårt nyhetsbrev!</p>
+            </div>  
+            
+            <div class="footermiddle">
+                <ul>
+                    <li><a href="https://www.oslomet.no/en" class="underline-by-hovering">English</a></li>
+                    <!--Bør den flyttes opp til nav bar?-->
+                    <li><a href="https://www.oslomet.no/alumni" class="underline-by-hovering">Alumni</a></li>
+                    <li><a href="https://www.oslomet.no/om/ansatteoversikt" class="underline-by-hovering">Ansatteoversikt</a></li>
+                    <li><a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt" class="underline-by-hovering">Arrangementoversikt</a></li>
+                    <li><a href="https://www.oslomet.no/om/for-ansatte" class="underline-by-hovering">For ansatte</a></li>
+                    <li><a href="https://www.oslomet.no/om/for-studenter" class="underline-by-hovering">For studenter</a></li>
+                    <li><a href="https://www.oslomet.no/om/ledige-stillinger" class="underline-by-hovering">Ledige stillinger</a></li>
+                    <li><a href="Personvernerklæring og informasjonskapsler" class="underline-by-hovering">Personvernerklæring og informasjonskapsler</a></li>
+                    <li><a href="https://www.oslomet.no/om/pressekontakt" class="underline-by-hovering">Pressekontakt</a></li>
+                    <li><a href="Tilgjengeligheitserklæring" class="underline-by-hovering">Tilgjengeligheitserklæring</a></li>
+                    <li><a href="Admin" class="underline-by-hovering">Admin</a></li>
+                </ul>
+            </div>
+            
+            <div class="footerright">
+                <ul>
+                    <li><a href="https://www.facebook.com/oslomet/>" class="underline-by-hovering">Facebook</a></li>
+                    <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Foslomet" class="underline-by-hovering">X</a></li>
+                    <li><a href="https://www.linkedin.com/school/oslomet/posts/?feedView=all" class="underline-by-hovering">Linkedln</a></li>
+                    <li><a href="https://www.instagram.com/oslomet/?hl=nb" class="underline-by-hovering">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>

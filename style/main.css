@@ -47,7 +47,6 @@ a {
     text-decoration: underline;
     text-decoration-color: var(--primary-color);
     text-decoration-thickness: 2px;
-
     color: var(--text-color);
 }
 
@@ -63,15 +62,15 @@ img {
 /* Header specific styling*/
 
 header {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Distributes space between header elements */
-    position: sticky;
     top: 0;
     padding: 20px; /* Uniform padding for consistency */
     background-color: #ffaa18; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
     The pairings have sufficient contrast for use with normal text, large text and graphics. Color found at https://venngage.com/tools/accessible-color-palette-generator */
+
 }
 
 /* Hamburger menu without javascript. The code is taken from the lecturer's tutorial of hamburger menu */ 
@@ -139,7 +138,6 @@ header {
     color: var(--secondary-color); 
     transition-duration: 0.2s;
 }
-
 
 /*Styling main*/
 main,
@@ -366,33 +364,23 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     background-color: #f2f2f2;
 }
 
-/* Mobile responsiveness */ 
-@media (max-width: 1200px) {
-    .info-table {
-        font-size: 12px;
-        overflow-x: auto; /* Enable horizontal scrolling on small screens */
-        display: block; /* Makes the table block-level to allow scrolling */
+/* Mobile responsiveness */
+@media (max-width: 700px) {
+    
+    td {
+        display: block;
+
     }
 
-    .info-table th,
-    .info-table td {
-        padding: 10px 5px; /* Adjust padding for better spacing on mobile */
-        text-align: center; 
-        min-width: 150px; /* Set a minimum width for cells to prevent squishing */
+    th {
+        display:none;
     }
-
-    /* Ensure the table fills the entire width */
-    .info-table td {
-        white-space: nowrap; 
+    td[rowspan] {
+        font-weight: bold;
     }
-
-    .info-table caption {
-        font-size: 16px;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-  
+   
 }
+
 
 caption {
     text-align: left;
@@ -402,7 +390,7 @@ caption {
 /* FOOTER STARTS HERE*/
 
 footer {
-    width: 100%;
+    max-width: 100%;
     background-color: #ffaa18;
     bottom: 0;
     padding: 20px; /* Uniform padding for consistency */

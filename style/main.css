@@ -75,18 +75,21 @@ header {
 
 #menu-toggle {display: none;} /* Hides the checkbox, which makes the menu toggle clickable without javascript */
 
-.menu-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: sticky;
-    padding-left: 0px;
+@media (min-width: 701px) {
+    .menu-content {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .menu-content li {padding-right: 4rem;}
 
 @media (max-width: 700px) {
     /* The hamburger menu will replace the row-menu at 700px */
+    .menu-content {
+        position: sticky;
+        padding-left: 0px;
+    }
     .menu-icon {
         display: block;
         background-image: url(../media/menu.svg); /* This hamburger menu icon is from https://fonts.google.com/icons */

@@ -142,6 +142,7 @@ aside {
     flex-wrap: wrap;
 }
 
+/* By using multiple @media, it makes it possible to adjust the gap of the flexboxes. So the text is easier to read. */
 @media (min-width: 901px) {
     .page-header-container {
         background-color:rgb(211, 211, 211);
@@ -150,19 +151,56 @@ aside {
         justify-content: space-around;
         flex-direction: row;
         align-items: flex-start;
-        gap: 80px;
+        gap: 5px;
         max-width: 100%;
-        overflow: hidden;
     }
 } 
 
-
-@media (max-width: 900px) {
+@media (max-width: 1250px) {
     .page-header-container {
         background-color: rgb(211, 211, 211);
         display: flex;
         padding: 30px;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+        max-width: 100%;
+    }
+} 
+
+@media (max-width: 1095px) {
+    .page-header-container {
+        background-color: rgb(211, 211, 211);
+        display: flex;
+        padding: 30px;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+        max-width: 100%;
+    }
+} 
+
+@media (max-width: 1030px) {
+    .page-header-container {
+        background-color: rgb(211, 211, 211);
+        display: flex;
+        padding: 30px;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+        max-width: 100%;
+    }
+} 
+
+@media (max-width: 990px) {
+    .page-header-container {
+        background-color: rgb(211, 211, 211);
+        display: flex;
+        padding: 30px;
+        justify-content: space-evenly;
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;

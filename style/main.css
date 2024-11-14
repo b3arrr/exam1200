@@ -75,7 +75,7 @@ header {
 
 #menu-toggle {display: none;} /* Hides the checkbox, which makes the menu toggle clickable without javascript */
 
-@media (min-width: 701px) {
+@media (min-width: 701px) { 
     .menu-content {
         display: flex;
         justify-content: center;
@@ -186,6 +186,7 @@ td {
 th {
     background-color: rgb(211, 211, 211);
 }
+
 /* adding margin on top and bottom, to give some spacing between sections */
 section {
     margin: 40px 0;

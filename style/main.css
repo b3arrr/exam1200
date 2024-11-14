@@ -47,7 +47,6 @@ a {
     text-decoration: underline;
     text-decoration-color: var(--primary-color);
     text-decoration-thickness: 2px;
-
     color: var(--text-color);
 }
 
@@ -59,29 +58,26 @@ img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
 }
 
-
 /* Header specific styling*/
 
 header {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Distributes space between header elements */
-    position: sticky;
     top: 0;
     padding: 20px; /* Uniform padding for consistency */
     background-color: #ffaa18; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
     The pairings have sufficient contrast for use with normal text, large text and graphics. Color found at https://venngage.com/tools/accessible-color-palette-generator */
 }
 
-/* Hamburger menu without javascript. The code is taken from the lecturer's tutorial of hamburger menu */ 
+/* Hamburger menu without javascript. The code is taken from the lecturer's tutorial of hamburger menu */
 
-#menu-toggle {display: none;} /* Hides the checkbox, which makes the menu toggle clickable without javascript */
+#menu-toggle {
+    display: none;
+} /* Hides the checkbox, which makes the menu toggle clickable without javascript */
 
-
-
-@media (min-width:701px) { 
-
+@media (min-width: 701px) {
     .menu-content {
         display: flex;
         flex-direction: row;
@@ -89,12 +85,29 @@ header {
         position: sticky;
         padding-left: 0px;
     }
+}
+.menu-content li {
+    padding-right: 4rem;
+}
+
 
     .menu-content li {padding-right: 4rem;}
 
+
+@media (max-width: 900px) {
+    .menu-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: sticky;
+        padding-left: 0px;
+    }
+
 }
 
-@media (max-width: 700px) { /* The hamburger menu will replace the row-menu at 700px */
+@media (max-width: 700px) {
+    /* The hamburger menu will replace the row-menu at 700px */
     .menu-icon {
         display: block;
         background-image: url(../media/menu.svg); /* This hamburger menu icon is from https://fonts.google.com/icons */
@@ -103,14 +116,16 @@ header {
         width: 40px;
     }
 
-    .dropdown.container {cursor: pointer;}
+    .dropdown.container {
+        cursor: pointer;
+    }
 
     .menu-content li {
         height: 0px;
         overflow: hidden;
     }
 
-    #menu-toggle:checked ~ .menu-content li { 
+    #menu-toggle:checked ~ .menu-content li {
         height: 1rem;
         width: auto;
         text-align: left;
@@ -127,10 +142,9 @@ header {
 
 .change-color-hovering:hover {
     /* When you hover over links, it will change the color to what is set for primary-color, and use 0.2 seconds to transition to that color*/
-    color: var(--secondary-color); 
+    color: var(--secondary-color);
     transition-duration: 0.2s;
 }
-
 
 /*Styling main*/
 main,
@@ -211,7 +225,8 @@ aside {
 
 /*Reduce margin for the content when entering mobile*/
 @media (max-width: 1200px) {
-    main, aside {
+    main,
+    aside {
         margin: 0 8%;
     }
 }
@@ -258,74 +273,70 @@ section {
 
 /* CSS FOR ACTIVITY PAGE*/
 
-.section-intro {
-    margin: 0px;
-}
-
-/** This is where the CSS for the pictures begins */
-
 .container {
+    padding: 50px 0;
+    max-width: 1150px;
+    padding: 0 30px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 30px;
 }
 
 .box {
-    background: white;
-    width: 270px;
-    margin: 10px;
-    border-radius: 15px;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
 }
 
-.box-image {
-    height: 170px;
-    margin-bottom: 15px;
-    background-size: cover;
-    border-radius: 15px 15px 0 0;
+.box:nth-of-type(1) {
+    flex: 1 250px;
 }
 
-.box-1 {
-    background-image: url(/media/istockphoto-1407893845-612x612.jpg);
+.box:nth-of-type(2) {
+    flex: 1 250px;
 }
 
-.box-2 {
-    background-image: url(/media/paris-2024-olympics-soccer.jpg);
+.box:nth-of-type(3) {
+    flex: 1 250px;
 }
 
-.box-3 {
-    background-image: url(/media/article_topimage_mobile_offside-i-fotball.jpg);
+.box:nth-of-type(4) {
+    flex: 1 250px;
 }
 
-.box-4 {
-    background-image: url(/media/21_NFF_Fotball_no_Fairplay_Saksbilder_1920x1230_Fa.jpg);
+.img {
+    max-width: 250px;
+    object-fit: cover;
 }
 
-.box h2 {
-    padding: 10px;
+.heading {
+    margin: 10px 0 15px;
 }
 
-.box p {
-    padding: 10px;
+.description {
+    margin-bottom: 20px;
 }
 
 .button-link {
-    color: white;
-    background-color: rgb(14, 119, 242);
-    border: none;
-    border-radius: 4px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 8px;
-    margin-bottom: 10px;
-    font-size: 16px;
+    border: initial;
+    background-color: initial;
+    background-color: blue;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 1000px;
+    font-size: 0.7rem;
+    max-width: 100px;
 }
 
-/* How to add a pointer when hovering over the button: https://developer.mozilla.org/en-US/docs/Web/CSS/cursor */
-.button-link:hover {
-    cursor: pointer;
+.link-button {
+    margin-top: auto;
 }
+
 
 /* CSS FRA MANDI*/
 .body {
@@ -424,32 +435,32 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     background-color: #f2f2f2;
 }
 
-/* Mobile responsiveness */ 
-@media (max-width: 1200px) {
-    .info-table {
-        font-size: 12px;
-        overflow-x: auto; /* Enable horizontal scrolling on small screens */
-        display: block; /* Makes the table block-level to allow scrolling */
+/* Mobile responsiveness tables */
+@media (max-width: 700px) {
+    td {
+        display: block;
+        text-align: right;
     }
 
-    .info-table th,
-    .info-table td {
-        padding: 10px 5px; /* Adjust padding for better spacing on mobile */
-        text-align: center; 
-        min-width: 150px; /* Set a minimum width for cells to prevent squishing */
+    th {
+        display: none;
+    }
+    table td[rowspan] {
+        font-weight: bold;
     }
 
-    /* Ensure the table fills the entire width */
-    .info-table td {
-        white-space: nowrap; 
+    .mobile-tr {
+        border-top: 1.4rem solid #ffffff;
+        margin-top: .2rem;
+        display: block;
     }
-
-    .info-table caption {
-        font-size: 16px;
-        text-align: left;
-        margin-bottom: 10px;
+    table td[data-label]::before {
+        content: attr(data-label) ":  ";
+        font-weight:bold;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        float:left;
     }
-  
 }
 
 caption {
@@ -460,7 +471,7 @@ caption {
 /* FOOTER STARTS HERE*/
 
 footer {
-    width: 100%;
+    max-width: 100%;
     background-color: #ffaa18;
     bottom: 0;
     padding: 20px; /* Uniform padding for consistency */

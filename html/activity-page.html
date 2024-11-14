@@ -8,30 +8,27 @@
     </head>
     <body>
         <header>
-            <h1 id="exam">Eksamen web 1200</h1>
-            <div class="dropdown">
-                <img id="dropdown-symbol" src="../media/dropdown_menu.svg" />
-                <nav class="dropdown-content">
-                    <ul>
-                        <li>
-                            <a href="../index.html" class="change-color-hovering">Index</a>
-                        </li>
-                        <li>
-                            <a href="github.html" class="change-color-hovering">Github</a>
-                        </li>
-                        <li>
-                            <a href="accessibility.html" class="change-color-hovering">Accessibility</a>
-                        </li>
-                        <li>
-                            <a href="activity-page.html" class="change-color-hovering"><strong>Activity Page</strong></a>
-                        </li>
-                    </ul>
-                </nav>
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label class="dropdown-container" for="menu-toggle">
+                    <div class="menu-icon"></div>
+                </label>
+                <ul class="menu-content">
+                    <li><a href="../index.html" class="underline-by-hovering">Index</a></li>
+                    <li><a href="github.html" class="underline-by-hovering">Github</a></li>
+                    <li><a href="accessibility.html" class="underline-by-hovering">Accessibility</a></li>
+                    <li><a href="#" class="bold-text">Activity Page</a></li>
+                </ul>
+            </nav>
             </div>
         </header>
 
         <main>
-            <h2 class="main-heading">Football in Norway</h2>
+ activity-html-css-endring
+            
+
+            <h1>Football in Norway</h1>
+ main
             <section aria-label="main heaading "class="section-intro">
                 <!-- Informatio about total active players found at snl.no
                  https://snl.no/Norges_Fotballforbund -->
@@ -47,6 +44,7 @@
 
             <section class="container">
                 <div class="box">
+ activity-html-css-endring
                     <img class="img" src="/media/istockphoto-1407893845-612x612.jpg" alt="fff">
                     <h4 class="heading">Why chose to play football?</h4>
                     <p class="description">Football is one of the country's biggest sports with plenty of 
@@ -55,6 +53,31 @@
                         memories for life.
                     </p>
                     <a class="link-button" href="https://www.fotball.no/tema/nff-nyheter/2021/--fotball-er-en-stor-og-viktig-del-av-livet/" target="_blank">
+
+                    <div class="box-image box-1"></div>
+                        <h2>Why chose to play football?</h2>
+                        <p>Football is one of the country's biggest sports with plenty of 
+                            opportunities for new experiences and interactions.
+                            Through sport, it becomes possible for you to make friends and 
+                            memories for life
+                        </p>
+                        <a class="link-button" href="https://www.fotball.no/tema/nff-nyheter/2021/--fotball-er-en-stor-og-viktig-del-av-livet/" target="_blank">
+                        <button class="button-link">Read more</button>
+                        </a>
+                    </div>
+                <div class="box">
+                    <div class="box-image box-2"></div>
+                    <!--Information about the pitch size found at nff.no
+                    https://www.fotball.no/lov-og-reglement/spilleregler/spilleregler2/spilleregler2/#143640-->
+                        <h2>How to play football?</h2>
+                        <p>Football is played with two teams on the pitch and depending on the age
+                            the size of the pitch will differ. When adults play, the pitch size is
+                            120m on the longest end and 90m on the shortest end. You play with 
+                            11 outfield players (10 including the goalkeeper) and play a total of 
+                            90 minutes (2x 45 minutes).
+                        </p>
+                        <a class="link-button" href="https://www.fotball.no/lov-og-reglement/spilleregler/spilleregler2/#143640" target="_blank">
+ main
                         <button class="button-link">Read more</button>
                         </a>
                 </div>
@@ -74,12 +97,22 @@
                 </div>
         
                 <div class="box">
+ activity-html-css-endring
                     <img class="img" src="/media/article_topimage_mobile_offside-i-fotball.jpg" alt="fff">
                     <h4 class="heading">Rules</h4>
                     <p class="description">Football has many rules and some of these rules can be a bit complex to
                         understand. Want to learn more about football's regulations?
                     </p>
                     <a class="link-button" href="https://www.fotball.no/lov-og-reglement/spilleregler/" target="_blank">
+
+                    <div class="box-image box-4"></div>
+                        <h2>Fair Play</h2>
+                        <p>What is Fair Play? Fair Play means that we as athletes must respect the 
+                            rules on the field and show respect to those we play against on the pitch.
+                            We will not discriminate and we will not play dirty either. 
+                        </p>
+                        <a class="link-button" href="https://www.fotball.no/fotballens-verdier/fair-play/" target="_blank">
+ main
                         <button class="button-link">Read more</button>
                         </a>
                 </div>              
@@ -89,7 +122,7 @@
 
             <section class="bottom-section">
                 <div class="inner-content">
-                    <h3>De beste fotballbaner i Oslo</h3>
+                    <h2>De beste fotballbaner i Oslo</h2>
                     <p>Oslo har et stort utvalg av fotballbaner som passer både for profesjonelle spillere og de som ønsker å spille for moro skyld. 
                     Her er noen av de beste fotballbanene i Oslo:</p>
                     <div class="image-grid">
@@ -148,7 +181,7 @@
                             </a>
                         </article>
                         <div class="extra-text-box">
-                            <h3>Er det forskjell på øst og vest Oslo?</h3>
+                            <h2>Er det forskjell på øst og vest Oslo?</h2>
                             <p>Fotballbanene i Oslo varierer betydelig mellom øst og vest. I vest finner man flere toppmoderne baner, ofte knyttet til velstående idrettslag og klubber. I øst er det mer folk og mindre baner, noe som går utover barn og ungdom i denne regionen.</p>
                         </div>
                         <div class="load-more">
@@ -158,5 +191,46 @@
                 </div>
             </section>
         </main>
+        <footer class="footerflex">
+
+            <div class="footerleft">
+                <address class="address">
+                    OSLO METROPOLITIAN UNIVERSITY<br />
+                    STORBYUNIVERSITETET<br />
+                    Postboks 4, St. Olavs plass<br />
+                    0130 Oslo<br />
+                    Tlf.: 67 23 50 00<br />
+                <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+                </address>
+                <p>Hold deg oppdatert på hva som skjer på OsloMet.</p>
+                <p>Abonner på vårt nyhetsbrev!</p>
+            </div>  
+            
+            <div class="footermiddle">
+                <ul>
+                    <li><a href="https://www.oslomet.no/en" class="underline-by-hovering">English</a></li>
+                    <!--Bør den flyttes opp til nav bar?-->
+                    <li><a href="https://www.oslomet.no/alumni" class="underline-by-hovering">Alumni</a></li>
+                    <li><a href="https://www.oslomet.no/om/ansatteoversikt" class="underline-by-hovering">Ansatteoversikt</a></li>
+                    <li><a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt" class="underline-by-hovering">Arrangementoversikt</a></li>
+                    <li><a href="https://www.oslomet.no/om/for-ansatte" class="underline-by-hovering">For ansatte</a></li>
+                    <li><a href="https://www.oslomet.no/om/for-studenter" class="underline-by-hovering">For studenter</a></li>
+                    <li><a href="https://www.oslomet.no/om/ledige-stillinger" class="underline-by-hovering">Ledige stillinger</a></li>
+                    <li><a href="Personvernerklæring og informasjonskapsler" class="underline-by-hovering">Personvernerklæring og informasjonskapsler</a></li>
+                    <li><a href="https://www.oslomet.no/om/pressekontakt" class="underline-by-hovering">Pressekontakt</a></li>
+                    <li><a href="Tilgjengeligheitserklæring" class="underline-by-hovering">Tilgjengeligheitserklæring</a></li>
+                    <li><a href="Admin" class="underline-by-hovering">Admin</a></li>
+                </ul>
+            </div>
+            
+            <div class="footerright">
+                <ul>
+                    <li><a href="https://www.facebook.com/oslomet/>" class="underline-by-hovering">Facebook</a></li>
+                    <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Foslomet" class="underline-by-hovering">X</a></li>
+                    <li><a href="https://www.linkedin.com/school/oslomet/posts/?feedView=all" class="underline-by-hovering">Linkedln</a></li>
+                    <li><a href="https://www.instagram.com/oslomet/?hl=nb" class="underline-by-hovering">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>

@@ -9,34 +9,27 @@
 
     <body>
         <header>
-            <h1 id="exam">Eksamen web 1200</h1>
-            <div class="dropdown">
-                <img id="dropdown-symbol" src="../media/dropdown_menu.svg" />
-                <nav class="dropdown-content">
-                    <ul>
-                        <li>
-                            <a href="../index.html" class="change-color-hovering">Index</a>
-                        </li>
-                        <li>
-                            <a href="#" class="change-color-hovering"><strong>Github</strong></a>
-                        </li>
-                        <li>
-                            <a href="accessibility.html" class="change-color-hovering">Accessibility</a>
-                        </li>
-                        <li>
-                            <a href="activity-page.html" class="change-color-hovering">Activity Page</a>
-                        </li>
-                    </ul>
-                </nav>
+            <nav>
+                <input id="menu-toggle" type="checkbox">
+                <label class="dropdown-container" for="menu-toggle">
+                    <div class="menu-icon"></div>
+                </label>
+                <ul class="menu-content">
+                    <li><a href="../index.html" class="underline-by-hovering">Index</a></li>
+                    <li><a href="#" class="bold-text">Github</a></li>
+                    <li><a href="accessibility.html" class="underline-by-hovering">Accessibility</a></li>
+                    <li><a href="activity-page.html" class="underline-by-hovering">Activity Page</a></li>
+                </ul>
+            </nav>
             </div>
         </header>
 
         <main>
-            <h2>Github Collaboration</h2>
+            <h1>Github Collaboration</h1>
             <section>
                 <!--Using section to thematicly group the articles, leaving the <article> to split each section-->
                 <article>
-                    <h3>What are Git and GitHub?</h3>
+                    <h2>What are Git and GitHub?</h2>
                     <!--Each article has a subheader of <h2> leaving <h1> to be the title of the page, but still allowing to separate topics-->
                     <p>
                         Are Git and GitHub the same? No, because: Git is a version control system (VCS), that “…tracks changes to files over a period of time.”(Kerr, 2024)
@@ -49,7 +42,7 @@
                     </p>
                 </article>
                 <article>
-                    <h3>What are the benefits of collaborating using Git and GitHub? </h3>
+                    <h2>What are the benefits of collaborating using Git and GitHub? </h2>
                     <p>Many advantages are worth mentioning, but here are some of them: </p>
                     <ul>
                         <!--Using <strong> tag to semanticly emphazise the different topic of each list item-->
@@ -83,9 +76,9 @@
             </section>
             <section>
                 <!--New section for showing the git repository-->
-                <h3>Github progression</h3>
+                <h2>Github progression</h2>
                 <article>
-                    <h4>Commit history of main branch.</h4>
+                    <h3>Commit history of main branch.</h3>
                     <!--IMAGE IS TO BE REPLACE LATER!-->
                     <a href="https://github.com/b3arrr/exam1200/commits/main/">
                         <img
@@ -95,7 +88,7 @@
                     </a>
                 </article>
                 <article>
-                    <h4>Commit difference</h4>
+                    <h3>Commit difference</h3>
                     <!--IMAGE AND HREF IS TO BE REPLACE LATER!-->
 
                     <a href="https://github.com/b3arrr/exam1200/tree/main">
@@ -107,7 +100,7 @@
                 </article>
             </section>
             <section>
-                <h3>Works Cited</h3>
+                <h2>Works Cited</h2>
                 <p>
                     Coursera. (2023). What Is GitHub and Why Should You Use It? Retrieved November 5 from https://www.coursera.org/articles/what-is-git
                     Devmountain. (n.d.). Git vs. GitHub: What’s the Difference? Devmountain. https://devmountain.com/blog/git-vs-github-whats-the-difference/
@@ -117,5 +110,46 @@
                 </p>
             </section>
         </main>
+        <footer class="footerflex">
+
+            <div class="footerleft">
+                <address class="address">
+                    OSLO METROPOLITIAN UNIVERSITY<br />
+                    STORBYUNIVERSITETET<br />
+                    Postboks 4, St. Olavs plass<br />
+                    0130 Oslo<br />
+                    Tlf.: 67 23 50 00<br />
+                <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+                </address>
+                <p>Hold deg oppdatert på hva som skjer på OsloMet.</p>
+                <p>Abonner på vårt nyhetsbrev!</p>
+            </div>  
+            
+            <div class="footermiddle">
+                <ul>
+                    <li><a href="https://www.oslomet.no/en" class="underline-by-hovering">English</a></li>
+                    <!--Bør den flyttes opp til nav bar?-->
+                    <li><a href="https://www.oslomet.no/alumni" class="underline-by-hovering">Alumni</a></li>
+                    <li><a href="https://www.oslomet.no/om/ansatteoversikt" class="underline-by-hovering">Ansatteoversikt</a></li>
+                    <li><a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt" class="underline-by-hovering">Arrangementoversikt</a></li>
+                    <li><a href="https://www.oslomet.no/om/for-ansatte" class="underline-by-hovering">For ansatte</a></li>
+                    <li><a href="https://www.oslomet.no/om/for-studenter" class="underline-by-hovering">For studenter</a></li>
+                    <li><a href="https://www.oslomet.no/om/ledige-stillinger" class="underline-by-hovering">Ledige stillinger</a></li>
+                    <li><a href="Personvernerklæring og informasjonskapsler" class="underline-by-hovering">Personvernerklæring og informasjonskapsler</a></li>
+                    <li><a href="https://www.oslomet.no/om/pressekontakt" class="underline-by-hovering">Pressekontakt</a></li>
+                    <li><a href="Tilgjengeligheitserklæring" class="underline-by-hovering">Tilgjengeligheitserklæring</a></li>
+                    <li><a href="Admin" class="underline-by-hovering">Admin</a></li>
+                </ul>
+            </div>
+            
+            <div class="footerright">
+                <ul>
+                    <li><a href="https://www.facebook.com/oslomet/>" class="underline-by-hovering">Facebook</a></li>
+                    <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Foslomet" class="underline-by-hovering">X</a></li>
+                    <li><a href="https://www.linkedin.com/school/oslomet/posts/?feedView=all" class="underline-by-hovering">Linkedln</a></li>
+                    <li><a href="https://www.instagram.com/oslomet/?hl=nb" class="underline-by-hovering">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
     </body>
 </html>

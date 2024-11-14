@@ -90,6 +90,10 @@ header {
     padding-right: 4rem;
 }
 
+
+    .menu-content li {padding-right: 4rem;}
+
+
 @media (max-width: 900px) {
     .menu-content {
         display: flex;
@@ -99,6 +103,7 @@ header {
         position: sticky;
         padding-left: 0px;
     }
+
 }
 
 @media (max-width: 700px) {
@@ -150,6 +155,73 @@ aside {
     gap: 30px;
     flex-wrap: wrap;
 }
+
+/* By using multiple @media, it makes it possible to adjust the gap of the flexboxes. So the text is easier to read. */
+@media (min-width: 901px) {
+    .page-header-container {
+        background-color:rgb(211, 211, 211);
+        display: flex;
+        padding: 30px;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 5px;
+        max-width: 100%;
+    }
+} 
+
+@media (max-width: 1250px) {
+    .page-header-container {
+        background-color: rgb(211, 211, 211);
+        display: flex;
+        padding: 30px;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+        max-width: 100%;
+    }
+} 
+
+@media (max-width: 1095px) {
+    .page-header-container {
+        background-color: rgb(211, 211, 211);
+        display: flex;
+        padding: 30px;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+        max-width: 100%;
+    }
+} 
+
+@media (max-width: 1032px) {
+    .page-header-container {
+        background-color: rgb(211, 211, 211);
+        display: flex;
+        padding: 30px;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+        max-width: 100%;
+    }
+} 
+
+@media (max-width: 1031px) {
+    .page-header-container {
+        background-color: rgb(211, 211, 211);
+        display: flex;
+        padding: 30px;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        max-width: 100%;
+    }
+}
+
 
 /*Reduce margin for the content when entering mobile*/
 @media (max-width: 1200px) {

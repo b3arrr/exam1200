@@ -379,10 +379,15 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     th {
         display: none;
     }
+
     table td[rowspan] {
         font-weight: bold;
     }
-
+    
+    .mobile-header-color {
+        background-color: rgb(211, 211, 211);
+    }
+    
     .mobile-tr {
         border-top: 1.4rem solid #ffffff;
         margin-top: .2rem;

@@ -150,10 +150,9 @@ aside {
         justify-content: space-around;
         flex-direction: row;
         align-items: flex-start;
-        gap: 40px;
+        gap: 80px;
         max-width: 100%;
         overflow: hidden;
-    
     }
 } 
 

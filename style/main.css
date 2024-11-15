@@ -490,13 +490,14 @@ footer {
 .social-media {
     display: flex;
     align-items: center;
-    padding: 4px 0;
+    padding-top: 0px;
+    padding-bottom: 20px;
 }
 
 .icon { /* The free icons is from https://www.iconfinder.com/ */
     height: 24px;
     width: 24px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .social-media a {

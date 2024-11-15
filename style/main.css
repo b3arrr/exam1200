@@ -467,7 +467,7 @@ footer {
     margin-top: 40px;
 }
 
-.underline-by-hovering:hover {
+.black-underline-link:hover {
     text-decoration: underline;
 }
 

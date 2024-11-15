@@ -83,7 +83,7 @@ header {
     top: 0;
     padding: 20px; /* Uniform padding for consistency */
     background-color: #ffaa18; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
-    The pairings have sufficient contrast for use with normal text, large text and graphics. Color found at https://venngage.com/tools/accessible-color-palette-generator */
+    The pairings have sufficient contrast for use with normal text, large text and graphics. Checked the contrast ratio with https://venngage.com/tools/accessible-color-palette-generator */
 }
 
 /* Hamburger menu without javascript. The code is taken from the lecturer's tutorial of hamburger menu */
@@ -155,7 +155,7 @@ aside {
 
 /* Used @media to help with scaling of the info-box. */
 .page-header-container {
-    background-color:rgb(211, 211, 211);
+    background-color: #EAEAEA; /* Contrast ratio of 17.46:1 with black text, follows WCAG 2.1 AA. Checked the contrast ratio with https://venngage.com/tools/accessible-color-palette-generator. */
     display: flex;
     padding: 30px;
     margin-bottom: -20px;
@@ -182,16 +182,16 @@ aside {
 }
 
 .topic-group li {
-    border: 1px solid #a2a2a2;
+    border: 1px solid #a2a2a2; /* Contrast ratio of 8.23:1 with black text, follows WCAG 2.1 AA. */
     padding: 15px;
-    background-color: #eaeaea;
+    background-color: #EAEAEA;
     border-radius: 5px;
     width: fit-content;
 }
 
 table {
     width: 100%;
-    background: rgb(234, 234, 234);
+    background: #EAEAEA;
     border-collapse: collapse;
 }
 th,
@@ -201,7 +201,7 @@ td {
     text-align: center;
 }
 th {
-    background-color: rgb(211, 211, 211);
+    background-color: #D3D3D3; /* Contrast ratio of #D3D3D3 with black text, follows WCAG 2.1 AA */
 }
 
 /* adding margin on top and bottom, to give some spacing between sections */
@@ -270,7 +270,7 @@ section {
 .button-link {
     border: initial;
     background-color: initial;
-    background-color: blue;
+    background-color: blue; /* Sjekke om contrast ratio er bra nok */
     padding: 10px 15px;
     color: #fff;
     border-radius: 1000px;
@@ -390,10 +390,15 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     th {
         display: none;
     }
+
     table td[rowspan] {
         font-weight: bold;
     }
 
+    .mobile-header-color {
+        background-color: rgb(211, 211, 211);
+    }
+    
     .mobile-tr {
         border-top: 1.4rem solid #ffffff;
         margin-top: .2rem;

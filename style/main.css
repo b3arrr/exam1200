@@ -25,17 +25,25 @@ body {
     background-color: var(--background);
 }
 
-/*Gives the text color for these elements (p,h1,h2,h3) the color of -> variable --text-color */
+h1 {
+    font-weight: 800;
+    margin-bottom: -30px;
+}
+
+/*Gives the text color for these elements (h1,h2,h3) the color of -> variable --text-color */
 p,
 h1,
 h2,
 h3 {
     color: var(--text-color);
+    margin-top: 20px;
 }
 
-h1 {
-    font-weight: 800;
+p {
+    color: var(--text-color);
+    line-height: 1.2;
 }
+
 
 /* Used to apply bold styling to an element, without indicating a higher level of importance like the <strong> element. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
 .bold-text {
@@ -48,9 +56,16 @@ a {
     text-decoration-color: var(--primary-color);
     text-decoration-thickness: 2px;
     color: var(--text-color);
+    margin-top: -10px;
 }
 
+/*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
+
 li {
+    list-style-position: inside;
+}
+
+.no-bullet { /* ER DET EN ANNEN MÅTE Å GJØRE DET PÅ? */
     list-style: none;
 }
 
@@ -79,6 +94,7 @@ header {
     .menu-content {
         display: flex;
         justify-content: center;
+        list-style: none;
     }
 }
 
@@ -141,6 +157,7 @@ aside {
     background-color:rgb(211, 211, 211);
     display: flex;
     padding: 30px;
+    margin-bottom: -20px;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: flex-start;
@@ -154,7 +171,6 @@ aside {
         flex-direction: column;
     }
 }
-
 
 /*Reduce margin for the content when entering mobile*/
 @media (max-width: 1200px) {
@@ -189,7 +205,7 @@ th {
 
 /* adding margin on top and bottom, to give some spacing between sections */
 section {
-    margin: 40px 0;
+    margin: 10px 0;
     width: 100%;
 }
 
@@ -203,6 +219,8 @@ section {
 
 .address {
     font-style: normal;
+    padding: 5px 5px 0px 0px;
+    line-height: 1.2;
 }
 
 /* CSS FOR ACTIVITY PAGE*/
@@ -400,6 +418,7 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
 caption {
     text-align: left;
     padding: 20px 10px 10px 0;
+    margin-top: 10px;
 }
 
 /* FOOTER STARTS HERE*/

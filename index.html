@@ -25,7 +25,7 @@
         </header>
 
         <main>
-            <img src="media/oslomet.jpg" alt="">
+            <img src="media/oslomet.jpg" alt="Inngagnsparti til en av byggene til OsloMet">
             <!--Using section element for combining introductional elements into one tematic section-->
             <h1>Matematisk modellering og datavitenskap - ingeniør</h1>
             <p>
@@ -699,16 +699,23 @@
 
         <aside> <!-- Skal være av de seksjonene med h2 være nested i en section element? Siden de allerede er nested i en aside.-->
             <h2>Spørsmål om utdanningen?</h2>
-                <a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">Har du spørsmål om utdanningen, kontakt oss gjennomvårt kontaktskjema</a>
+                <p>Har du spørsmål om utdanningen, kontakt oss gjennom <a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">vårt kontaktskjema</a></p>
+
+
 
             <h2>Faglig leder</h2>
-            <address class="address">
-                <!-- Address her? -->
-                Kristoffer Herland Hellton<br />
-                førsteamanuensis<br />
-                + 47 672 37 240<br />
-                kristoffer.hellton@oslomet.no
-            </address>
+                <div class="info-leader">
+                    <div><img class="img-leader" src="media/faglig-leder.jpg" alt="Portrett av en smilende person"></div>
+                    <div>
+                        <p class="bold-text">Kristoffer Herland Hellton</p>
+                        <address class="address">
+                            <!-- Address her? -->
+                            førsteamanuensis<br />
+                            + 47 672 37 240<br />
+                            kristoffer.hellton@oslomet.no
+                        </address>
+                    </div>
+                </div>
 
             <section>
                 <h2>Du er kanskje også interessert i disse?</h2>
@@ -784,22 +791,22 @@
                 </table>
             </section>
 
-            <section>
-                <h2>Studenthistorier</h2>
-                <a href="https://www.oslomet.no/studier/studenthistorier?student_story=147">Teknologi og design</a>
+            <div class="info-container">
+                <div>
+                    <h2>Studenthistorier</h2>
+                    <a href="https://www.oslomet.no/studier/studenthistorier?student_story=147">Teknologi og design</a>
                     <p>Spå fremtiden med matematikk og datavitenskap</p>
+                    <p>
                         Har du lyst til å finne ut hva som vil skje i fremtiden?
                         Lær deg å bruke verktøy for å forutsi alt fra været og
                         strømprisene til utviklingen i boligmarkedet.
                     </p>
-                </a>
-            </section>
-
-            <div>
-                <a href="https://www.oslomet.no/studier/studenthistorier"
-                    >Flere studenthistorier</a
-                >
-            </div>
+                    <a href="https://www.oslomet.no/studier/studenthistorier">Flere studenthistorier finner du her.</a>
+                </div>
+                <div>
+                    <img src="media/studenthistorier.jpg" alt="To smilende personer">
+                </div>
+                
         </aside>
 
         <footer class="footerflex">

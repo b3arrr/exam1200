@@ -419,6 +419,36 @@ caption {
     margin-top: 10px;
 }
 
+.info-leader {
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 30px;
+}
+
+@media (min-width: 528px) {
+    .img-leader {
+        height: 255.11px;
+        width: 189.65px;
+}
+
+}
+
+.info-container {
+    background-color: rgb(211, 211, 211);
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    column-gap: 30px;
+}
+
+@media (max-width: 1300px) {
+    .info-container{
+        flex-direction: column-reverse;
+ }
+}
+
 /* FOOTER STARTS HERE*/
 
 footer {

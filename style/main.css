@@ -210,14 +210,6 @@ section {
     width: 100%;
 }
 
-.listWrapper {
-    box-sizing: border-box;
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    row-gap: 20px;
-}
-
 .address {
     font-style: normal;
     padding: 5px 5px 0px 0px;

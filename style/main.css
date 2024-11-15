@@ -478,12 +478,29 @@ footer {
     }
 }
 
-.footermiddle {
-    list-style-type: none;
+/* Turned it to flexboxs, so it would be possible to place the social media icons beside the text/link */
+.footerright { 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4px;
 }
 
-.footerright {
-    list-style-type: none;
+.social-media {
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
 }
 
+.icon { /* The free icons is from https://www.iconfinder.com/ */
+    height: 24px;
+    width: 24px;
+    margin-right: 15px;
+}
+
+.social-media a {
+    padding-top: 10px;
+}
 /* FOOTER ENDS HERE*/

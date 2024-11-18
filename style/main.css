@@ -143,11 +143,7 @@ header {
     }
 }
 
-.change-color-hovering:hover {
-    /* When you hover over links, it will change the color to what is set for primary-color, and use 0.2 seconds to transition to that color*/
-    color: var(--secondary-color);
-    transition-duration: 0.2s;
-}
+
 
 /*Styling main*/
 main,

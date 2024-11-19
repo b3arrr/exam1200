@@ -144,8 +144,7 @@ header {
 }
 
 /*Styling main*/
-main,
-aside {
+main {
     margin: 0 15%;
     display: flex;
     flex-direction: column;
@@ -175,8 +174,7 @@ aside {
 
 /*Reduce margin for the content when entering mobile*/
 @media (max-width: 1200px) {
-    main,
-    aside {
+    main {
         margin: 0 8%;
     }
 }
@@ -448,14 +446,27 @@ caption {
 @media (min-width: 528px) {
     .img-leader {
         height: 255.11px;
-        width: 189.65px;
+        width: 189.65px;    
+    }
 }
 
+
+aside {
+    background-color:green;
+    max-width: 100%;
 }
 
-.info-container {
-    background-color: rgb(211, 211, 211);
-    padding: 30px;
+.aside-container {
+justify-content: space-aroundb;
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+gap: 10px;
+padding-bottom: 40px;
+}
+
+.info-aside {
+    padding: 0 15%;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -463,9 +474,9 @@ caption {
 }
 
 @media (max-width: 1300px) {
-    .info-container{
-        flex-direction: column-reverse;
- }
+    .info-aside{
+        flex-direction: column;
+    }
 }
 
 /* FOOTER STARTS HERE*/

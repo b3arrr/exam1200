@@ -296,30 +296,26 @@ section {
 .main-heading {
     margin-bottom: 15px;
 }
-/* Styling for intro text */
 .intro-text {
     max-width: 880px;
     margin: 0 auto;
 }
 
-/* Container styling */
 .container {
     display: flex;
     flex-wrap: wrap; 
     gap: 20px; 
-    justify-content: center; /* Centers the items */
+    justify-content: center; 
     align-items: flex-start;
     padding: 20px;
-    width: 100%; /* Ensure the container takes full width */
+    width: 100%; 
 }
-
-/* Info box styling */
 .info-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px; /* You can change this to a more flexible value like 80% */
-    width: 100%; /* Ensure it takes full available width */
+    max-width: 300px; 
+    width: 100%; 
     text-align: center;
     background-color: #f9f9f9; 
     padding: 15px;
@@ -327,27 +323,23 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-/* Image styling */
 .img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-/* Info heading styling */
 .info-heading {
     font-size: 1.2rem;
     margin: 10px 0;
 }
 
-/* Info description styling */
 .info-description {
     font-size: 0.9rem;
     margin: 10px 0;
     color: #333;
 }
 
-/* Info button styling */
 .info-button {
     margin-top: 15px;
     padding: 10px 12px;
@@ -357,8 +349,6 @@ section {
     border-radius: 4px;
     cursor: pointer;
 }
-
-/* Hover effect for button */
 .info-button:hover {
     background-color: #0056b3;
 }

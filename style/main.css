@@ -275,7 +275,7 @@ section {
 .button-link {
     border: initial;
     background-color: initial;
-    background-color: #ffaa18;
+    background-color: #ffa556;
     padding: 10px 15px;
     color: black;
     border-radius: 1000px;
@@ -354,7 +354,7 @@ section {
 max-width: 800px;
 margin: auto;
 padding: 20px;
-background-color: #ffaa18;
+background-color: #ffa556;
 border-radius: 8px;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 text-align: center;

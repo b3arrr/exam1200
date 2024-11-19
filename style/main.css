@@ -61,13 +61,19 @@ a {
 /*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
 
 li {
-    list-style-position: inside;
+    margin:10px;
+    list-style: none;
+    /* list-style-position: inside; */
+}
+/*targets bullet points to style*/
+.list-decoration li::before {
+    content: '▲';
+    color: var(--primary-color);
+    padding: 10px;
+    margin-right: 10px;
+    transition: transform 0.3s;
 }
 
-.no-bullet {
-    /* ER DET EN ANNEN MÅTE Å GJØRE DET PÅ? */
-    list-style: none;
-}
 
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
@@ -165,6 +171,8 @@ aside {
     display:flex;
     flex-wrap: wrap;
 }
+
+
 .index-box {
     padding: 30px 0px 30px;
     margin-top: 10px;

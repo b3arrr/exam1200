@@ -310,6 +310,7 @@ section {
     padding: 20px;
     width: 100%; 
 }
+
 .info-box {
     display: flex;
     flex-direction: column;
@@ -318,15 +319,15 @@ section {
     width: 100%; 
     text-align: center;
     background-color: #f9f9f9; 
-    padding: 15px;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 6px rgba(212, 52, 52, 0.1); 
 }
 
 .img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .info-heading {
@@ -337,27 +338,36 @@ section {
 .info-description {
     font-size: 0.9rem;
     margin: 10px 0;
-    color: #333;
+    color: #222;
 }
+.extra-information {
 
-.info-button {
-    margin-top: 15px;
-    padding: 10px 12px;
-    background-color: #ff9d00;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.info-button:hover {
-    background-color: #0056b3;
-}
+max-width: 800px;
+margin: auto;
+padding: 20px;
+background-color: #ffaa18;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+text-align: center;
 
-/* Responsive styling for mobile devices */
+}
+.info-text {
+    font-size: 1rem;
+    color: #000000;
+}
+/* Responsive styling for mobile devices */ 
 @media (max-width: 768px) {
     .info-box {
         max-width: 100%; /* Full width on smaller screens */
     }
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .info.box  {
+        max-width: 100%;
+        padding: 20px;
+    } 
 }
 
 

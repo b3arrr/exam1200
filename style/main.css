@@ -78,11 +78,10 @@ img {
 header {
     max-width: 100%;
     display: flex;
-    
     align-items: center;
-    justify-content: center; /* Distributes space between header elements */
+    justify-content: space-evenly; /*Spaces its children evenly across the header*/
     top: 0;
-    padding: 35px 20px;
+    padding: 35px 20px; 
     background-color: #ffaa18; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
     The pairings have sufficient contrast for use with normal text, large text and graphics. Checked the contrast ratio with https://venngage.com/tools/accessible-color-palette-generator */
 }
@@ -94,6 +93,7 @@ header {
 } /* Hides the checkbox, which makes the menu toggle clickable without javascript */
 
 @media (min-width: 701px) {
+  
     .menu-content {
         display: flex;
         justify-content: center;
@@ -107,6 +107,9 @@ header {
 
 @media (max-width: 700px) {
     /* The hamburger menu will replace the row-menu at 700px */
+    header{  /*Ensure the hamburge menu will be on the left side when below 700px*/
+        justify-content: left;
+    }
     .menu-content {
         position: sticky;
         padding-left: 0px;
@@ -156,13 +159,13 @@ aside {
     flex-wrap: wrap;
 }
 
-/*index specific styling*/
-/* .index-main-container {
+
+ /*Styling for course information on index-page*/
+ .index-main-container {
     display:flex;
     flex-wrap: wrap;
-} */
+}
 .index-box {
-
     padding: 30px 0px 30px;
     margin-top: 10px;
     max-width: fit-content;
@@ -178,8 +181,6 @@ details {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
 }
-
-
 summary {
     cursor: pointer;
     padding: 20px;

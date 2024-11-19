@@ -284,20 +284,42 @@ section {
 }
 
 /* CSS FRA MANDI*/
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 20px;
+}
+
+.main-heading {
+    margin-bottom: 15px;
+}
+/* Styling for intro text */
+.intro-text {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+/* Container styling */
 .container {
     display: flex;
     flex-wrap: wrap; 
     gap: 20px; 
-    justify-content: center; 
+    justify-content: center; /* Centers the items */
     align-items: flex-start;
     padding: 20px;
+    width: 100%; /* Ensure the container takes full width */
 }
 
+/* Info box styling */
 .info-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px; 
+    max-width: 300px; /* You can change this to a more flexible value like 80% */
+    width: 100%; /* Ensure it takes full available width */
     text-align: center;
     background-color: #f9f9f9; 
     padding: 15px;
@@ -305,26 +327,30 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
+/* Image styling */
 .img {
-    width: 100%; 
+    width: 100%;
     height: auto;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
+/* Info heading styling */
 .info-heading {
     font-size: 1.2rem;
     margin: 10px 0;
 }
 
+/* Info description styling */
 .info-description {
     font-size: 0.9rem;
     margin: 10px 0;
     color: #333;
 }
 
+/* Info button styling */
 .info-button {
-    margin-top: 10px;
-    padding: 8px 12px;
+    margin-top: 15px;
+    padding: 10px 12px;
     background-color: #ff9d00;
     color: white;
     border: none;
@@ -332,15 +358,18 @@ section {
     cursor: pointer;
 }
 
+/* Hover effect for button */
 .info-button:hover {
     background-color: #0056b3;
 }
 
+/* Responsive styling for mobile devices */
 @media (max-width: 768px) {
     .info-box {
-        max-width: 100%; 
+        max-width: 100%; /* Full width on smaller screens */
     }
 }
+
 
 /* Styled the table so that it is easier for the user to know where they are on the table. 
 For example, having different colors on the rows 

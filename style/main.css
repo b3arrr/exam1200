@@ -467,7 +467,7 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
 }
 
 /* Mobile responsiveness tables */
-@media (max-width: 700px) {
+@media (max-width: 820px) {
     td {
         display: block;
         text-align: right;

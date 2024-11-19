@@ -61,16 +61,17 @@ a {
 /*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
 
 li {
-    margin:10px;
     list-style: none;
     /* list-style-position: inside; */
 }
 /*targets bullet points to style*/
+.list-decoration li {
+    margin: 10px;
+}
 .list-decoration li::before {
     content: '▲';
     color: var(--primary-color);
     padding: 10px;
-    margin-right: 10px;
     transition: transform 0.3s;
 }
 

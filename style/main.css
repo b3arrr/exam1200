@@ -2,7 +2,6 @@
 :root {
     --background: #ffffff;
     --primary-color: #ffaa18;
-    --secondary-color: #69a003;
     --text-color: #000000;
 }
 
@@ -55,7 +54,13 @@ a {
     text-decoration-color: var(--primary-color);
     text-decoration-thickness: 2px;
     color: var(--text-color);
-    margin-top: -10px;
+}
+
+a:hover {
+    text-decoration-color: black;
+}
+a:visited {
+    color:rgb(134, 0, 146);
 }
 
 /*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
@@ -531,6 +536,9 @@ footer {
     margin-top: 40px;
 }
 
+.black-underline-link:visited {
+    color:black;
+}
 .black-underline-link:hover {
     text-decoration: underline;
 }

@@ -2,7 +2,6 @@
 :root {
     --background: #ffffff;
     --primary-color: #ffaa18;
-    --secondary-color: #69a003;
     --text-color: #000000;
 }
 
@@ -44,7 +43,6 @@ p {
     line-height: 1.2;
 }
 
-
 /* Used to apply bold styling to an element, without indicating a higher level of importance like the <strong> element. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
 .bold-text {
     font-weight: bold;
@@ -56,18 +54,32 @@ a {
     text-decoration-color: var(--primary-color);
     text-decoration-thickness: 2px;
     color: var(--text-color);
-    margin-top: -10px;
+}
+
+a:hover {
+    text-decoration-color: black;
+}
+a:visited {
+    color:rgb(134, 0, 146);
 }
 
 /*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
 
 li {
-    list-style-position: inside;
+    list-style: none;
+    /* list-style-position: inside; */
+}
+/*targets bullet points to style*/
+.list-decoration li {
+    margin: 10px;
+}
+.list-decoration li::before {
+    content: '▲';
+    color: var(--primary-color);
+    padding: 10px;
+    transition: transform 0.3s;
 }
 
-.no-bullet { /* ER DET EN ANNEN MÅTE Å GJØRE DET PÅ? */
-    list-style: none;
-}
 
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
@@ -79,18 +91,21 @@ header {
     max-width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distributes space between header elements */
+    justify-content: space-evenly; /*Spaces its children evenly across the header*/
     top: 0;
-    padding: 20px; /* Uniform padding for consistency */
+    padding: 35px 20px; 
     background-color: #ffaa18; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
     The pairings have sufficient contrast for use with normal text, large text and graphics. Checked the contrast ratio with https://venngage.com/tools/accessible-color-palette-generator */
 }
 
 /* Hamburger menu without javascript. The code is taken from the lecturer's tutorial of hamburger menu */
 
-#menu-toggle {display: none;} /* Hides the checkbox, which makes the menu toggle clickable without javascript */
+#menu-toggle {
+    display: none;
+} /* Hides the checkbox, which makes the menu toggle clickable without javascript */
 
-@media (min-width: 701px) { 
+@media (min-width: 701px) {
+  
     .menu-content {
         display: flex;
         justify-content: center;
@@ -98,14 +113,19 @@ header {
     }
 }
 
-.menu-content li {padding-right: 4rem;}
+.menu-content li {
+    padding-right: 4rem;
+}
 
 @media (max-width: 700px) {
     /* The hamburger menu will replace the row-menu at 700px */
+    header{  /*Ensure the hamburge menu will be on the left side when below 700px*/
+        justify-content: left;
+    }
     .menu-content {
         position: sticky;
         padding-left: 0px;
-        list-style: none; 
+        list-style: none;
     }
     .menu-icon {
         display: block;
@@ -115,7 +135,9 @@ header {
         width: 40px;
     }
 
-    .dropdown.container {cursor: pointer;}
+    .dropdown.container {
+        cursor: pointer;
+    }
 
     .menu-content li {
         height: 0px;
@@ -137,11 +159,7 @@ header {
     }
 }
 
-.change-color-hovering:hover {
-    /* When you hover over links, it will change the color to what is set for primary-color, and use 0.2 seconds to transition to that color*/
-    color: var(--secondary-color);
-    transition-duration: 0.2s;
-}
+
 
 /*Styling main*/
 main,
@@ -153,9 +171,61 @@ aside {
     flex-wrap: wrap;
 }
 
+
+ /*Styling for course information on index-page*/
+ .index-main-container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+.index-box {
+    padding: 30px 0px 30px;
+    margin-top: 10px;
+    max-width: fit-content;
+    border: solid rgba(0, 0, 0, 0.252);
+    border-width: 0px 0px 1px;
+}
+details {
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+summary {
+    cursor: pointer;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    transition: background-color 0.2s ease-in-out;
+}
+
+summary:hover {
+    background-color: #f1f1f1;
+}
+
+/*This applies the styling to the details element, but excludes it's child summary. */
+details > *:not(summary) {
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+main img {
+    margin-top: 40px;
+}
+
 /* Used @media to help with scaling of the info-box. */
 .page-header-container {
-    background-color: #EAEAEA; /* Contrast ratio of 17.46:1 with black text, follows WCAG 2.1 AA. Checked the contrast ratio with https://venngage.com/tools/accessible-color-palette-generator. */
+    background-color: #eaeaea; /* Contrast ratio of 17.46:1 with black text, follows WCAG 2.1 AA. Checked the contrast ratio with https://venngage.com/tools/accessible-color-palette-generator. */
     display: flex;
     padding: 30px;
     margin-bottom: -20px;
@@ -184,14 +254,14 @@ aside {
 .topic-group li {
     border: 1px solid #a2a2a2; /* Contrast ratio of 8.23:1 with black text, follows WCAG 2.1 AA. */
     padding: 15px;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     border-radius: 5px;
     width: fit-content;
 }
 
 table {
     width: 100%;
-    background: #EAEAEA;
+    background: #eaeaea;
     border-collapse: collapse;
 }
 th,
@@ -201,7 +271,7 @@ td {
     text-align: center;
 }
 th {
-    background-color: #D3D3D3; /* Contrast ratio of #D3D3D3 with black text, follows WCAG 2.1 AA */
+    background-color: #d3d3d3; /* Contrast ratio of #D3D3D3 with black text, follows WCAG 2.1 AA */
 }
 
 /* adding margin on top and bottom, to give some spacing between sections */
@@ -417,18 +487,18 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
     .mobile-header-color {
         background-color: rgb(211, 211, 211);
     }
-    
+
     .mobile-tr {
         border-top: 1.4rem solid #ffffff;
-        margin-top: .2rem;
+        margin-top: 0.2rem;
         display: block;
     }
     table td[data-label]::before {
         content: attr(data-label) ":  ";
-        font-weight:bold;
+        font-weight: bold;
         font-size: 0.8rem;
         text-transform: uppercase;
-        float:left;
+        float: left;
     }
 }
 
@@ -449,8 +519,7 @@ caption {
     .img-leader {
         height: 255.11px;
         width: 189.65px;
-}
-
+    }
 }
 
 .info-container {
@@ -463,9 +532,9 @@ caption {
 }
 
 @media (max-width: 1300px) {
-    .info-container{
+    .info-container {
         flex-direction: column-reverse;
- }
+    }
 }
 
 /* FOOTER STARTS HERE*/
@@ -486,6 +555,9 @@ footer {
     margin-top: 40px;
 }
 
+.black-underline-link:visited {
+    color:black;
+}
 .black-underline-link:hover {
     text-decoration: underline;
 }
@@ -498,7 +570,7 @@ footer {
 }
 
 /* Turned it to flexboxs, so it would be possible to place the social media icons beside the text/link */
-.footerright { 
+.footerright {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -513,7 +585,8 @@ footer {
     padding-bottom: 12px;
 }
 
-.icon { /* The free icons is from https://www.iconfinder.com/ */
+.icon {
+    /* The free icons is from https://www.iconfinder.com/ */
     height: 24px;
     width: 24px;
     margin-right: 12px;

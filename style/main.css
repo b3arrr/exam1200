@@ -310,6 +310,7 @@ section {
     padding: 20px;
     width: 100%; 
 }
+
 .info-box {
     display: flex;
     flex-direction: column;
@@ -337,7 +338,7 @@ section {
 .info-description {
     font-size: 0.9rem;
     margin: 10px 0;
-    color: #333;
+    color: #222;
 }
 .extra-information {
 
@@ -359,6 +360,14 @@ text-align: center;
     .info-box {
         max-width: 100%; /* Full width on smaller screens */
     }
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .info.box  {
+        max-width: 100%;
+        padding: 20px;
+    } 
 }
 
 

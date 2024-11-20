@@ -332,6 +332,7 @@ section {
 
 .img-illustration {
     max-width: 300px;
+    min-width: none;
     object-fit: cover;
 }
 

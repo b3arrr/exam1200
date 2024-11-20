@@ -330,7 +330,7 @@ section {
     flex: 1 250px;
 }
 
-.img {
+.img-illustration {
     max-width: 300px;
     object-fit: cover;
 }

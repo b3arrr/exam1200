@@ -275,9 +275,10 @@ section {
 }
 
 .button-link {
+    text-decoration: none;
     border: initial;
     background-color: initial;
-    background-color: #ffa556;
+    background-color: #2ba8f6;
     padding: 10px 15px;
     color: black;
     border-radius: 1000px;
@@ -322,7 +323,7 @@ section {
     background-color: #f9f9f9; 
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(212, 52, 52, 0.1); 
+    box-shadow: 0 4px 6px rgba(232, 48, 48, 0.1); 
 }
 
 .img {
@@ -346,7 +347,7 @@ section {
 max-width: 800px;
 margin: auto;
 padding: 20px;
-background-color: #ffa556;
+background-color: #2ba8f6;
 border-radius: 8px;
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 text-align: center;
@@ -360,6 +361,9 @@ text-align: center;
 @media (max-width: 768px) {
     .info-box {
         max-width: 100%; /* Full width on smaller screens */
+    }
+    .field-box {
+    max-width: 100%; 
     }
     .container {
         flex-direction: column;

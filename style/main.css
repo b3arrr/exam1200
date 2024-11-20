@@ -297,6 +297,7 @@ section {
     height: auto;
 
   }
+  
 .container {
     padding: 50px 0;
     max-width: 1150px;
@@ -308,6 +309,7 @@ section {
     row-gap: 30px;
 }
 
+/* Gives the informaton box a background effect making it easier to see the boxes */
 .information-box {
     padding: 20px 30px;
     background-color: #fff;
@@ -334,10 +336,6 @@ section {
 .img {
     max-width: 300px;
     object-fit: cover;
-}
-
-.heading {
-    margin: 10px 0 15px;
 }
 
 .information {

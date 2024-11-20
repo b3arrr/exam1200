@@ -285,7 +285,7 @@ section {
 }
 
 /* CSS FOR ACTIVITY PAGE*/
-.hero-section {
+.intro-section {
     position: relative;
     text-align: center;
   }
@@ -341,11 +341,12 @@ section {
 }
 
 .button-link {
+    text-decoration: none;
     border: initial;
     background-color: initial;
-    background-color: #ffa556;
+    background-color: #2ba8f6;
     padding: 10px 15px;
-    color: black;
+    color: black !important;
     border-radius: 1000px;
     font-size: 0.7rem;
     max-width: 100px;
@@ -361,7 +362,7 @@ section {
 }
 
 /* CSS FRA MANDI*/
-.bottom-section {
+.field-section {
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -378,17 +379,7 @@ section {
     margin: 0 auto;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    justify-content: center; 
-    align-items: flex-start;
-    padding: 20px;
-    width: 100%; 
-}
-
-.info-box {
+.field-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,7 +412,7 @@ section {
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    background-color: #ffa556;
+    background-color: #2ba8f6;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     text-align: center;

@@ -305,11 +305,14 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
   }
   
 .info {
+    overflow: hidden;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    row-gap: 10px;
+    padding: 40px;
     box-sizing: border-box;
 }
 
@@ -324,38 +327,30 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     margin: 10px; /*sett 20px til 10px for at boksene skal være ved siden av hverandre*/
     background-color: #f9f9f9;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-    padding: 20px;
+    padding: 10px;
     border-radius: 5px;
 }
 
+/* Only activates when the screens width is 768px or less */
 @media (max-width: 768px) {
     .information-box {
-        flex: 1 1 100%;
+        flex: 0 0 100%;
     }
 }
 
-
-/* The nth-of-type() pseudo-class made it easier to chanage the size of each independet flexbox /*
-/* Making it easier to align them and experiment. Code from https://www.w3schools.com/cssref/sel_nth-of-type.php */
-.information-box:nth-of-type(1) {
-    flex: 1 250px;
-}
-
-.information-box:nth-of-type(2) {
-    flex: 1 250px;
-}
-
-.information-box:nth-of-type(3) {
-    flex: 1 250px;
-}
-
 .img-illustration {
-    max-width: 300px; 
-    min-width: none;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
     object-fit: cover;
+    display: block;
 }
 
 .information {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -426,6 +421,7 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 30px;
+    margin-bottom: 20px;
 }
 /* Styling for images inside the field boxes */
 .img-field {

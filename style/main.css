@@ -597,14 +597,6 @@ footer {
     align-items: flex-start;
     flex-wrap: wrap;
     padding-top: 40px;
-    margin-top: 40px;
-}
-
-.black-underline-link:visited {
-    color:black;
-}
-.black-underline-link:hover {
-    text-decoration: underline;
 }
 
 @media (max-width: 900px) {

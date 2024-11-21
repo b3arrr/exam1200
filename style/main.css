@@ -60,6 +60,10 @@ a:visited {
     color:rgb(134, 0, 146);
 }
 
+.black-underline-link:visited {
+    color: var(--text-color);
+}
+
 /*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
 
 li {

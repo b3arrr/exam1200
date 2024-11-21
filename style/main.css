@@ -544,7 +544,7 @@ aside {
 }
 
 .aside-container {
-justify-content: space-aroundb;
+justify-content: space-around;
 display: flex;
 align-items: flex-start;
 flex-direction: column;

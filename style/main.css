@@ -285,6 +285,9 @@ section {
 }
 
 /* CSS FOR ACTIVITY PAGE*/
+
+/* Styled the hero heading for a visually appealing. 
+Using inspiration and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp */ 
 .intro-section {
     position: relative;
     text-align: center;
@@ -312,7 +315,7 @@ section {
     flex-direction: column;
     align-items: center;
     margin: 10px 20px;
-    background-color: #fff;
+    background-color: #f9f9f9;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
     padding: 10px 20px;
     align-self: normal;
@@ -343,27 +346,31 @@ section {
     margin-bottom: 20px;
 }
 
+/* Styling for the buttons link */
 .button-link {
     text-decoration: none;
     border: initial;
     background-color: initial;
-    background-color: #2ba8f6;
+    background-color: #60bdff;
     padding: 10px 15px;
-    color: black !important;
+    color: black !important; /* Ensures the text is black regardless of parent styles.  Source: https://www.w3schools.com/css/css_important.asp */
     border-radius: 25px;
     font-size: 0.7rem;
 }
-
+/* Wrapper for position of the button links */
 .link-button {
     margin-top: auto;
 }
 
+/* Hover effect for the button links */
 .button-link:hover {
     cursor: pointer;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* CSS FRA MANDI*/
+
+/* Styling for the field section container */
 .field-section {
     display: flex;
     flex-direction: column;
@@ -373,14 +380,17 @@ section {
     padding: 20px;
 }
 
+/* Styling for the main heading in the bottom section*/
 .main-heading {
     margin-bottom: 15px;
 }
+
+/* Styling for introducton text in bottom section*/
 .intro-text {
     max-width: 880px;
     margin: 0 auto;
 }
-
+/* Styling for the individual field boxes*/
 .field-box {
     display: flex;
     flex-direction: column;
@@ -393,34 +403,49 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(212, 52, 52, 0.1); 
 }
-
-.img {
+/* Styling to make container for all field boxes*/
+.container-field {
+    padding: 50px 0;
+    max-width: 1150px;
+    padding: 0 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 30px;
+}
+/* Styling for imgaes inside the field boxes */
+.img-field {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
-
+/* Styling for headings inside the field boxes */
 .info-heading {
     font-size: 1.2rem;
     margin: 10px 0;
 }
 
+/* Styling for the description text inside the field boxes */
 .info-description {
     font-size: 0.9rem;
     margin: 10px 0;
     color: #222;
 }
-.extra-information {
+
+/* Styling for the extra information about fields in Oslo */
+.field-information {
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    background-color: #2ba8f6;
+    background-color: #60bdff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     text-align: center;
 
+/* Styling for the text about fields in Oslo */
 }
-.info-text {
+.field-text {
     font-size: 1rem;
     color: #000000;
 }
@@ -555,64 +580,3 @@ padding-top: 10px;
     .info-aside-reverse{
         flex-direction: column-reverse;
     }
-}
-
-/* FOOTER STARTS HERE*/
-
-footer {
-    max-width: 100%;
-    background-color: #ffaa18;
-    bottom: 0;
-    padding: 20px; /* Uniform padding for consistency */
-}
-
-.footerflex {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding-top: 40px;
-    margin-top: 40px;
-}
-
-.black-underline-link:visited {
-    color:black;
-}
-.black-underline-link:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 900px) {
-    .footerflex {
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-
-/* Turned it to flexboxs, so it would be possible to place the social media icons beside the text/link */
-.footerright {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 4px;
-}
-
-.social-media {
-    display: flex;
-    align-items: center;
-    padding-top: 0px;
-    padding-bottom: 12px;
-}
-
-.icon {
-    /* The free icons is from https://www.iconfinder.com/ */
-    height: 24px;
-    width: 24px;
-    margin-right: 12px;
-}
-
-.social-media a {
-    padding-top: 10px;
-}
-/* FOOTER ENDS HERE*/

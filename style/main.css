@@ -171,6 +171,7 @@ main {
  /*Styling for course information on index-page*/
  .index-main-container {
     display:flex;
+    align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
 }
@@ -178,8 +179,10 @@ main {
 
 .index-box {
     padding: 30px 0px 30px;
-    margin-top: 10px;
+    width: 100%;
     max-width: 800px;
+    text-wrap:balance;
+    margin-top: 10px;
     border: solid rgba(0, 0, 0, 0.252);
     border-width: 0px 0px 1px;
 }
@@ -198,14 +201,14 @@ summary {
     font-size: 1rem;
     font-weight: 600;
     color: #333;
-    background-color: #ffffff;
+    background-color: #ebdd90;
     border-bottom: 1px solid #ddd;
     display: flex;
     transition: background-color 0.2s ease-in-out;
 }
 
 summary:hover {
-    background-color: #f1f1f1;
+    background-color: #ffffff;
 }
 
 /*This applies the styling to the details element, but excludes it's child summary. */

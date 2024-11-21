@@ -66,9 +66,9 @@ a:visited {
 
 /*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
 
-li {
+ul li {
     list-style: none;
-    /* list-style-position: inside; */
+    margin-bottom: 10px;
 }
 /*targets bullet points to style*/
 .list-decoration li {
@@ -635,7 +635,4 @@ footer {
     margin-right: 12px;
 }
 
-.social-media a {
-    padding-top: 10px;
-}
 /* FOOTER ENDS HERE*/

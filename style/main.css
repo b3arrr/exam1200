@@ -36,11 +36,8 @@ h2,
 h3 {
     color: var(--text-color);
     margin-top: 20px;
-}
+    line-height: 1.5;
 
-p {
-    color: var(--text-color);
-    line-height: 1.2;
 }
 
 /* Used to apply bold styling to an element, without indicating a higher level of importance like the <strong> element. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
@@ -61,6 +58,10 @@ a:hover {
 }
 a:visited {
     color:rgb(134, 0, 146);
+}
+
+.black-underline-link:visited {
+    color: var(--text-color);
 }
 
 /*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
@@ -174,14 +175,18 @@ main {
  /*Styling for course information on index-page*/
  .index-main-container {
     display:flex;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 
 .index-box {
     padding: 30px 0px 30px;
+    width: 100%;
+    max-width: 800px;
+    text-wrap:balance;
     margin-top: 10px;
-    max-width: fit-content;
     border: solid rgba(0, 0, 0, 0.252);
     border-width: 0px 0px 1px;
 }
@@ -200,14 +205,14 @@ summary {
     font-size: 1rem;
     font-weight: 600;
     color: #333;
-    background-color: #ffffff;
+    background-color: #ebdd90;
     border-bottom: 1px solid #ddd;
     display: flex;
     transition: background-color 0.2s ease-in-out;
 }
 
 summary:hover {
-    background-color: #f1f1f1;
+    background-color: #ffffff;
 }
 
 /*This applies the styling to the details element, but excludes it's child summary. */
@@ -485,6 +490,7 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
 }
 
 /* Mobile responsiveness tables */
+/*Inspired technique retrieved from https://codepen.io/AllThingsSmitty/pen/MyqmdM*/ 
 @media (max-width: 820px) {
     td {
         display: block;

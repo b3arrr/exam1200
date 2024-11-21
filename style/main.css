@@ -26,7 +26,6 @@ body {
 
 h1 {
     font-weight: 800;
-    margin-bottom: -30px;
 }
 
 /*Gives the text color for these elements (h1,h2,h3) the color of -> variable --text-color */
@@ -36,8 +35,7 @@ h2,
 h3 {
     color: var(--text-color);
     margin-top: 20px;
-    line-height: 1.5;
-
+    line-height: 1.5rem;
 }
 
 /* Used to apply bold styling to an element, without indicating a higher level of importance like the <strong> element. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
@@ -51,14 +49,14 @@ a {
     text-decoration-color: var(--primary-color);
     text-decoration-thickness: 2px;
     color: var(--text-color);
-    line-height: 1.5;
+    line-height: 1.5rem;
 }
 
 a:hover {
     text-decoration-color: black;
 }
 a:visited {
-    color:rgb(134, 0, 146);
+    color: rgb(134, 0, 146);
 }
 
 .black-underline-link:visited {
@@ -76,12 +74,11 @@ li {
     margin: 10px;
 }
 .list-decoration li::before {
-    content: '▲';
+    content: "▲";
     color: var(--primary-color);
     padding: 10px;
     transition: transform 0.3s;
 }
-
 
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
@@ -95,7 +92,7 @@ header {
     align-items: center;
     justify-content: space-evenly; /*Spaces its children evenly across the header*/
     top: 0;
-    padding: 35px 20px; 
+    padding: 35px 20px;
     background-color: #ffaa18; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
     The pairings have sufficient contrast for use with normal text, large text and graphics. Checked the contrast ratio with https://venngage.com/tools/accessible-color-palette-generator */
 }
@@ -107,7 +104,6 @@ header {
 } /* Hides the checkbox, which makes the menu toggle clickable without javascript */
 
 @media (min-width: 701px) {
-  
     .menu-content {
         display: flex;
         justify-content: center;
@@ -121,7 +117,8 @@ header {
 
 @media (max-width: 700px) {
     /* The hamburger menu will replace the row-menu at 700px */
-    header{  /*Ensure the hamburge menu will be on the left side when below 700px*/
+    header {
+        /*Ensure the hamburge menu will be on the left side when below 700px*/
         justify-content: left;
     }
     .menu-content {
@@ -161,8 +158,6 @@ header {
     }
 }
 
-
-
 /*Styling main*/
 main {
     margin: 0 15%;
@@ -172,21 +167,19 @@ main {
     flex-wrap: wrap;
 }
 
-
- /*Styling for course information on index-page*/
- .index-main-container {
-    display:flex;
+/*Styling for course information on index-page*/
+.index-main-container {
+    display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
-
 .index-box {
     padding: 30px 0px 30px;
     width: 100%;
     max-width: 800px;
-    text-wrap:balance;
+    text-wrap: balance;
     margin-top: 10px;
     border: solid rgba(0, 0, 0, 0.252);
     border-width: 0px 0px 1px;
@@ -221,7 +214,7 @@ details > *:not(summary) {
     padding: 15px;
     font-size: 0.9rem;
     color: #555;
-    line-height: 1.6;
+    line-height: 1.5rem;
 }
 
 main img {
@@ -287,24 +280,23 @@ section {
 .address {
     font-style: normal;
     padding: 5px 5px 0px 0px;
-    line-height: 1.5;
+    line-height: 1.5rem;
 }
 
 /* CSS FOR ACTIVITY PAGE*/
 
 /* Styled the hero heading for a visually appealing. 
-Using inspiration and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp */ 
+Using inspiration and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp */
 .intro-section {
     position: relative;
     text-align: center;
-  }
+}
 
 .intro-image {
     width: 100%;
     height: auto;
+}
 
-  }
-  
 .info {
     padding: 50px 0;
     padding: 0 30px;
@@ -380,9 +372,9 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
 .field-section {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-    text-align: center; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 20px;
 }
 
@@ -401,13 +393,13 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px; 
-    width: 100%; 
+    max-width: 300px;
+    width: 100%;
     text-align: center;
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(212, 52, 52, 0.1); 
+    box-shadow: 0 4px 6px rgba(212, 52, 52, 0.1);
 }
 /* Styling to make container for all field boxes*/
 .container-field {
@@ -449,13 +441,13 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     text-align: center;
 
-/* Styling for the text about fields in Oslo */
+    /* Styling for the text about fields in Oslo */
 }
 .field-text {
     font-size: 1rem;
     color: #000000;
 }
-/* Responsive styling for mobile devices */ 
+/* Responsive styling for mobile devices */
 @media (max-width: 768px) {
     .info-box {
         max-width: 100%; /* Full width on smaller screens */
@@ -464,12 +456,11 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
         flex-direction: column;
         gap: 15px;
     }
-    .info.box  {
+    .info.box {
         max-width: 100%;
         padding: 20px;
-    } 
+    }
 }
-
 
 /* Styled the table so that it is easier for the user to know where they are on the table. 
 For example, having different colors on the rows 
@@ -491,7 +482,7 @@ Code used in https://www.w3schools.com/css/css_table.asp*/
 }
 
 /* Mobile responsiveness tables */
-/*Inspired technique retrieved from https://codepen.io/AllThingsSmitty/pen/MyqmdM*/ 
+/*Inspired technique retrieved from https://codepen.io/AllThingsSmitty/pen/MyqmdM*/
 @media (max-width: 820px) {
     td {
         display: block;
@@ -533,7 +524,7 @@ caption {
 /* ASIDE STARTS HERE*/
 
 aside {
-    background-color: #FDBF60; 
+    background-color: #fdbf60;
     max-width: 100%;
     margin-top: 40px;
 }
@@ -551,14 +542,13 @@ aside {
 }
 
 .aside-container {
-justify-content: space-around;
-display: flex;
-align-items: flex-start;
-flex-direction: column;
-gap: 40px;
-padding-bottom: 40px;
-padding-top: 10px;
-
+    justify-content: space-around;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 40px;
+    padding-top: 10px;
 }
 
 .info-aside {
@@ -578,13 +568,13 @@ padding-top: 10px;
 }
 
 @media (max-width: 1477px) {
-    .info-aside{
+    .info-aside {
         flex-direction: column;
     }
 }
 
 @media (max-width: 1477px) {
-    .info-aside-reverse{
+    .info-aside-reverse {
         flex-direction: column-reverse;
     }
 }

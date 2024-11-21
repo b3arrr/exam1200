@@ -51,6 +51,7 @@ a {
     text-decoration-color: var(--primary-color);
     text-decoration-thickness: 2px;
     color: var(--text-color);
+    line-height: 1.5;
 }
 
 a:hover {
@@ -286,7 +287,7 @@ section {
 .address {
     font-style: normal;
     padding: 5px 5px 0px 0px;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 /* CSS FOR ACTIVITY PAGE*/
@@ -594,7 +595,7 @@ footer {
     max-width: 100%;
     background-color: #ffaa18;
     bottom: 0;
-    padding: 20px; /* Uniform padding for consistency */
+    padding: 60px; /* Uniform padding for consistency */
 }
 
 .footerflex {
@@ -602,7 +603,6 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-top: 40px;
 }
 
 @media (max-width: 900px) {

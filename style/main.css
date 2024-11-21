@@ -300,44 +300,52 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
   }
   
 .info {
-    padding: 50px 0;
-    padding: 0 30px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
 /* Gives the informaton box a background effect making it easier to see the boxes */
 .information-box {
-    flex: 1 1rem;
+    flex: 1 1 30%;
+    min-width: 250px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 20px;
+    margin: 10px; /*sett 20px til 10px for at boksene skal være ved siden av hverandre*/
     background-color: #f9f9f9;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-    padding: 10px 20px;
-    align-self: normal;
+    padding: 20px;
     border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+    .information-box {
+        flex: 1 1 100%;
+    }
+}
+
+
 /* The nth-of-type() pseudo-class made it easier to chanage the size of each independet flexbox /*
 /* Making it easier to align them and experiment. Code from https://www.w3schools.com/cssref/sel_nth-of-type.php */
-.info:nth-of-type(1) {
+.information-box:nth-of-type(1) {
     flex: 1 250px;
 }
 
-.info:nth-of-type(2) {
+.information-box:nth-of-type(2) {
     flex: 1 250px;
 }
 
-.info:nth-of-type(3) {
+.information-box:nth-of-type(3) {
     flex: 1 250px;
 }
 
 .img-illustration {
-    max-width: 300px;
+    max-width: 300px; 
     min-width: none;
     object-fit: cover;
 }
@@ -353,7 +361,7 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     background-color: initial;
     background-color: #60bdff;
     padding: 10px 15px;
-    color: black !important; /* Ensures the text is black regardless of parent styles.  Source: https://www.w3schools.com/css/css_important.asp */
+    color: black !important; /* Ensures the text is black regardless of parent styles. Source: https://www.w3schools.com/css/css_important.asp */
     border-radius: 25px;
     font-size: 0.7rem;
 }
@@ -414,7 +422,7 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     column-gap: 20px;
     row-gap: 30px;
 }
-/* Styling for imgaes inside the field boxes */
+/* Styling for images inside the field boxes */
 .img-field {
     width: 100%;
     height: auto;

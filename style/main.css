@@ -355,7 +355,7 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
 }
 
 /* Styling for the buttons link */
-.button-link {
+.link-button {
     text-decoration: none;
     border: initial;
     background-color: initial;
@@ -371,9 +371,10 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
 }
 
 /* Hover effect for the button links */
-.button-link:hover {
+.link-button:hover {
     cursor: pointer;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    text-decoration: underline;
 }
 
 /* CSS FRA MANDI*/

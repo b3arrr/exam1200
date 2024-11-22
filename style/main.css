@@ -140,9 +140,10 @@ header {
 }
 
 .menu-content li a {
+    /*makes buttons for the header menu when not in mobile version*/
     padding: 20px;
     margin: 0px 20px;
-    border: 2px solid rgba(253, 188, 104, 0.774);
+    border: 2px solid rgba(253, 188, 104, 0.774); /*adds subtle borde to highlight the edges*/ 
     background-color:#ffae22;
     border-radius: 6px; 
     text-align: center; 
@@ -152,6 +153,7 @@ header {
     cursor: pointer; 
 }
 .menu-content li a:hover {
+    /*enables interactivity when hovering the button*/
     background-color: white;
     color: rgb(231, 150, 0); 
 }
@@ -167,9 +169,25 @@ header {
         right: 0;
         left: auto;
     }
+    .menu-content li a {
+        /* Remove the button-like appearance for the hamburger menu */
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        text-decoration: underline; 
+    }
+    .menu-content li a:hover {
+        /* Minimal hover effect for mobile */
+        background-color: transparent;
+        color: var(--primary-color);
+        text-decoration: none;
+    }
     .menu-content {
         position: sticky;
-        padding-left: 0px;
+        z-index: 1; /* Ensure it's in front of other content*/
         list-style: none;
     }
     .menu-icon {
@@ -219,6 +237,7 @@ main {
         margin: 0 8% 30px;
     }
 }
+
 
 /*Styling for course information on index-page*/
 .main-section-container {

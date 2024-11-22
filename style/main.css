@@ -24,18 +24,23 @@ body {
     background-color: var(--background);
 }
 
-h1 {
-    font-weight: 800;
-}
 
 /*Gives the text color for these elements (h1,h2,h3) the color of -> variable --text-color */
 p,
-h1,
 h2,
 h3 {
     color: var(--text-color);
     margin: 15px 0px;
     line-height: 1.5rem;
+}
+
+h1 {
+    color: var(--text-color);
+    font-weight: 800;
+    text-align: center;
+    margin: 20px auto 0px;
+    border: solid rgba(0, 0, 0, 0.252);
+    border-width: 0px 0px 2px;
 }
 
 /* Used to apply bold styling to an element, without indicating a higher level of importance like the <strong> element. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
@@ -70,7 +75,6 @@ a:visited {
 
 ul li {
     list-style: none;
-    margin-bottom: 10px;
 }
 /*targets bullet points to style*/
 .list-decoration li {
@@ -163,28 +167,29 @@ header {
 
 /*Styling main*/
 main {
-    margin: 0 15%;
+    margin: 0 15% 30px;
     display: flex;
     flex-direction: column;
     gap: 30px;
     flex-wrap: wrap;
+    
 }
 
 /*Styling for course information on index-page*/
-.index-main-container {
+.main-section-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
-.index-box {
+.main-section-box {
     padding: 30px 0px 30px;
     width: 100%;
     max-width: 800px;
     text-wrap: balance;
     border: solid rgba(0, 0, 0, 0.252);
-    border-width: 0px 0px 1px;
+    border-width: 0px 0px 2px;
 }
 details {
     max-width: 500px;
@@ -274,10 +279,7 @@ th {
 }
 
 /* adding margin on top and bottom, to give some spacing between sections */
-section {
-    margin: 10px 0;
-    width: 100%;
-}
+
 
 .address {
     font-style: normal;
@@ -558,7 +560,7 @@ aside {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-@media (max-width: 1062px) {
+@media (max-width: 862px) {
     .info-aside {
         margin: 0%;
         border-radius: 0px;
@@ -590,6 +592,10 @@ footer {
     background-color: #ffaa18;
     bottom: 0;
     padding: 60px; /* Uniform padding for consistency */
+}
+footer li {
+    /*Give some extra spacing for the list in the footer*/
+    margin: 5px 0px
 }
 
 .footerflex {

@@ -194,6 +194,12 @@ main {
     gap: 30px;
     flex-wrap: wrap;
 }
+/*Reduce margin for the content when entering mobile*/
+@media (max-width: 1200px) {
+    main {
+        margin: 0 8% 30px;
+    }
+}
 
 /*Styling for course information on index-page*/
 .main-section-container {
@@ -277,12 +283,6 @@ figcaption {padding-bottom: 0 10px;}
     }
 }
 
-/*Reduce margin for the content when entering mobile*/
-@media (max-width: 1200px) {
-    main {
-        margin: 0 8%;
-    }
-}
 
 .topic-group li {
     border: 1px solid #a2a2a2; /* Contrast ratio of 8.23:1 with black text, follows WCAG 2.1 AA. */

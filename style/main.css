@@ -404,31 +404,31 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px; 
+    max-width: 225px; 
     width: 100%; 
     text-align: center;
     background-color: #f9f9f9; 
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(212, 52, 52, 0.1); 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
 }
 /* Styling to make container for all field boxes*/
 .container-field {
     padding: 50px 0;
     max-width: 1150px;
-    padding: 0 30px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     column-gap: 20px;
+    justify-content: center;
     row-gap: 30px;
     margin-bottom: 20px;
 }
 /* Styling for images inside the field boxes */
 .img-field {
-    width: 100%;
     height: auto;
     border-radius: 10px;
+    width: 100%; /* or max-width: 100%; */
 }
 /* Styling for headings inside the field boxes */
 .info-heading {

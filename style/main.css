@@ -24,6 +24,15 @@ body {
     background-color: var(--background);
 }
 
+h1 {
+    color: var(--text-color);
+    font-weight: 800;
+    text-align: center;
+    margin: 20px auto 0px;
+    border: solid rgba(0, 0, 0, 0.252);
+    border-width: 0px 0px 2px;
+}
+
 /*Gives the text color for these elements (h1,h2,h3) the color of -> variable --text-color */
 p,
 h2,
@@ -33,14 +42,6 @@ h3 {
     line-height: 1.5rem;
 }
 
-h1 {
-    color: var(--text-color);
-    font-weight: 800;
-    text-align: center;
-    margin: 20px auto 0px;
-    border: solid rgba(0, 0, 0, 0.252);
-    border-width: 0px 0px 2px;
-}
 
 /* Used to apply bold styling to an element, without indicating a higher level of importance like the <strong> element. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
 .bold-text {
@@ -72,7 +73,7 @@ a:visited {
 
 /*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
 
-ul li {
+ul li { /* Trengs det her å legge ul og?*/
     list-style: none;
 }
 /*targets bullet points to style*/
@@ -242,6 +243,7 @@ details > *:not(summary) {
 
 details img {padding: 15px 15px 0 15px;}
 details p {padding: 0 15px 0 15px}
+
 
 /*main img {
     margin-top: 40px;

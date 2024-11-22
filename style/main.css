@@ -324,10 +324,11 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     box-sizing: border-box;
 }
 
+
 /* Gives the informaton box a background effect making it easier to see the boxes */
 .information-box {
     flex: 1 1 30%;
-    min-width: 250px;
+
     max-width: 400px;
     display: flex;
     flex-direction: column;
@@ -342,7 +343,9 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
 /* Only activates when the screens width is 768px or less */
 @media (max-width: 768px) {
     .information-box {
-        flex: 0 0 100%;
+        flex: 1 1 90%;
+        padding: 0 15px 10px;
+        margin: 5px auto;
     }
 }
 
@@ -647,3 +650,4 @@ footer li {
 }
 
 /* FOOTER ENDS HERE*/
+

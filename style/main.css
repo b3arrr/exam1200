@@ -24,7 +24,6 @@ body {
     background-color: var(--background);
 }
 
-
 /*Gives the text color for these elements (h1,h2,h3) the color of -> variable --text-color */
 p,
 h2,
@@ -69,8 +68,7 @@ a:visited {
 }
 .black-underline-link {
     color: var(--text-color);
-    font-size: 1.25rem; 
-
+    font-size: 1.25rem;
 }
 
 /*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
@@ -101,8 +99,10 @@ header {
     align-items: center;
     justify-content: space-evenly; /*Spaces its children evenly across the header*/
     top: 0;
-    padding: 35px 20px;
-    background-color: #ffaa18; /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
+    padding: 40px 20px;
+    background-color: var(
+        --primary-color
+    ); /* The color follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. The ratio for this color is 11.02:1.
     The pairings have sufficient contrast for use with normal text, large text and graphics. Checked the contrast ratio with https://venngage.com/tools/accessible-color-palette-generator */
 }
 
@@ -129,7 +129,6 @@ header {
 
 .menu-content li {
     padding-right: 4rem;
-    
 }
 
 @media (max-width: 760px) {
@@ -163,7 +162,6 @@ header {
         height: 0px;
         overflow: hidden;
     }
-    
 
     #menu-toggle:checked ~ .menu-content li {
         height: 1rem;
@@ -187,7 +185,6 @@ main {
     flex-direction: column;
     gap: 30px;
     flex-wrap: wrap;
-    
 }
 
 /*Styling for course information on index-page*/
@@ -294,7 +291,6 @@ th {
 }
 
 /* adding margin on top and bottom, to give some spacing between sections */
-
 
 .address {
     font-style: normal;
@@ -416,13 +412,13 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 225px; 
-    width: 100%; 
+    max-width: 225px;
+    width: 100%;
     text-align: center;
     background-color: #f9f9f9;
     padding: 30px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 /* Styling to make container for all field boxes*/
 .container-field {
@@ -581,7 +577,7 @@ aside {
         border-radius: 0px;
     }
     .aside-container {
-        max-width:100%;
+        max-width: 100%;
     }
 }
 
@@ -604,13 +600,13 @@ aside {
 
 footer {
     max-width: 100%;
-    background-color: #ffaa18;
+    background-color: var(--primary-color);
     bottom: 0;
     padding: 60px; /* Uniform padding for consistency */
 }
 footer li {
     /*Give some extra spacing for the list in the footer*/
-    margin: 5px 0px
+    margin: 5px 0px;
 }
 
 .footerflex {

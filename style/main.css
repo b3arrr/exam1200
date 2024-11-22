@@ -212,9 +212,6 @@ main {
     border-width: 0px 0px 2px;
 }
 
-article.main-section-box { /* Annen måte å gjøre det på?*/
-    padding: 10px;
-}
 details {
     max-width: 500px;
     border: 1px solid #ddd;
@@ -223,6 +220,7 @@ details {
     background-color: #f9f9f9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    outline: 1px solid red;
 }
 summary {
     cursor: pointer;
@@ -234,6 +232,7 @@ summary {
     border-bottom: 1px solid #ddd;
     display: flex;
     transition: background-color 0.2s ease-in-out;
+    outline: 1px solid red;
 }
 
 summary:hover {
@@ -246,11 +245,15 @@ details > *:not(summary) {
     font-size: 0.9rem;
     color: #555;
     line-height: 1.5rem;
+    outline: 1px solid red;
 }
 
-details img {padding: 15px 15px 0 15px;}
-details p {padding: 0 15px 0 15px}
-figcaption {padding-bottom: 0 10px;}
+details img {padding: 15px 15px 0 15px;
+    outline: 1px solid red;}
+details p {padding: 0 15px 0 15px
+    outline: 1px solid red;}
+figcaption {padding-bottom: 0 10px;
+    outline: 1px solid red;}
 
 
 /*main img {

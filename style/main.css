@@ -83,6 +83,10 @@ ul li { /* Trengs det her å legge ul og?*/
     margin: 15px;
 }
 
+list-decoration li::before {
+    color: var(--primary-color);
+}
+
 /*targets bullet points to style
 .list-decoration li {
     margin: 10px;
@@ -91,11 +95,12 @@ ul li { /* Trengs det her å legge ul og?*/
     content: "▲";
     color: var(--primary-color);
     padding: 10px;
-    transition: transform 0.3s;
-}*/
+    
+} */
 
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
+    max-height: 100%
 }
 
 /* Header specific styling*/
@@ -608,12 +613,14 @@ aside {
 
 .img-leader {
     max-width: 190px;
+    height: auto;
     padding-top: 25px;
     padding-right: 30px;
 }
 
 .img-story {
     max-width: 100%;
+    height: auto;
     padding-top: 25px;
 }
 

@@ -104,29 +104,40 @@ header {
     The pairings have sufficient contrast for use with normal text, large text and graphics. Checked the contrast ratio with https://venngage.com/tools/accessible-color-palette-generator */
 }
 
+#oslomet-logo {
+    position: absolute;
+    max-width: 90px;
+    left: 0
+}
+
 /* Hamburger menu without javascript. The code is taken from the lecturer's tutorial of hamburger menu */
 
 #menu-toggle {
     display: none;
 } /* Hides the checkbox, which makes the menu toggle clickable without javascript */
 
-@media (min-width: 701px) {
+@media (min-width: 721px) {
     .menu-content {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         list-style: none;
     }
 }
 
 .menu-content li {
     padding-right: 4rem;
+    
 }
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
     /* The hamburger menu will replace the row-menu at 700px */
     header {
         /*Ensure the hamburge menu will be on the left side when below 700px*/
         justify-content: left;
+    }
+    #oslomet-logo {
+        right: 0;
+        left: auto;
     }
     .menu-content {
         position: sticky;
@@ -149,6 +160,7 @@ header {
         height: 0px;
         overflow: hidden;
     }
+    
 
     #menu-toggle:checked ~ .menu-content li {
         height: 1rem;

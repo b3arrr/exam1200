@@ -140,25 +140,22 @@ header {
 }
 
 .menu-content li a {
-    padding: 16px 16px;
+    padding: 20px;
     margin: 0px 20px;
-    border-radius: 4px; 
-    background-color: rgb(160, 190, 255); 
+    border: 2px solid rgba(253, 188, 104, 0.774);
+    background-color:#ffae22;
+    border-radius: 6px; 
     text-align: center; 
-        box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.411);
-        text-decoration: none; /* Removes underline */
-    transition: background-color 0.2s ease, color 0.2s ease; /* Smooth transition for hover effect */
-    cursor: pointer; /* Pointer to indicate interactivity */
+    box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.089);
+    text-decoration: none; 
+    transition: background-color 0.2s ease, color 0.2s ease; 
+    cursor: pointer; 
 }
 .menu-content li a:hover {
-    background-color: white; /* Highlight button on hover */
-    color: rgb(231, 150, 0); /* Text color changes to contrast background */
+    background-color: white;
+    color: rgb(231, 150, 0); 
 }
 
-
-/* .menu-content li {
-    padding-right: 4rem;
-} */
 
 @media (max-width: 760px) {
     /* The hamburger menu will replace the row-menu at 700px */

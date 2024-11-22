@@ -48,7 +48,7 @@ a {
     text-decoration: underline;
     text-decoration-color: var(--primary-color);
     text-decoration-thickness: 2px;
-    color: var(--text-color);
+    color: blue;
     line-height: 1.5rem;
 }
 
@@ -60,6 +60,9 @@ a:visited {
 }
 
 .black-underline-link:visited {
+    color: var(--text-color);
+}
+.black-underline-link {
     color: var(--text-color);
 }
 

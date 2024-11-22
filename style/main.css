@@ -68,7 +68,6 @@ a:visited {
 }
 .black-underline-link {
     color: var(--text-color);
-    font-size: 1.25rem;
 }
 
 /*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
@@ -150,6 +149,7 @@ header {
         display: block;
         background-image: url(../media/menu.svg); /* This hamburger menu icon is from https://fonts.google.com/icons */
         background-size: cover;
+        filter: brightness(0);
         height: 40px;
         width: 40px;
     }
@@ -218,7 +218,7 @@ summary {
     font-size: 1rem;
     font-weight: 600;
     color: #333;
-    background-color: #ebdd90;
+    background-color: #ffdc9e;
     border-bottom: 1px solid #ddd;
     display: flex;
     transition: background-color 0.2s ease-in-out;

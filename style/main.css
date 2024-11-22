@@ -250,6 +250,7 @@ details > *:not(summary) {
 
 details img {padding: 15px 15px 0 15px;}
 details p {padding: 0 15px 0 15px}
+figcaption {padding-bottom: 0 10px;}
 
 
 /*main img {

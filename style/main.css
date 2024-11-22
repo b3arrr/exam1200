@@ -180,7 +180,6 @@ main {
     width: 100%;
     max-width: 800px;
     text-wrap: balance;
-    margin-top: 10px;
     border: solid rgba(0, 0, 0, 0.252);
     border-width: 0px 0px 1px;
 }

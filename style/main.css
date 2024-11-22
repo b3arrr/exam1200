@@ -83,6 +83,10 @@ ul li { /* Trengs det her å legge ul og?*/
     margin: 15px;
 }
 
+list-decoration li::before {
+    color: var(--primary-color);
+}
+
 /*targets bullet points to style
 .list-decoration li {
     margin: 10px;
@@ -91,11 +95,12 @@ ul li { /* Trengs det her å legge ul og?*/
     content: "▲";
     color: var(--primary-color);
     padding: 10px;
-    transition: transform 0.3s;
-}*/
+    
+} */
 
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
+    max-height: 100%
 }
 
 /* Header specific styling*/
@@ -134,9 +139,25 @@ header {
     }
 }
 
-.menu-content li {
-    padding-right: 4rem;
+.menu-content li a {
+    /*makes buttons for the header menu when not in mobile version*/
+    padding: 20px;
+    margin: 0px 20px;
+    border: 2px solid rgba(253, 188, 104, 0.774); /*adds subtle borde to highlight the edges*/ 
+    background-color:#ffae22;
+    border-radius: 6px; 
+    text-align: center; 
+    box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.089);
+    text-decoration: none; 
+    transition: background-color 0.2s ease, color 0.2s ease; 
+    cursor: pointer; 
 }
+.menu-content li a:hover {
+    /*enables interactivity when hovering the button*/
+    background-color: white;
+    color: rgb(231, 150, 0); 
+}
+
 
 @media (max-width: 760px) {
     /* The hamburger menu will replace the row-menu at 700px */
@@ -148,9 +169,25 @@ header {
         right: 0;
         left: auto;
     }
+    .menu-content li a {
+        /* Remove the button-like appearance for the hamburger menu */
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        text-decoration: underline; 
+    }
+    .menu-content li a:hover {
+        /* Minimal hover effect for mobile */
+        background-color: transparent;
+        color: var(--primary-color);
+        text-decoration: none;
+    }
     .menu-content {
         position: sticky;
-        padding-left: 0px;
+        z-index: 1; /* Ensure it's in front of other content*/
         list-style: none;
     }
     .menu-icon {
@@ -194,6 +231,13 @@ main {
     gap: 30px;
     flex-wrap: wrap;
 }
+/*Reduce margin for the content when entering mobile*/
+@media (max-width: 1200px) {
+    main {
+        margin: 0 8% 30px;
+    }
+}
+
 
 /*Styling for course information on index-page*/
 .main-section-container {
@@ -277,12 +321,6 @@ figcaption {padding-bottom: 0 10px;}
     }
 }
 
-/*Reduce margin for the content when entering mobile*/
-@media (max-width: 1200px) {
-    main {
-        margin: 0 8%;
-    }
-}
 
 .topic-group li {
     border: 1px solid #a2a2a2; /* Contrast ratio of 8.23:1 with black text, follows WCAG 2.1 AA. */
@@ -608,12 +646,14 @@ aside {
 
 .img-leader {
     max-width: 190px;
+    height: auto;
     padding-top: 25px;
     padding-right: 30px;
 }
 
 .img-story {
     max-width: 100%;
+    height: auto;
     padding-top: 25px;
 }
 

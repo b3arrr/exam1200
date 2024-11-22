@@ -203,6 +203,10 @@ main {
     border: solid rgba(0, 0, 0, 0.252);
     border-width: 0px 0px 2px;
 }
+
+article.main-section-box { /* Annen måte å gjøre det på?*/
+    padding: 10px;
+}
 details {
     max-width: 500px;
     border: 1px solid #ddd;
@@ -236,9 +240,12 @@ details > *:not(summary) {
     line-height: 1.5rem;
 }
 
-main img {
+details img {padding: 15px 15px 0 15px;}
+details p {padding: 0 15px 0 15px}
+
+/*main img {
     margin-top: 40px;
-}
+} Måtte kommentere ut fordi det påvirket margin av bildene i toggle boksene. La inn en klasse som den for forsidebildet til activitypage i forsidebildet til index*/
 
 /* Used @media to help with scaling of the info-box. */
 .page-header-container {
@@ -308,8 +315,9 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
 }
 
 .intro-image {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    margin-top: 40px;
 }
 
 .info {

@@ -76,7 +76,14 @@ a:visited {
 ul li { /* Trengs det her å legge ul og?*/
     list-style: none;
 }
-/*targets bullet points to style*/
+
+.list-decoration li {
+    list-style-position: outisde;
+    list-style: square;
+    margin: 15px;
+}
+
+/*targets bullet points to style
 .list-decoration li {
     margin: 10px;
 }
@@ -85,7 +92,7 @@ ul li { /* Trengs det her å legge ul og?*/
     color: var(--primary-color);
     padding: 10px;
     transition: transform 0.3s;
-}
+}*/
 
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/

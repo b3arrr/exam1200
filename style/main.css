@@ -69,6 +69,8 @@ a:visited {
 }
 .black-underline-link {
     color: var(--text-color);
+    font-size: 1.25rem; 
+
 }
 
 /*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
@@ -106,8 +108,9 @@ header {
 
 #oslomet-logo {
     position: absolute;
-    max-width: 90px;
-    left: 0
+    max-width: 80px;
+    margin: 0px 10px;
+    left: 0;
 }
 
 /* Hamburger menu without javascript. The code is taken from the lecturer's tutorial of hamburger menu */
@@ -116,7 +119,7 @@ header {
     display: none;
 } /* Hides the checkbox, which makes the menu toggle clickable without javascript */
 
-@media (min-width: 721px) {
+@media (min-width: 761px) {
     .menu-content {
         display: flex;
         justify-content: space-evenly;
@@ -129,7 +132,7 @@ header {
     
 }
 
-@media (max-width: 720px) {
+@media (max-width: 760px) {
     /* The hamburger menu will replace the row-menu at 700px */
     header {
         /*Ensure the hamburge menu will be on the left side when below 700px*/

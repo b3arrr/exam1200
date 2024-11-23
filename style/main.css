@@ -511,9 +511,7 @@ footer li {
 
 /* CSS FOR ACTIVITY PAGE*/
 
-/* Using inspiration 
-and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
-
+/* Using inspiration and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
 .activity-page {
     background-color: #b9d17e;
 }
@@ -524,6 +522,12 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
+}
+
+.intro-text {
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
 }
 
 /* Styling for images inside the field boxes */
@@ -557,11 +561,6 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     border-radius: 5px;
 }
 
-.intro-text {
-    position: relative;
-    text-align: center;
-    padding-top: 30px;
-}
 .information-box h2 {
     align-items: center;
     text-align: center;
@@ -575,15 +574,6 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     padding: 0 20px 10px 20px;
 }
 
-/* Only activates when the screens width is 768px or less */
-@media (max-width: 768px) {
-    .information-box {
-        flex: 1 1 90%;
-        padding: 0 15px 10px;
-        margin: 5px auto;
-    }
-}
-
 /* Styling for the buttons link */
 .link-button {
     text-decoration: none;
@@ -595,10 +585,6 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     border-radius: 25px;
     margin-bottom: 15px;
 }
-/* Wrapper for position of the button links */
-.link-button {
-    margin-top: auto;
-}
 
 /* Hover effect for the button links */
 .link-button:hover {
@@ -607,16 +593,6 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     text-decoration: underline;
 }
 
-/* Styling for the main heading in the bottom section*/
-.main-heading {
-    margin-bottom: 15px;
-}
-
-/* Styling for introducton text in bottom section*/
-.intro-text {
-    max-width: 880px;
-    margin: 0 auto;
-}
 /* Styling for the individual field boxes*/
 .field-box {
     display: flex;
@@ -640,6 +616,12 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     text-align: center;
     padding: 20px;
 }
+
+/* Styling for introducton text in bottom section*/
+.field-section p {
+    max-width: 880px;
+}
+
 /* Styling to make container for all field boxes*/
 .container-field {
     padding: 50px 0;

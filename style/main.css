@@ -511,44 +511,68 @@ footer li {
 
 /* CSS FOR ACTIVITY PAGE*/
 
-/* Styled the hero heading for a visually appealing. 
-Using inspiration and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp */
-.intro-section {
-    position: relative;
-    text-align: center;
+/* Using inspiration 
+and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
+
+.activity-page {
+    background-color: #b9d17e;
 }
 
 .intro-image {
-    max-width: 100%;
-    height: auto;
     margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+/* Styling for images inside the field boxes */
+.img-fotball {
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 .info {
-    overflow: hidden;
-    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-evenly;
-    row-gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    row-gap: 15px;
     padding: 40px;
     box-sizing: border-box;
 }
 
 /* Gives the informaton box a background effect making it easier to see the boxes */
 .information-box {
-    flex: 1 1 30%;
-
-    max-width: 400px;
     display: flex;
+    flex: auto;
     flex-direction: column;
     align-items: center;
+    max-width: 450px;
     margin: 10px; /*sett 20px til 10px for at boksene skal være ved siden av hverandre*/
     background-color: #f9f9f9;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
     padding: 10px;
     border-radius: 5px;
+}
+
+.intro-text {
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+}
+.information-box h2 {
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+.information-box p {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px 10px 20px;
 }
 
 /* Only activates when the screens width is 768px or less */
@@ -560,22 +584,6 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     }
 }
 
-.img-illustration {
-    width: 100%;
-    height: auto;
-    max-width: 350px;
-    object-fit: cover;
-    display: block;
-}
-
-.information {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 /* Styling for the buttons link */
 .link-button {
     text-decoration: none;
@@ -585,7 +593,7 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     padding: 10px 15px;
     color: black !important; /* Ensures the text is black regardless of parent styles. Source: https://www.w3schools.com/css/css_important.asp */
     border-radius: 25px;
-    font-size: 0.7rem;
+    margin-bottom: 15px;
 }
 /* Wrapper for position of the button links */
 .link-button {
@@ -597,21 +605,6 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     cursor: pointer;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     text-decoration: underline;
-}
-
-
-
-
-/* CSS FRA MANDI*/
-
-/* Styling for the field section container */
-.field-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
 }
 
 /* Styling for the main heading in the bottom section*/
@@ -637,6 +630,16 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
+
+/* Styling for the field section container */
+.field-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
 /* Styling to make container for all field boxes*/
 .container-field {
     padding: 50px 0;
@@ -649,21 +652,14 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     row-gap: 30px;
     margin-bottom: 20px;
 }
-/* Styling for images inside the field boxes */
-.img-field {
-    height: auto;
-    border-radius: 10px;
-    width: 100%; /* or max-width: 100%; */
-}
+
 /* Styling for headings inside the field boxes */
 .info-heading {
-    font-size: 1.2rem;
     margin: 10px 0;
 }
 
 /* Styling for the description text inside the field boxes */
 .info-description {
-    font-size: 0.9rem;
     margin: 10px 0;
     color: #222;
 }
@@ -681,7 +677,6 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     /* Styling for the text about fields in Oslo */
 }
 .field-text {
-    font-size: 1rem;
     color: #000000;
 }
 /* Responsive styling for mobile devices */
@@ -689,10 +684,12 @@ Using inspiration and code examples from: https://www.w3schools.com/howto/howto_
     .info-box {
         max-width: 100%; /* Full width on smaller screens */
     }
+
     .container {
         flex-direction: column;
         gap: 15px;
     }
+
     .info.box {
         max-width: 100%;
         padding: 20px;

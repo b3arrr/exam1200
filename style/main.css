@@ -76,16 +76,15 @@ a:visited {
 ul li { /* Trengs det her å legge ul og?*/
     list-style: none;
 }
-
+.list-decoration {
+    word-break: break-word; /* Handle word breaking */
+}
 .list-decoration li {
-    list-style-position: outisde;
+    list-style-position: outside;
     list-style: square;
     margin: 15px;
 }
 
-list-decoration li::before {
-    color: var(--primary-color);
-}
 
 /*targets bullet points to style
 .list-decoration li {

@@ -24,15 +24,6 @@ body {
     background-color: var(--background);
 }
 
-/*Gives the text color for these elements (h1,h2,h3) the color of -> variable --text-color */
-p,
-h2,
-h3 {
-    color: var(--text-color);
-    margin: 15px 0px;
-    line-height: 1.5rem;
-}
-
 h1 {
     color: var(--text-color);
     font-weight: 800;
@@ -40,6 +31,15 @@ h1 {
     margin: 20px auto 0px;
     border: solid rgba(0, 0, 0, 0.252);
     border-width: 0px 0px 2px;
+}
+
+/*Gives the text color for these elements (h1,h2,h3) the color of -> variable --text-color */
+p,
+h2,
+h3 {
+    color: var(--text-color);
+    margin: 15px 0px;
+    line-height: 1.5rem;
 }
 
 /* Used to apply bold styling to an element, without indicating a higher level of importance like the <strong> element. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
@@ -73,23 +73,22 @@ a:visited {
 /*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
 
 ul li {
+    /* Trengs det her å legge ul og?*/
     list-style: none;
 }
-/*targets bullet points to style*/
+.list-decoration {
+    word-break: break-word; /* Handle word breaking */
+}
 .list-decoration li {
-    margin: 10px;
+    list-style-position: outside;
+    list-style: square;
+    margin: 15px;
 }
-.list-decoration li::before {
-    content: "▲";
-    color: var(--primary-color);
-    padding: 10px;
-    transition: transform 0.3s;
-}
-
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
+    box-sizing: border-box;
+    max-height: fit-content;
 }
-
 /* Header specific styling*/
 
 header {
@@ -126,8 +125,23 @@ header {
     }
 }
 
-.menu-content li {
-    padding-right: 4rem;
+.menu-content li a {
+    /*makes buttons for the header menu when not in mobile version*/
+    padding: 20px;
+    margin: 0px 20px;
+    border: 2px solid rgba(253, 188, 104, 0.774); /*adds subtle borde to highlight the edges*/
+    background-color: #ffae22;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.089);
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+.menu-content li a:hover {
+    /*enables interactivity when hovering the button*/
+    background-color: white;
+    color: rgb(231, 150, 0);
 }
 
 @media (max-width: 760px) {
@@ -140,9 +154,25 @@ header {
         right: 0;
         left: auto;
     }
+    .menu-content li a {
+        /* Remove the button-like appearance for the hamburger menu */
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        text-decoration: underline;
+    }
+    .menu-content li a:hover {
+        /* Minimal hover effect for mobile */
+        background-color: transparent;
+        color: var(--primary-color);
+        text-decoration: none;
+    }
     .menu-content {
         position: sticky;
-        padding-left: 0px;
+        z-index: 1; /* Ensure it's in front of other content*/
         list-style: none;
     }
     .menu-icon {
@@ -180,13 +210,18 @@ header {
 
 /*Styling main*/
 main {
+    /*overall margin for the main */
     margin: 0 15% 30px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
     flex-wrap: wrap;
 }
-
+/*Reduce margin for the content when entering mobile*/
+@media (max-width: 1200px) {
+    main {
+        margin: 0 8% 30px;
+    }
+}
 /*Styling for course information on index-page*/
 .main-section-container {
     display: flex;
@@ -199,10 +234,10 @@ main {
     padding: 30px 0px 30px;
     width: 100%;
     max-width: 800px;
-    text-wrap: balance;
     border: solid rgba(0, 0, 0, 0.252);
     border-width: 0px 0px 2px;
 }
+
 details {
     max-width: 500px;
     border: 1px solid #ddd;
@@ -210,14 +245,14 @@ details {
     margin: 10px 0;
     background-color: #f9f9f9;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 summary {
     cursor: pointer;
     padding: 20px;
     font-size: 1rem;
-    font-weight: 600;
-    color: #333;
+    font-weight: bold;
+    color: var(--text-color);
     background-color: #ffdc9e;
     border-bottom: 1px solid #ddd;
     display: flex;
@@ -228,7 +263,7 @@ summary:hover {
     background-color: #ffffff;
 }
 
-/*This applies the styling to the details element, but excludes it's child summary. */
+/*This applies the styling to the details element, but excludes it's child "summary". */
 details > *:not(summary) {
     padding: 15px;
     font-size: 0.9rem;
@@ -236,9 +271,18 @@ details > *:not(summary) {
     line-height: 1.5rem;
 }
 
-main img {
-    margin-top: 40px;
+details img {
+    padding: 15px 15px 0 15px;
+    /*border box ensures that the padding and margin and dimensions are calculated together, resolving issue of the image going outside of its parent container boundaries*/
+    box-sizing: border-box;
 }
+details p {
+    padding: 0 15px 0 15px;
+}
+figcaption {
+    padding-bottom: 0 10px;
+}
+
 
 /* Used @media to help with scaling of the info-box. */
 .page-header-container {
@@ -257,13 +301,6 @@ main img {
     .page-header-container {
         gap: 30px;
         flex-direction: column;
-    }
-}
-
-/*Reduce margin for the content when entering mobile*/
-@media (max-width: 1200px) {
-    main {
-        margin: 0 8%;
     }
 }
 
@@ -591,16 +628,20 @@ aside {
 
 .img-leader {
     max-width: 190px;
+    height: auto;
     padding-top: 25px;
     padding-right: 30px;
 }
 
 .img-story {
     max-width: 100%;
+    height: auto;
     padding-top: 25px;
 }
 
-/* FOOTER STARTS HERE */
+/*ASIDE ENDS HERE*/
+
+/*FOOTER STARTS HERE*/
 
 footer {
     max-width: 100%;
@@ -652,3 +693,195 @@ footer li {
 
 /* FOOTER ENDS HERE*/
 
+
+
+
+/* CSS FOR ACTIVITY PAGE*/
+
+/* Styled the hero heading for a visually appealing. 
+Using inspiration and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp */
+.intro-section {
+    position: relative;
+    text-align: center;
+}
+
+.intro-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.info {
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    row-gap: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Gives the informaton box a background effect making it easier to see the boxes */
+.information-box {
+    flex: 1 1 30%;
+
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; /*sett 20px til 10px for at boksene skal være ved siden av hverandre*/
+    background-color: #f9f9f9;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Only activates when the screens width is 768px or less */
+@media (max-width: 768px) {
+    .information-box {
+        flex: 1 1 90%;
+        padding: 0 15px 10px;
+        margin: 5px auto;
+    }
+}
+
+.img-illustration {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.information {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the buttons link */
+.link-button {
+    text-decoration: none;
+    border: initial;
+    background-color: initial;
+    background-color: #60bdff;
+    padding: 10px 15px;
+    color: black !important; /* Ensures the text is black regardless of parent styles. Source: https://www.w3schools.com/css/css_important.asp */
+    border-radius: 25px;
+    font-size: 0.7rem;
+}
+/* Wrapper for position of the button links */
+.link-button {
+    margin-top: auto;
+}
+
+/* Hover effect for the button links */
+.link-button:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    text-decoration: underline;
+}
+
+
+
+
+/* CSS FRA MANDI*/
+
+/* Styling for the field section container */
+.field-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for the main heading in the bottom section*/
+.main-heading {
+    margin-bottom: 15px;
+}
+
+/* Styling for introducton text in bottom section*/
+.intro-text {
+    max-width: 880px;
+    margin: 0 auto;
+}
+/* Styling for the individual field boxes*/
+.field-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 225px;
+    width: 100%;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+/* Styling to make container for all field boxes*/
+.container-field {
+    padding: 50px 0;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: center;
+    row-gap: 30px;
+    margin-bottom: 20px;
+}
+/* Styling for images inside the field boxes */
+.img-field {
+    height: auto;
+    border-radius: 10px;
+    width: 100%; /* or max-width: 100%; */
+}
+/* Styling for headings inside the field boxes */
+.info-heading {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Styling for the description text inside the field boxes */
+.info-description {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    color: #222;
+}
+
+/* Styling for the extra information about fields in Oslo */
+.field-information {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #60bdff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    /* Styling for the text about fields in Oslo */
+}
+.field-text {
+    font-size: 1rem;
+    color: #000000;
+}
+/* Responsive styling for mobile devices */
+@media (max-width: 768px) {
+    .info-box {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .info.box {
+        max-width: 100%;
+        padding: 20px;
+    }
+}

@@ -255,9 +255,6 @@ main {
     border-width: 0px 0px 2px;
 }
 
-article.main-section-box { /* Annen måte å gjøre det på?*/
-    padding: 10px;
-}
 details {
     max-width: 500px;
     border: 1px solid #ddd;

@@ -86,7 +86,8 @@ ul li {
 }
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
-    max-height: 100%;
+    box-sizing: border-box;
+    max-height: fit-content;
 }
 /* Header specific styling*/
 
@@ -282,9 +283,6 @@ figcaption {
     padding-bottom: 0 10px;
 }
 
-/*main img {
-    margin-top: 40px;
-} Måtte kommentere ut fordi det påvirket margin av bildene i toggle boksene. La inn en klasse som den for forsidebildet til activitypage i forsidebildet til index*/
 
 /* Used @media to help with scaling of the info-box. */
 .page-header-container {

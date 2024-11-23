@@ -515,7 +515,7 @@ footer li {
 and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
 
 .activity-page {
-    background-color: #CCE490;
+    background-color: #b9d17e;
 }
 
 .intro-image {
@@ -524,6 +524,12 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
+}
+
+/* Styling for images inside the field boxes */
+.img-fotball {
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
 .info {
@@ -551,34 +557,22 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     border-radius: 5px;
 }
 
-/* Styling for images inside the field boxes */
-.img-fotball {
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-/* Styling for the field section container */
-.field-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.intro-text {
+    position: relative;
     text-align: center;
-    padding: 20px;
+    padding-top: 30px;
 }
-
 .information-box h2 {
     align-items: center;
     text-align: center;
     padding-top: 10px;
-    outline: 1px solid red;
 }
 .information-box p {
     flex-grow: 1;
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 0 20px 0 20px;
+    padding: 0 20px 10px 20px;
 }
 
 /* Only activates when the screens width is 768px or less */
@@ -590,7 +584,6 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     }
 }
 
-
 /* Styling for the buttons link */
 .link-button {
     text-decoration: none;
@@ -600,7 +593,7 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     padding: 10px 15px;
     color: black !important; /* Ensures the text is black regardless of parent styles. Source: https://www.w3schools.com/css/css_important.asp */
     border-radius: 25px;
-    font-size: 0.7rem;
+    margin-bottom: 15px;
 }
 /* Wrapper for position of the button links */
 .link-button {
@@ -636,6 +629,16 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling for the field section container */
+.field-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 /* Styling to make container for all field boxes*/
 .container-field {

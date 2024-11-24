@@ -41,7 +41,7 @@ h1 {
     color: var(--text-color);
     font-weight: 800;
     text-align: center;
-    margin: 20px auto 20px;
+    margin: 35px auto 20px;
     border: solid rgba(0, 0, 0, 0.252);
     border-width: 0px 0px 2px;
 }
@@ -248,13 +248,13 @@ main {
 }
 /*Stling for each specific section */
 .main-section-box {
-    padding: 30px 0px 30px;
+    padding: 0px 0px 50px;
+    margin: 30px 0px;
     width: 100%;
     max-width: 800px;
     border: solid rgba(0, 0, 0, 0.252);
     border-width: 0px 0px 2px;
 }
-
 .main-section-top {
     padding: 10px 0px 60px;
     text-align: center;

@@ -516,6 +516,16 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
 /* The color pairings follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. https://venngage.com/tools/accessible-color-palette-generator */
 .activity-page {
     background-color: #5f83af;
+    background-color: #a0b4d0;
+    background-color: #eab02f;
+    background-color: #f4cf96;
+    background-color: #afda96;
+    background-color: #DDFFBC;
+    background-color: #5F8D4E;
+    background-color: #B6E388;
+    background-color: #C5D8A4;
+    background-color: #ACB992;
+    background-color: #9EDF9C;
 }
 
 .intro-image {
@@ -527,11 +537,12 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
 }
 
 .intro-text {
+    background-color: #f9f9f9;
     border: solid, black;
     border: 2px solid;
     padding: 10px;
     box-shadow: 6px 4px 8px;
-    border-image: repeating-linear-gradient(to bottom right, #3d7452, #cc1400, #9977ff,rgb(89, 164, 255)) 20;
+    border-image: repeating-linear-gradient(to bottom right,#cc1400, #9977ff,rgb(89, 164, 255)) 20;
     margin: auto;
     text-align: center;
     max-width: 890px;
@@ -643,9 +654,15 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     max-width: 850px;
     margin: auto;
     padding: 20px;
-    background-color: #60bdff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: solid;
+    box-shadow: 6px 4px 8px;
+    background-color: #f9f9f9;
+    border-image: repeating-linear-gradient( /* Inspiration from https://www.w3schools.com/cssref/func_repeating-linear-gradient.php */
+        to bottom right,
+        #cc1400,
+        #9977ff,
+        rgb(89, 164, 255)
+    ) 20;
     text-align: center;
     /* Styling for the text about fields in Oslo */
 }

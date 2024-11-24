@@ -1,28 +1,25 @@
-/*Stores variable colors in root to be re-used in the project*/
-:root {
-    --background: #ffffff;
-    --primary-color: #ffaa18;
-    --text-color: #000000;
-}
+/* Sorted the CSS after recommendations from: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing
+By searching "||", you can jump to different parts of the stylesheet */ 
 
-/*Define what font and font size to be used in the project (inside the <html> element)*/
+/* || GENERAL STYLES - Default styling */
+
+/*Defines what font and font size to be used in the project (inside the <html> element)
+Based on the 'WCAG Guideline 1.4 Distinguishable, these fonts fulfills the requirement the best, 
+info from https://www.accessibilitychecking.com/blog/fonts-accessibility/#stk-5 */
 html {
     font-family: Arial, "Times New Roman", Calibri, Helvetica, Verdana,
-        sans-serif; /* Based on the 'WCAG Guideline 1.4 Distinguishable'
-    these fonts fulfills the requirement the best, info from https://www.accessibilitychecking.com/blog/fonts-accessibility/#stk-5 */
+        sans-serif; 
     font-size: 1rem;
 }
 
-/*Remove all default margin and padding for all elements, this gives precise control  */
+/* Remove all default margin and padding for all elements, this gives precise control */
 * {
     margin: 0;
     padding: 0;
 }
 
 /*Gives the background color of the document the color of -> variable --background*/
-body {
-    background-color: var(--background);
-}
+body {background-color: var(--background);}
 
 h1 {
     color: var(--text-color);
@@ -71,28 +68,13 @@ a:visited {
     color: var(--text-color);
 }
 
-/*li {list-style: none;} /* Removes all bullet points. Text that need bullet points have the class "bullet-points" */
+/* Used to apply bold styling to an element, without indicating 
+a higher level of importance like the <strong> element. 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
+.bold-text {font-weight: bold;}
+/* END*/
 
-ul li {
-    /* Trengs det her å legge ul og?*/
-    list-style: none;
-}
-.list-decoration {
-    word-break: break-word; /* Handle word breaking */
-}
-.list-decoration li {
-    list-style-position: outside;
-    list-style: square;
-    margin: 15px;
-}
-
-img {
-    max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
-    box-sizing: border-box;
-    max-height: fit-content;
-}
-/* Header specific styling*/
-
+/* || STYLING OF HEADER AND NAV BAR */
 header {
     max-width: 100%;
     display: flex;
@@ -114,10 +96,7 @@ header {
 }
 
 /* Hamburger menu without javascript. The code is taken from the lecturer's tutorial of hamburger menu */
-
-#menu-toggle {
-    display: none;
-} /* Hides the checkbox, which makes the menu toggle clickable without javascript */
+#menu-toggle {display: none;} /* Hides the checkbox, which makes the menu toggle clickable without javascript */
 
 @media (min-width: 761px) {
     .menu-content {
@@ -140,24 +119,24 @@ header {
     transition: background-color 0.2s ease, color 0.2s ease;
     cursor: pointer;
 }
+
+/*Enables interactivity when hovering the button*/
 .menu-content li a:hover {
-    /*enables interactivity when hovering the button*/
     background-color: white;
     color: rgb(231, 150, 0);
 }
 
+/* The hamburger menu will replace the row-menu at 700px */
 @media (max-width: 760px) {
-    /* The hamburger menu will replace the row-menu at 700px */
-    header {
-        /*Ensure the hamburge menu will be on the left side when below 700px*/
-        justify-content: left;
-    }
+    header {justify-content: left;} /*Ensure the hamburge menu will be on the left side when below 700px*/
+    
     #oslomet-logo {
         right: 0;
         left: auto;
     }
+
+    /* Remove the button-like appearance for the hamburger menu */
     .menu-content li a {
-        /* Remove the button-like appearance for the hamburger menu */
         padding: 0;
         margin: 0;
         border: none;
@@ -166,12 +145,14 @@ header {
         border-radius: 0;
         text-decoration: underline;
     }
+
+    /* Minimal hover effect for mobile */
     .menu-content li a:hover {
-        /* Minimal hover effect for mobile */
         background-color: transparent;
         color: var(--primary-color);
         text-decoration: none;
     }
+
     .menu-content {
         display: none; 
         position: absolute; 
@@ -184,9 +165,9 @@ header {
         z-index: 1; /*Ensures that the menu is in front of other contents*/
     }
 
-    #menu-toggle:checked ~ .menu-content {
-        display: block; /* Show the menu when checkbox is checked */
-    }
+    /* Show the menu when checkbox is checked */
+    #menu-toggle:checked ~ .menu-content {display: block;} 
+    
     .menu-icon {
         display: block;
         background-image: url(../media/menu.svg); /* This hamburger menu icon is from https://fonts.google.com/icons */
@@ -196,9 +177,7 @@ header {
         width: 40px;
     }
 
-    .dropdown.container {
-        cursor: pointer;
-    }
+    .dropdown.container {cursor: pointer;}
 
     .menu-content li {
         height: 0px;
@@ -217,7 +196,9 @@ header {
         height: 40px;
     }
 }
+/* END */
 
+/* || STYLING OF MAIN */
 /*Styling main*/
 main {
     /*overall margin for the main */
@@ -226,12 +207,14 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 /*Reduce margin for the content when entering mobile*/
 @media (max-width: 1200px) {
     main {
         margin: 0 3% 30px;
     }
 }
+
 /*Styling for course information on index-page*/
 .main-section-container {
     display: flex;
@@ -247,6 +230,7 @@ main {
     border: solid rgba(0, 0, 0, 0.252);
     border-width: 0px 0px 2px;
 }
+
 .main-section-top {
     padding: 10px 0px 60px;
     text-align: center;
@@ -255,7 +239,49 @@ main {
     border: solid rgb(0, 0, 0);
     border-width: 0px 0px 1px;
 }
+/* END */
 
+/* || STYLING OF LINKS */
+/*Gives all links a blue underline with a 2px thickness*/
+a {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 2px;
+    color: blue;
+    line-height: 1.5rem;
+}
+
+a:hover {text-decoration-color: black;}
+a:visited {color: rgb(134, 0, 146);}
+
+.black-underline-link {color: var(--text-color);}
+.black-underline-link:visited {color: var(--text-color);}
+/* END */
+
+/* || STYLING OF LISTS */
+li {list-style: none;}
+
+.list-decoration {
+    word-break: break-word; /* Handle word breaking */
+}
+.list-decoration li {
+    list-style-position: outside;
+    list-style: square;
+    margin: 15px;
+}
+/* END */
+
+/* || STYLING OF IMAGES */
+img {
+    max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
+    box-sizing: border-box;
+    max-height: fit-content;
+}
+
+figcaption {padding-bottom: 0 10px;}
+/* END */
+
+/* || STYLING OF INFORMATION TOGGLE */
 details {
     max-width: 500px;
     border: 1px solid #ddd;
@@ -277,9 +303,7 @@ summary {
     transition: background-color 0.2s ease-in-out;
 }
 
-summary:hover {
-    background-color: #ffffff;
-}
+summary:hover {background-color: #ffffff;}
 
 /*This applies the styling to the details element, but excludes it's child "summary". */
 details > *:not(summary) {
@@ -294,127 +318,10 @@ details img {
     /*border box ensures that the padding and margin and dimensions are calculated together, resolving issue of the image going outside of its parent container boundaries*/
     box-sizing: border-box;
 }
-details p {
-    padding: 0 15px 0 15px;
-}
-figcaption {
-    padding-bottom: 0 10px;
-}
+details p {padding: 0 15px 0 15px;}
+/* END */
 
-
-/* Used @media to help with scaling of the info-box. */
-.page-header-container {
-    background-color: #eaeaea; /* Contrast ratio of 17.46:1 with black text, follows WCAG 2.1 AA. Checked the contrast ratio with https://venngage.com/tools/accessible-color-palette-generator. */
-    display: flex;
-    padding: 30px;
-    text-align: left;
-    margin-bottom: -20px;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
-    max-width: 100%;
-}
-
-@media (max-width: 1031px) {
-    .page-header-container {
-        gap: 30px;
-        flex-direction: column;
-    }
-}
-
-.topic-group li {
-    border: 1px solid #a2a2a2; /* Contrast ratio of 8.23:1 with black text, follows WCAG 2.1 AA. */
-    padding: 15px;
-    background-color: #eaeaea;
-    border-radius: 5px;
-    width: fit-content;
-}
-
-table {
-    width: 100%;
-    background: #eaeaea;
-    border-collapse: collapse;
-}
-th,
-td {
-    border: 1px solid;
-    padding: 10px;
-    text-align: center;
-}
-th {
-    background-color: #d3d3d3; /* Contrast ratio of #D3D3D3 with black text, follows WCAG 2.1 AA */
-}
-
-/* adding margin on top and bottom, to give some spacing between sections */
-
-.address {
-    font-style: normal;
-    padding: 5px 5px 0px 0px;
-    line-height: 1.5rem;
-}
-
-
-/* Styled the table so that it is easier for the user to know where they are on the table. 
-For example, having different colors on the rows 
-Code used in https://www.w3schools.com/css/css_table.asp*/
-
-.info-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.info-table td,
-.info-table th {
-    border: 1px solid #ddd;
-    padding: 15px;
-}
-
-.info-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-/* Mobile responsiveness tables */
-/*Inspired technique retrieved from https://codepen.io/AllThingsSmitty/pen/MyqmdM*/
-@media (max-width: 820px) {
-    td {
-        display: block;
-        text-align: right;
-    }
-
-    th {
-        display: none;
-    }
-
-    table td[rowspan] {
-        font-weight: bold;
-    }
-
-    .mobile-header-color {
-        background-color: rgb(211, 211, 211);
-    }
-
-    .mobile-tr {
-        border-top: 1.4rem solid #ffffff;
-        margin-top: 0.2rem;
-        display: block;
-    }
-    table td[data-label]::before {
-        content: attr(data-label) ":  ";
-        font-weight: bold;
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        float: left;
-    }
-}
-
-caption {
-    text-align: left;
-    padding: 20px 10px 10px 0;
-    margin-top: 10px;
-}
-
-/* ASIDE STARTS HERE*/
+/* || STYLING OF ASIDE */
 
 aside {
     background-color: #fdbf60;
@@ -454,26 +361,10 @@ aside {
     }
 }
 
-.info-aside:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+.info-aside:hover {box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+/* END*/
 
-.img-leader {
-    max-width: 190px;
-    height: auto;
-    padding-top: 25px;
-    padding-right: 30px;
-}
-
-.img-story {
-    max-width: 100%;
-    height: auto;
-    padding-top: 25px;
-}
-
-/*ASIDE ENDS HERE*/
-
-/*FOOTER STARTS HERE*/
+/* || STYLING OF FOOTER*/
 
 footer {
     max-width: 100%;
@@ -523,13 +414,127 @@ footer li {
     margin-right: 12px;
 }
 
-/* FOOTER ENDS HERE*/
+.address {
+    font-style: normal;
+    padding: 5px 5px 0px 0px;
+    line-height: 1.5rem;
+}
+/* END */
+
+/* || STYLING OF INDEX */
+/* Used @media to help with scaling of the info-box. */
+.page-header-container {
+    background-color: #eaeaea; /* Contrast ratio of 17.46:1 with black text, follows WCAG 2.1 AA. Checked the contrast ratio with https://venngage.com/tools/accessible-color-palette-generator. */
+    display: flex;
+    padding: 30px;
+    margin-bottom: -20px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 100%;
+}
+
+@media (max-width: 1031px) {
+    .page-header-container {
+        gap: 30px;
+        flex-direction: column;
+    }
+}
+
+/* Styling of tables in index page */
+table {
+    width: 100%;
+    background: #eaeaea;
+    border-collapse: collapse;
+}
+th,
+td {
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    background-color: #d3d3d3; /* Contrast ratio of #D3D3D3 with black text, follows WCAG 2.1 AA */
+}
 
 
-/* CSS FOR ACTIVITY PAGE*/
+/* Styled the table so that it is easier for the user to know where they are on the table. 
+For example, having different colors on the rows 
+Code used in https://www.w3schools.com/css/css_table.asp */
 
-/* Using inspiration 
-and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
+.info-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.info-table td,
+.info-table th {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.info-table tr:nth-child(even) {background-color: #f2f2f2;}
+
+/* Mobile responsiveness tables
+Inspired technique retrieved from https://codepen.io/AllThingsSmitty/pen/MyqmdM*/
+@media (max-width: 820px) {
+    td {
+        display: block;
+        text-align: right;
+    }
+
+    th {
+        display: none;
+    }
+
+    table td[rowspan] {
+        font-weight: bold;
+    }
+
+    .mobile-header-color {
+        background-color: rgb(211, 211, 211);
+    }
+
+    .mobile-tr {
+        border-top: 1.4rem solid #ffffff;
+        margin-top: 0.2rem;
+        display: block;
+    }
+    table td[data-label]::before {
+        content: attr(data-label) ":  ";
+        font-weight: bold;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        float: left;
+    }
+}
+
+caption {
+    text-align: left;
+    padding: 20px 10px 10px 0;
+    margin-top: 10px;
+}
+
+/* Styling of images in aside */
+.img-leader {
+    max-width: 190px;
+    height: auto;
+    padding-top: 25px;
+    padding-right: 30px;
+}
+
+.img-story {
+    max-width: 100%;
+    height: auto;
+    padding-top: 25px;
+}
+/* END */
+
+/* || STYLING OF ACTIVITY PAGE */
+
+/* Using inspiration and code examples from: 
+https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
 
 /* The color pairings follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. https://venngage.com/tools/accessible-color-palette-generator */
 .activity-page {
@@ -676,12 +681,10 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
         rgb(89, 164, 255)
     ) 20;
     text-align: center;
-    /* Styling for the text about fields in Oslo */
 }
 
-.field-text {
-    color: #000000;
-}
+.field-text {color: black;}
+
 /* Responsive styling for mobile devices */
 @media (max-width: 768px) {
     .info-box {
@@ -699,6 +702,7 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     }
 }
 
+/* || STYLING OF GITHUB PAGE */
 .main-section-box h4 {
     padding: 20px 0;
 }

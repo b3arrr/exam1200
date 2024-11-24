@@ -39,6 +39,13 @@ h3 {
     line-height: 1.5rem;
 }
 
+/*Stores variable colors in root to be re-used in the project*/
+:root {
+    --background: #ffffff;
+    --primary-color: #ffaa18;
+    --text-color: #000000;
+}
+
 /* Used to apply bold styling to an element, without indicating a higher level of importance like the <strong> element. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
 .bold-text {
     font-weight: bold;

@@ -531,17 +531,7 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
 
 /* The color pairings follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. https://venngage.com/tools/accessible-color-palette-generator */
 .activity-page {
-    background-color: #5f83af;
-    background-color: #a0b4d0;
-    background-color: #eab02f;
-    background-color: #f4cf96;
-    background-color: #afda96;
-    background-color: #DDFFBC;
-    background-color: #5F8D4E;
-    background-color: #B6E388;
     background-color: #C5D8A4;
-    background-color: #ACB992;
-    background-color: #9EDF9C;
 }
 
 .intro-image {
@@ -579,9 +569,13 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
     background-color: initial;
     background-color: #60bdff;
     padding: 10px 15px;
-    color: black !important; /* Ensures the text is black regardless of parent styles. Source: https://www.w3schools.com/css/css_important.asp */
+    color: black; /* Ensures the text is black regardless of parent styles. Source: https://www.w3schools.com/css/css_important.asp */
     border-radius: 25px;
     margin-bottom: 15px;
+}
+
+.link-button a {
+    color: black;
 }
 
 /* Hover effect for the button links */

@@ -50,7 +50,7 @@ h3 {
 /*Gives all links a yellow underline with a 2px thickness*/
 a {
     text-decoration: underline;
-    text-decoration-color: var(--primary-color);
+    text-decoration-color: blue;
     text-decoration-thickness: 2px;
     color: blue;
     line-height: 1.5rem;
@@ -61,6 +61,7 @@ a:hover {
 }
 a:visited {
     color: rgb(134, 0, 146);
+    text-decoration-color: rgb(134, 0, 146) ;
 }
 
 .black-underline-link:visited {
@@ -306,6 +307,7 @@ figcaption {
     background-color: #eaeaea; /* Contrast ratio of 17.46:1 with black text, follows WCAG 2.1 AA. Checked the contrast ratio with https://venngage.com/tools/accessible-color-palette-generator. */
     display: flex;
     padding: 30px;
+    text-align: left;
     margin-bottom: -20px;
     justify-content: space-evenly;
     flex-direction: row;

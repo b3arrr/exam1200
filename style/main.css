@@ -28,7 +28,7 @@ h1 {
     color: var(--text-color);
     font-weight: 800;
     text-align: center;
-    margin: 20px auto 0px;
+    margin: 20px auto 20px;
     border: solid rgba(0, 0, 0, 0.252);
     border-width: 0px 0px 2px;
 }
@@ -84,6 +84,7 @@ ul li {
     list-style: square;
     margin: 15px;
 }
+
 img {
     max-width: 100%; /* makes sure the image stays within the borders of its parent component*/
     box-sizing: border-box;
@@ -515,7 +516,7 @@ footer li {
 }
 
 .intro-image {
-    margin-top: 40px;
+    margin: 40px 0px 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;

@@ -606,7 +606,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
     background-color: initial;
     background-color: #60bdff;
     padding: 10px 15px;
-    color: black; /* Ensures the text is black regardless of parent styles. Source: https://www.w3schools.com/css/css_important.asp */
+    color: black;
     border-radius: 25px;
     margin-bottom: 15px;
 }

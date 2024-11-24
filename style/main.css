@@ -172,9 +172,19 @@ header {
         text-decoration: none;
     }
     .menu-content {
-        position: sticky;
-        z-index: 1; /* Ensure it's in front of other content*/
-        list-style: none;
+        display: none; 
+        position: absolute; 
+        top: 90px; /* Place it directly below the hamburger icon */
+        left: 25px; /*Use left to line it up with with the hamburger menu from the left side*/
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px 10px 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.61);
+        z-index: 1; /*Ensures that the menu is in front of other contents*/
+    }
+
+    #menu-toggle:checked ~ .menu-content {
+        display: block; /* Show the menu when checkbox is checked */
     }
     .menu-icon {
         display: block;
@@ -198,9 +208,7 @@ header {
         height: 1rem;
         width: auto;
         text-align: left;
-        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-        background-color: white;
-        box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 16px;
     }
 
     nav {
@@ -220,7 +228,7 @@ main {
 /*Reduce margin for the content when entering mobile*/
 @media (max-width: 1200px) {
     main {
-        margin: 0 8% 30px;
+        margin: 0 3% 30px;
     }
 }
 /*Styling for course information on index-page*/
@@ -237,6 +245,14 @@ main {
     max-width: 800px;
     border: solid rgba(0, 0, 0, 0.252);
     border-width: 0px 0px 2px;
+}
+.main-section-top {
+    padding: 10px 0px 60px;
+    text-align: center;
+    width: 100%;
+    max-width: 1075px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0px 0px 1px;
 }
 
 details {
@@ -685,4 +701,8 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
         max-width: 100%;
         padding: 20px;
     }
+}
+
+.main-section-box h4 {
+    padding: 20px 0;
 }

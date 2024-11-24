@@ -252,7 +252,7 @@ main {
 /*Gives all links a blue underline with a 2px thickness*/
 a {
     text-decoration: underline;
-    text-decoration-color: var(--primary-color);
+    text-decoration-color: blue;
     text-decoration-thickness: 2px;
     color: blue;
     line-height: 1.5rem;

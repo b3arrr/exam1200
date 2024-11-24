@@ -514,8 +514,10 @@ footer li {
 /* Using inspiration 
 and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
 
+/* The color pairings follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. https://venngage.com/tools/accessible-color-palette-generator */
 .activity-page {
     background-color: #b9d17e;
+    background-color: #d5f1d8;
 }
 
 .intro-image {
@@ -655,6 +657,7 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
 
 /* Styling for headings inside the field boxes */
 .info-heading {
+    display: inline-block;
     margin: 10px 0;
 }
 
@@ -666,16 +669,16 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
 
 /* Styling for the extra information about fields in Oslo */
 .field-information {
-    max-width: 800px;
+    max-width: 850px;
     margin: auto;
     padding: 20px;
     background-color: #60bdff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     text-align: center;
-
     /* Styling for the text about fields in Oslo */
 }
+
 .field-text {
     color: #000000;
 }

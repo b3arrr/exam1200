@@ -39,11 +39,33 @@ h3 {
     line-height: 1.5rem;
 }
 
-/*Stores variable colors in root to be re-used in the project*/
-:root {
-    --background: #ffffff;
-    --primary-color: #ffaa18;
-    --text-color: #000000;
+/* Used to apply bold styling to an element, without indicating a higher level of importance like the <strong> element. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong */
+.bold-text {
+    font-weight: bold;
+}
+
+/*Gives all links a yellow underline with a 2px thickness*/
+a {
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+    color: blue;
+    line-height: 1.5rem;
+}
+
+a:hover {
+    text-decoration-color: black;
+}
+a:visited {
+    color: rgb(134, 0, 146);
+    text-decoration-color: rgb(134, 0, 146) ;
+}
+
+.black-underline-link:visited {
+    color: var(--text-color);
+}
+.black-underline-link {
+    color: var(--text-color);
 }
 
 /* Used to apply bold styling to an element, without indicating 
@@ -516,8 +538,7 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
 
 /* The color pairings follow WCAG 2.1 AA based on a contrast ratio of 4.5:1. https://venngage.com/tools/accessible-color-palette-generator */
 .activity-page {
-    background-color: #b9d17e;
-    background-color: #d5f1d8;
+    background-color: #C5D8A4;
 }
 
 .intro-image {
@@ -529,11 +550,19 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
 }
 
 .intro-text {
+    background-color: #f9f9f9;
+    border: solid, black;
+    border: 2px solid;
+    padding: 10px;
+    box-shadow: 6px 4px 8px;
+    border-image: repeating-linear-gradient(to bottom right,#cc1400, #9977ff,rgb(89, 164, 255)) 20;
     margin: auto;
     text-align: center;
     max-width: 890px;
 }
 
+.intro-text p {
+}
 /* Styling for images inside the field boxes */
 .img-fotball {
     border-radius: 10px;
@@ -547,9 +576,13 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
     background-color: initial;
     background-color: #60bdff;
     padding: 10px 15px;
-    color: black !important; /* Ensures the text is black regardless of parent styles. Source: https://www.w3schools.com/css/css_important.asp */
+    color: black; /* Ensures the text is black regardless of parent styles. Source: https://www.w3schools.com/css/css_important.asp */
     border-radius: 25px;
     margin-bottom: 15px;
+}
+
+.link-button a {
+    color: black;
 }
 
 /* Hover effect for the button links */
@@ -638,9 +671,15 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
     max-width: 850px;
     margin: auto;
     padding: 20px;
-    background-color: #60bdff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: solid;
+    box-shadow: 6px 4px 8px;
+    background-color: #f9f9f9;
+    border-image: repeating-linear-gradient( /* Inspiration from https://www.w3schools.com/cssref/func_repeating-linear-gradient.php */
+        to bottom right,
+        #cc1400,
+        #9977ff,
+        rgb(89, 164, 255)
+    ) 20;
     text-align: center;
 }
 

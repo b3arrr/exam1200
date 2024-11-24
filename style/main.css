@@ -1,6 +1,22 @@
 /* Sorted the CSS after recommendations from: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing
 By searching "||", you can jump to different parts of the stylesheet */ 
 
+/* 
+TABLE OF CONTENTS 
+ 1. General Styles
+ 2. Styling of Header and Nav bar
+ 3. Styling of Main
+ 4. Styling of Links
+ 5. Styling of Lists
+ 6. Styling of Images
+ 7. Styling of Information Toggles
+ 8. Styling of Aside
+ 9. Styling of Footer
+ 10. Styling of Index Page
+ 11. Styling of Activity Page
+ 12. Styling of Github Page
+*/
+
 /* || GENERAL STYLES - Default styling */
 
 /*Defines what font and font size to be used in the project (inside the <html> element)

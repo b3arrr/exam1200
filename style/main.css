@@ -307,6 +307,7 @@ figcaption {
     background-color: #eaeaea; /* Contrast ratio of 17.46:1 with black text, follows WCAG 2.1 AA. Checked the contrast ratio with https://venngage.com/tools/accessible-color-palette-generator. */
     display: flex;
     padding: 30px;
+    text-align: left;
     margin-bottom: -20px;
     justify-content: space-evenly;
     flex-direction: row;

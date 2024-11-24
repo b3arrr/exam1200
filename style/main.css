@@ -246,6 +246,14 @@ main {
     border: solid rgba(0, 0, 0, 0.252);
     border-width: 0px 0px 2px;
 }
+.main-section-top {
+    padding: 10px 0px 60px;
+    text-align: center;
+    width: 100%;
+    max-width: 1075px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0px 0px 1px;
+}
 
 details {
     max-width: 500px;

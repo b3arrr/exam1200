@@ -385,7 +385,7 @@ footer li {
     margin: 5px 0px;
 }
 
-.footerflex {
+.footer-flex { 
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -393,14 +393,14 @@ footer li {
 }
 
 @media (max-width: 900px) {
-    .footerflex {
+    .footer-flex {
         flex-direction: column;
         gap: 20px;
     }
 }
 
 /* Turned it to flexboxs, so it would be possible to place the social media icons beside the text/link */
-.footerright {
+.footer-right {
     display: flex;
     justify-content: space-around;
     flex-direction: column;

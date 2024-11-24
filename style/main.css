@@ -73,6 +73,12 @@ a:visited {
 }
 .black-underline-link {
     color: var(--text-color);
+    text-decoration: none;
+}
+.black-underline-link:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+    text-decoration-color: black;
 }
 
 /* Used to apply bold styling to an element, without indicating 
@@ -258,11 +264,6 @@ a {
     line-height: 1.5rem;
 }
 
-a:hover {text-decoration-color: black;}
-a:visited {color: rgb(134, 0, 146);}
-
-.black-underline-link {color: var(--text-color);}
-.black-underline-link:visited {color: var(--text-color);}
 /* END */
 
 /* || STYLING OF LISTS */
@@ -568,8 +569,6 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
     max-width: 890px;
 }
 
-.intro-text p {
-}
 /* Styling for images inside the field boxes */
 .img-fotball {
     border-radius: 10px;

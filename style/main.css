@@ -228,14 +228,15 @@ main {
     }
 }
 
-/*Styling for course information on index-page*/
+/*Main styling for sections of index, github, and accessibility page*/
+/*Container for the sections*/
 .main-section-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
 }
-
+/*Stling for each specific section */
 .main-section-box {
     padding: 30px 0px 30px;
     width: 100%;
@@ -290,6 +291,8 @@ figcaption {padding-bottom: 0 10px;}
 /* END */
 
 /* || STYLING OF INFORMATION TOGGLE */
+
+/*Styling for the detail of the information toggle*/ 
 details {
     max-width: 500px;
     border: 1px solid #ddd;
@@ -299,6 +302,7 @@ details {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: 0.2s ease-in-out;
 }
+/*Styling for the summary of the information toggle*/ 
 summary {
     cursor: pointer;
     padding: 20px;
@@ -311,7 +315,9 @@ summary {
     transition: background-color 0.2s ease-in-out;
 }
 
-summary:hover {background-color: #ffffff;}
+summary:hover {
+    background-color: #ffffff;
+}
 
 /*This applies the styling to the details element, but excludes it's child "summary". */
 details > *:not(summary) {
@@ -326,7 +332,9 @@ details img {
     /*border box ensures that the padding and margin and dimensions are calculated together, resolving issue of the image going outside of its parent container boundaries*/
     box-sizing: border-box;
 }
-details p {padding: 0 15px 0 15px;}
+details p {
+    padding: 0 15px 0 15px;
+}
 /* END */
 
 /* || STYLING OF ASIDE */
@@ -353,7 +361,6 @@ aside {
     gap: 10px;
     /* Subtle border and background for emphasis*/
     background: #fffaf1;
-
     border: 1.5px solid #ffd395;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -370,6 +377,7 @@ aside {
 }
 
 .info-aside:hover {box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+
 /* END*/
 
 /* || STYLING OF FOOTER*/

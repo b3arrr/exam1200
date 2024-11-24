@@ -245,11 +245,11 @@ main {
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
+    margin-bottom: 40px;
 }
 /*Stling for each specific section */
 .main-section-box {
-    padding: 0px 0px 50px;
-    margin: 30px 0px;
+    padding: 30px 0px 50px;
     width: 100%;
     max-width: 800px;
     border: solid rgba(0, 0, 0, 0.252);

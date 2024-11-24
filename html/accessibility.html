@@ -54,243 +54,239 @@
 
         <main>
             <h1>Accessibility</h1>
-            <section class="main-section-container">
-                <article class="main-section-box">
-                    <h2>What is Accessibility?</h2>
-                    <p>
-                        The UN Convention on the Rights of Persons with
-                        Disabilities defines universal design as (United
-                        Nations, 2006):
-                    </p>
-                    <p>
-                        “Universal design” means the design of products,
-                        environments, programmers, and services to be usable by
-                        all people, to the greatest extent possible without the
-                        need for adaptation or specialized design. “Universal
-                        design” shall not exclude assistive devices for
-                        particular groups of persons with disabilities where
-                        this is needed.”
-                    </p>
-                    <p>
-                        In Norway in 2014, it became a legal requirement
-                        (Equality and Anti-Discrimination Act, 2018) that
-                        digital solutions must be universally designed. There
-                        are several advantages to striving for universal design.
-                        For example, solutions can be more user-friendly,
-                        increase accessibility, and more people become
-                        independent in their everyday lives. This is a positive
-                        investment for the society (Nordbø, 2022).
-                    </p>
-                </article>
-            </section>
-
-            <section class="main-section-container">
-                <article class="main-section-box">
-                    <h2>Coding Choices made for Universal Design</h2>
-                    <p>
-                        We used Lighthouse, which is an automated tool that
-                        helps us to improve the quality of web pages. It assists
-                        us in checking the accessibility, performance, and more
-                        (chrome for developers, n. d.).
-                    </p>
-                    <p>
-                        When using the automated tests, we still have the
-                        responsibility to check the code manually. The reason
-                        is: “As automated tooling does not cover all the success
-                        criteria identified in WCAG…” (web.dev, n. d.) A clear
-                        verdict from an automated test does not mean any issues.
-                    </p>
-                    <p>
-                        Generally, the coding choices we made that cannot be
-                        detected by an automated tool are, for example:
-                    </p>
-
-                    <!--Details and summary for decreasing clutter, for an improved user experience-->
-                    <details>
-                        <summary>
-                            The alternative text and table caption are accurate
-                            and properly assigned
-                        </summary>
-                        <img
-                            src="/media/alt-text.jpeg"
-                            width="470"
-                            alt="Screenshot of html code that shows alternative text for a image"
-                        />
-                        <figcaption>
-                            Figure 1 - Screenshot of html code for alternative
-                            text.
-                        </figcaption>
+            <div class="main-section-container">
+                <section>
+                    <article class="main-section-box">
+                        <h2>What is Accessibility?</h2>
                         <p>
-                            The alternative text is not redundant and is
-                            informative and descriptive enough to give the
-                            reader “…a sense of what the image is about and what
-                            message it conveys. ”(Olawanle, 2022)
+                            The UN Convention on the Rights of Persons with
+                            Disabilities defines universal design as (United
+                            Nations, 2006):
+                        </p>
+                        <p>
+                            “Universal design” means the design of products,
+                            environments, programmers, and services to be usable by
+                            all people, to the greatest extent possible without the
+                            need for adaptation or specialized design. “Universal
+                            design” shall not exclude assistive devices for
+                            particular groups of persons with disabilities where
+                            this is needed.”
+                        </p>
+                        <p>
+                            In Norway in 2014, it became a legal requirement
+                            (Equality and Anti-Discrimination Act, 2018) that
+                            digital solutions must be universally designed. There
+                            are several advantages to striving for universal design.
+                            For example, solutions can be more user-friendly,
+                            increase accessibility, and more people become
+                            independent in their everyday lives. This is a positive
+                            investment for the society (Nordbø, 2022).
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <article class="main-section-box">
+                        <h2>Coding Choices made for Universal Design</h2>
+                        <p>
+                            We used Lighthouse, which is an automated tool that
+                            helps us to improve the quality of web pages. It assists
+                            us in checking the accessibility, performance, and more
+                            (chrome for developers, n. d.).
+                        </p>
+                        <p>
+                            When using the automated tests, we still have the
+                            responsibility to check the code manually. The reason
+                            is: “As automated tooling does not cover all the success
+                            criteria identified in WCAG…” (web.dev, n. d.) A clear
+                            verdict from an automated test does not mean any issues.
+                        </p>
+                        <p>
+                            Generally, the coding choices we made that cannot be
+                            detected by an automated tool are, for example:
+                        </p>
+                        <!--Details and summary for decreasing clutter, for an improved user experience-->
+                        <details>
+                            <summary>
+                                The alternative text and table caption are accurate
+                                and properly assigned
+                            </summary>
+                            <img
+                                src="/media/alt-text.jpeg"
+                                width="470"
+                                alt="Screenshot of html code that shows alternative text for a image"
+                            />
+                            <figcaption>
+                                Figure 1 - Screenshot of html code for alternative
+                                text.
+                            </figcaption>
+                            <p>
+                                The alternative text is not redundant and is
+                                informative and descriptive enough to give the
+                                reader “…a sense of what the image is about and what
+                                message it conveys. ”(Olawanle, 2022)
+                            </p>
+                            <img
+                                src="/media/caption-text.jpeg"
+                                width="470"
+                                alt="Screenshot of html code for table caption text."
+                            />
+                            <figcaption>
+                                Figure 2 - Screenshot of html code for table
+                                caption.
+                            </figcaption>
+                            <p>
+                                The table caption gives the table an accessible
+                                description and it describes the data presented
+                                (MDN, n. d.).
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                Choosing a font that makes the content accessible
+                            </summary>
+                            <p>
+                                The Web Content Accessibility Guidelines (WCAG)
+                                don’t define a specific font to use. After doing
+                                some research and comparing different fonts, we
+                                chose different fonts based on the guidelines. The
+                                goal is to make the text easy to see and read (Mace,
+                                n. d. ).
+                            </p>
+                            <p>
+                                In addition, to make the text readable and
+                                understandable we limited the width. This prevents
+                                the text from spreading out and becoming difficult
+                                to read.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>Responsive design</summary>
+                            <img
+                                src="/media/media-flex.jpeg"
+                                width="470"
+                                alt="Screenshot of css code for better scaling of footer"
+                            />
+                            <figcaption>
+                                Figure 1 - Screenshot of css code for footer
+                            </figcaption>
+                            <p>
+                                Scalability is important because we are using
+                                different devices every day. The goal is to make a
+                                website that looks good and functional on all
+                                screens/devices (Nordbø, 2022).
+                            </p>
+                            <p>
+                                We did this by using flexboxes and media queries to,
+                                for example, adapt to different viewport widths to
+                                get a seamless scaling.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                Consistent webpage layout and navigation
+                            </summary>
+                            <p>
+                                Similar layout and navigation of index-page,
+                                GitHub-page, and Accessibility-page to make it
+                                predictable for the readers.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>
+                                Helping the users navigate and find content
+                            </summary>
+                            <img
+                                src="/media/button-link.jpeg"
+                                width="470"
+                                alt="Screenshot of example of good accessible link text"
+                            />
+                            <figcaption>
+                                Figure 1 - Screenshot of html code for button with
+                                accessible link text
+                            </figcaption>
+                            <ul class="list-decoration">
+                                <li>
+                                    Predictable, logical order of the content of the
+                                    website.
+                                </li>
+                                <li>
+                                    The links and buttons have accessible link texts
+                                    to give information to the reader about what
+                                    they will expect by clicking on the link (W3
+                                    Schools, n. d.).
+                                </li>
+                                <li>
+                                    Familiar elements, such as underlined links,
+                                    blue when not visited, and purple when visited.
+                                    Links can increase readability and “scanning” of
+                                    pages.
+                                </li>
+                            </ul>
+                        </details>
+                    </article>
+                    <article class="main-section-box">
+                        <h2>Results from Automated test with Lighthouse</h2>
+                        <p>
+                            Throughout the project we have improved our website by
+                            testing regulary. The test were done with Chrome with
+                            these options:
                         </p>
                         <img
-                            src="/media/caption-text.jpeg"
+                            src="/media/lighthouse.jpeg"
                             width="470"
-                            alt="Screenshot of html code for table caption text."
+                            height="298"
+                            alt="Screenshot of selected option for testing with the tool Lighthouse"
                         />
                         <figcaption>
-                            Figure 2 - Screenshot of html code for table
-                            caption.
+                            Figure 1 - Screenshot of the Lighthouse tool
                         </figcaption>
-                        <p>
-                            The table caption gives the table an accessible
-                            description and it describes the data presented
-                            (MDN, n. d.).
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary>
-                            Choosing a font that makes the content accessible
-                        </summary>
-                        <p>
-                            The Web Content Accessibility Guidelines (WCAG)
-                            don’t define a specific font to use. After doing
-                            some research and comparing different fonts, we
-                            chose different fonts based on the guidelines. The
-                            goal is to make the text easy to see and read (Mace,
-                            n. d. ).
-                        </p>
-                        <p>
-                            In addition, to make the text readable and
-                            understandable we limited the width. This prevents
-                            the text from spreading out and becoming difficult
-                            to read.
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary>Responsive design</summary>
+                        <h3>Index-page</h3>
                         <img
-                            src="/media/media-flex.jpeg"
+                            src="/media/lighthouse-index.jpeg"
                             width="470"
-                            alt="Screenshot of css code for better scaling of footer"
+                            height="214"
+                            alt="Screenshot of results from Lighthouse test of index page"
                         />
                         <figcaption>
-                            Figure 1 - Screenshot of css code for footer
+                            Figure 2 - Screenshot of the Lighthouse test results for
+                            Index page
                         </figcaption>
-                        <p>
-                            Scalability is important because we are using
-                            different devices every day. The goal is to make a
-                            website that looks good and functional on all
-                            screens/devices (Nordbø, 2022).
-                        </p>
-                        <p>
-                            We did this by using flexboxes and media queries to,
-                            for example, adapt to different viewport widths to
-                            get a seamless scaling.
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary>
-                            Consistent webpage layout and navigation
-                        </summary>
-                        <p>
-                            Similar layout and navigation of index-page,
-                            GitHub-page, and Accessibility-page to make it
-                            predictable for the readers.
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary>
-                            Helping the users navigate and find content
-                        </summary>
+                        <h3>Github page</h3>
                         <img
-                            src="/media/button-link.jpeg"
+                            src="/media/lighthouse-github.jpeg"
                             width="470"
-                            alt="Screenshot of example of good accessible link text"
+                            height="214"
+                            alt="Screenshot of results from Lighthouse test of github page"
                         />
                         <figcaption>
-                            Figure 1 - Screenshot of html code for button with
-                            accessible link text
+                            Figure 3 - Screenshot of the Lighthouse test results for
+                            Github page
                         </figcaption>
-                        <ul class="list-decoration">
-                            <li>
-                                Predictable, logical order of the content of the
-                                website.
-                            </li>
-                            <li>
-                                The links and buttons have accessible link texts
-                                to give information to the reader about what
-                                they will expect by clicking on the link (W3
-                                Schools, n. d.).
-                            </li>
-                            <li>
-                                Familiar elements, such as underlined links,
-                                blue when not visited, and purple when visited.
-                                Links can increase readability and “scanning” of
-                                pages.
-                            </li>
-                        </ul>
-                    </details>
-                </article>
-                <article class="main-section-box">
-                    <h2>Results from Automated test with Lighthouse</h2>
-                    <p>
-                        Throughout the project we have improved our website by
-                        testing regulary. The test were done with Chrome with
-                        these options:
-                    </p>
-                    <img
-                        src="/media/lighthouse.jpeg"
-                        width="470"
-                        height="298"
-                        alt="Screenshot of selected option for testing with the tool Lighthouse"
-                    />
-                    <figcaption>
-                        Figure 1 - Screenshot of the Lighthouse tool
-                    </figcaption>
-                    <h3>Index-page</h3>
-                    <img
-                        src="/media/lighthouse-index.jpeg"
-                        width="470"
-                        height="214"
-                        alt="Screenshot of results from Lighthouse test of index page"
-                    />
-                    <figcaption>
-                        Figure 2 - Screenshot of the Lighthouse test results for
-                        Index page
-                    </figcaption>
-                    <h3>Github page</h3>
-                    <img
-                        src="/media/lighthouse-github.jpeg"
-                        width="470"
-                        height="214"
-                        alt="Screenshot of results from Lighthouse test of github page"
-                    />
-                    <figcaption>
-                        Figure 3 - Screenshot of the Lighthouse test results for
-                        Github page
-                    </figcaption>
-                    <h3>Accessibility-page</h3>
-                    <img
-                        src="/media/lighthouse-acc.jpeg"
-                        width="470"
-                        height="210"
-                        alt="Screenshot of results from Lighthouse test of accessibility page"
-                    />
-                    <figcaption>
-                        Figure 4 - Screenshot of the Lighthouse test results for
-                        Accessibility page
-                    </figcaption>
-                    <h3>Activity-page</h3>
-                    <img
-                        src="/media/lighthouse-activity.jpeg"
-                        width="470"
-                        height="214"
-                        alt="Screenshot of results from Lighthouse test of activity page"
-                    />
-                    <figcaption>
-                        Figure 5 - Screenshot of the Lighthouse test results for
-                        Activity page
-                    </figcaption>
-                </article>
-            </section>
+                        <h3>Accessibility-page</h3>
+                        <img
+                            src="/media/lighthouse-acc.jpeg"
+                            width="470"
+                            height="210"
+                            alt="Screenshot of results from Lighthouse test of accessibility page"
+                        />
+                        <figcaption>
+                            Figure 4 - Screenshot of the Lighthouse test results for
+                            Accessibility page
+                        </figcaption>
+                        <h3>Activity-page</h3>
+                        <img
+                            src="/media/lighthouse-activity.jpeg"
+                            width="470"
+                            height="214"
+                            alt="Screenshot of results from Lighthouse test of activity page"
+                        />
+                        <figcaption>
+                            Figure 5 - Screenshot of the Lighthouse test results for
+                            Activity page
+                        </figcaption>
+                    </article>
+                </section>
+            </div>
         </main>
         <aside>
             <section class="aside-container">

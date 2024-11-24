@@ -220,7 +220,7 @@ main {
 /*Reduce margin for the content when entering mobile*/
 @media (max-width: 1200px) {
     main {
-        margin: 0 8% 30px;
+        margin: 0 3% 30px;
     }
 }
 /*Styling for course information on index-page*/

@@ -11,11 +11,13 @@
     <body>
         <header>
             <img id="oslomet-logo" src="media/transparent-oslomet-logo.png" height="56" width="80" alt="image of oslomet logo">
+            <!--Wrapp the links in a navigation element, to improve accessibility-->
             <nav>
                 <input id="menu-toggle" type="checkbox" />
                 <label class="dropdown-container" for="menu-toggle">
                     <div class="menu-icon"></div>
                 </label>
+                <!--Menu content class is essential for a burger menu, see stylesheet for more info-->
                 <ul class="menu-content">
                     <li><a href="#" class="bold-text black-underline-link">Index</a></li>
                     <li>
@@ -42,7 +44,6 @@
         </header>
 
         <main>
-            <div class="intro-section">
                 <img
                     src="media/oslomet.webp"
                     alt="Inngagnsparti til en av byggene til OsloMet"
@@ -50,15 +51,16 @@
                     height="1920"
                     width="1080"
                 />
-            </div>
             <!--Using section element for combining introductional elements into one tematic section-->
             <section class="main-section-container">
                 <h1>Matematisk modellering og datavitenskap - ingeniør</h1>
+                <!--section class specificly for the top portion of the page-->
                 <div class="main-section-top">
                     <p>
                         Få innsikt i matematiske modeller og datadrevne metoder som kan
                         løse mange praktiske og samfunnsnyttige oppgaver.
                     </p>
+                    <!--Container class needed for separating content visually-->
                     <div class="page-header-container">
                         <div>
                             <ul>
@@ -106,10 +108,9 @@
                 </div>
             </section>
 
-            <section>
                 <!--Section element created for sectioning off the portion of the page which goes in detail about the course-->
                 <!--Flex container for paragraph sections of course information-->
-                <div class="main-section-container">
+                <section class="main-section-container">
                     <div class="main-section-box">
                         <h2>Opptakskrav</h2>
                         <p>For å søke på dette programmet må du ha:</p>
@@ -231,12 +232,11 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-            </section>
+                </section>
 
             <section>
-                <!--New-->
                 <h2>Studiets Oppbygging</h2>
+                <!--Table to organize a large amount of data, while staying organized-->
                 <table class="info-table">
                     <caption>
                         Fordypningsemner knyttet til spesialisering innen
@@ -251,6 +251,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <!--We are using data-labels to help organize the semantic of each row, which we are able to present visually when using media queries-->
                         <tr class="mobile-tr">
                             <!-- 1. Semester -->
                             <td class="mobile-header-color" rowspan="4">
@@ -994,7 +995,6 @@
             </section>
 
             <section>
-
                 <div class="main-section-container">
                     <div class="main-section-box">
                         <h2>Hvordan foregår undervisningen?</h2>
@@ -1104,10 +1104,11 @@
         </main>
 
         <aside> 
-            <div class="aside-container">
-                <div class="info-aside">
+            <!--Container for styling aside boxes-->
+            <section class="aside-container">
+                <!--aside card. see more in css-->
+                <article class="info-aside">
                     <img class="img-leader"  src="media/faglig-leder.webp" alt="Portrett av en smilende person" height="394" width="530">
-                    <div>
                         <h2>Spørsmål om utdanningen?</h2>
                         <p>Har du spørsmål om utdanningen, kontakt oss gjennom <a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">vårt kontaktskjema</a></p>
                         <h3>Faglig leder</h3>
@@ -1117,10 +1118,9 @@
                             + 47 672 37 240<br />
                             kristoffer.hellton@oslomet.no
                         </p>
-                    </div>
-                </div>
+                </article>
                 
-                <div class="info-aside">
+                <article class="info-aside">
                     <div>
                         <h2>Studenthistorier</h2>
                         <a href="https://www.oslomet.no/studier/studenthistorier?student_story=147">Teknologi og design</a>
@@ -1133,8 +1133,8 @@
                         <a href="https://www.oslomet.no/studier/studenthistorier">Flere studenthistorier finner du her.</a>
                     </div>
                     <img src="media/studenthistorier.webp"  alt="To smilende personer" class="img-story" width="1200" height="1920">
-                </div>
-                <div class="info-aside">
+                </article>
+                <article class="info-aside">
                     <div><h2>Du er kanskje også interessert i disse?</h2></div>
                     <div>
                         <table class="info-table">
@@ -1208,8 +1208,8 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
         </aside>
 
         <footer class="footerflex">

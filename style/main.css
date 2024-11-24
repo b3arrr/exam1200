@@ -140,19 +140,13 @@ header {
     padding: 20px;
     margin: 0px 20px;
     border: 2px solid rgba(253, 188, 104, 0.774); /*adds subtle borde to highlight the edges*/
-    background-color: #ffae22;
+    background-color: white;
     border-radius: 6px;
     text-align: center;
     box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.089);
     text-decoration: none;
     transition: background-color 0.2s ease, color 0.2s ease;
     cursor: pointer;
-}
-
-/*Enables interactivity when hovering the button*/
-.menu-content li a:hover {
-    background-color: white;
-    color: rgb(231, 150, 0);
 }
 
 /* The hamburger menu will replace the row-menu at 700px */

@@ -576,6 +576,8 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
 .intro-image {
     margin: 40px 0px 20px;
     display: block;
+    max-width: 100%;
+    height:auto;
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;

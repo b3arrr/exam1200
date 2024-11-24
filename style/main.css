@@ -663,3 +663,7 @@ and code examples from: https://www.w3schools.com/howto/howto_css_hero_image.asp
         padding: 20px;
     }
 }
+
+.main-section-box h4 {
+    padding: 20px 0;
+}

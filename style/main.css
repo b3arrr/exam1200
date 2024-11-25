@@ -592,6 +592,8 @@ https://www.w3schools.com/howto/howto_css_hero_image.asp to style heading*/
 
 /* Styling for images inside the field boxes */
 .img-fotball {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
     outline: 1px solid grey;
 }

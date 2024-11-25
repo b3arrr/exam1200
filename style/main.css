@@ -297,7 +297,7 @@ img {
     max-height: fit-content;
 }
 
-figcaption {padding-bottom: 0 10px;}
+figcaption {padding: 10px 0 15px;}
 /* END */
 
 /* || STYLING OF INFORMATION TOGGLE */
